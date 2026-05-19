@@ -2,7 +2,7 @@
 <html lang="en_NS">
 
 <head>
-  <title>Wiki</title>
+  <title>Key2 LineageOS stuff</title>
   <link rel="icon" type="image/x-icon" href="nonbinary.ico">
   <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -382,6 +382,7 @@ pre {
         <p class="article_section_text">BlackBerry Key2</p>
         <p class="article_section_right"></p>
       </div>
+      <h3 class="article_name" style="color:var(--text);text-align:center;margin-right:var(--article-padding);">Due to lack of free time krab-ubica has put rom development on indefinent pause</h3>
       <label for="article_integritySpoofing" class="article_title">
         <p class="article_name_divider"></p>
         <svg class="article_arrow" viewBox="0 0 54 85" xmlns="http://www.w3.org/2000/svg">
@@ -393,7 +394,7 @@ pre {
       <input type="checkbox" id="article_integritySpoofing" name="article_integritySpoofing">
         <div class="article_contents" id="article_integritySpoofing_contents">
           <p class="article_divider"></p>
-          <h4 class="article_header">1: Prerequsites</h4>
+          <h4 class="article_header">1: Requirements</h4>
           <p class="article_text">NOTE: The tutorial is meant for the blackberry key2(le) but will work for other android devices.
           <p class="article_text">You have ADB and fastboot installed</p>
           <p class="article_text">Your device is running LineageOS, if it's not see the article below</p>
@@ -443,12 +444,12 @@ pre {
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">Install Guide for LineageOS UNOFFICIAL</h3>
-        <p class="article_date">Last editied: Apr 25 2026</p>
+        <p class="article_date">Last editied: May 19 2026</p>
       </label>
       <input type="checkbox" id="article_krab" name="article_krab">
         <div class="article_contents" id="article_krab_contents">
           <p class="article_divider"></p>
-          <h4 class="article_header">1: Prerequisites</h4>
+          <h4 class="article_header">1: Requirements</h4>
           <p class="article_text">NOTE: If you have any questions or issues you can ask in the BlackBerry Android hideout discord server, the invite is <a href="https://discord.gg/BuJURQD6Qb">https://discord.gg/BuJURQD6Qb</a></p>
           <p class="article_text">A BlackBerry key2, the key2le is not currently supported.</p>
           <p class="article_text">A Windows or linux computer</p>
@@ -458,12 +459,12 @@ pre {
           <p class="article_divider_small"></p>
           <h4 class="article_header">2: Stock Firmware Preparation</h4>
           <p class="article_text">Remove your lockscreen password and google account from your device</p>
-          <p class="article_text">If you are the option to set your screen lock to swipe is grayed out factory reset your phone from settings AFTER removing you google account.</p>
+          <p class="article_text">If the option to set your screen lock to swipe is grayed out factory reset your phone from settings AFTER removing your google account.</p>
           <p class="article_text">If you do not remember your password follow <a href="https://youtu.be/HPddEUfth7A">theses instructions</a> from the device setup.</p>
           <p class="article_text">Download the <a href="https://mega.nz/file/pdBjAARa#l5WNgDKoaRWN-ORkK-lBPhGqkwyFqz91HlU3r-CGWfs">ACQ160 Autoloader</a>.</p>
           <p class="article_text">Power off your device then hold volume down and power until the bootloader menu is shown</p>
-          <p class="article_text">You will need to flash the firmware twice, to do so extract the downloaded 7z file and run the included 'flashall.bat' file, once the phone boots up to the setup reboot to the bootloader and repeat</p>
-          <p class="article_text">A linux version of the flashall.bat script is available <a href="https://daphnis-past-midnight.neocities.org/flash.sh">here</a>.</p>
+          <p class="article_text">You will need to flash the firmware twice, to do so extract the downloaded 7z file and run the included 'flashall.bat' file, once the phone boots up to the setup reboot to the bootloader and repeat once.</p>
+          <p class="article_text">NOTE: A linux version of the flashall.bat script is available <a href="https://daphnis-past-midnight.neocities.org/flash.sh">here</a>.</p>
           <p class="article_text">If you get this error message: <code class="article_code">error: cannot load '.\img\oem_getvar:subvariantFAILED.img(remote:GetVarVariableNotFound)': Invalid argument</code> you can ignore it.</p>
           <p class="article_divider_small"></p>
           <p class="article_text">Power off your device then boot into the bootloader again.</p>
@@ -481,9 +482,9 @@ pre {
           <p class="article_text">If the unlock was successful, on the phone MODE: will change from <code class="article_code">PRODUCT</code> to <code class="article_code">FACTORY</code></p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">4: Flashing LineageOS</h4>
-          <p class="article_text">Download the latest rom version posted on discord, <a href="https://mega.nz/file/xAgSQRDQ#SH1kS5XRl8jjbRHeXoAIPuo34ge3EjrNfycPOIq0dvk">currently that's 1.8a</a>.</p>
-          <p class="article_text">Once your download finishes extract the downloaded .zip file, and enter the directory you extracted it to.</p>
-          <p class="article_text">The package for gapps(Google Services) is not included with the rom download, if you want them you will need to download it seperately. The recommended package is <a href="https://github.com/MindTheGapps/15.0.0-arm64/releases/latest">MindTheGapps</a>.</p>
+          <p class="article_text">Download the latest rom version, for android 15 it's <a href="https://mega.nz/file/xAgSQRDQ#SH1kS5XRl8jjbRHeXoAIPuo34ge3EjrNfycPOIq0dvk">1.8a</a> or <a href="https://mega.nz/file/BMZimQyB#2eONwQPzAnDRh2Ca-dihAWL7_s1q-V1vJMzFAiOQotQ">1.20a alpha</a> and <a href="https://mega.nz/file/dFRHjB5K#0UGDzY6eADtvdTaadqhJ3NGuAsbO0ATABJHD1SOYxI0">2.0f alpha</a> for android 16.</p>
+          <p class="article_text">The package for gapps(Google Services) is not included with the rom download, if you want them you will need to download it seperately. The recommended package for android 15 is <a href="https://github.com/MindTheGapps/15.0.0-arm64/releases/latest">MindTheGapps 15</a>, and <a href="https://github.com/MindTheGapps/16.0.0-arm64/releases/latest">MindTheGapps 16</a> for android 16.</p>
+          <p class="article_text">Once your rom download finishes extract it's .zip file, and enter the directory it extracted to.</p>
           <p class="article_divider_small"></p>
           <p class="article_text">Power off you device then hold volume down and power until the bootloader menu is shown</p>
           <p class="article_text">Run the following commands:
@@ -495,7 +496,7 @@ pre {
           </ul>
           <p class="article_text">NOTE: You navigate the recovery by using the volume keys to move the cursor and the power button the select.</p>
           <p class="article_text">Once the LineageOS recovery appears select 'Apply update' -> 'Apply update from adb'</p>
-          <p class="article_text">Run <code class="article_code">adb sideload /path/to/lineage-22.2-{date}-UNOFFICIAL-krab-{versionNumber}-athena.zip</code></p>
+          <p class="article_text">Run <code class="article_code">adb sideload /path/to/lineage-{lineageOS version}-{date}-UNOFFICIAL-krab-{version}-athena.zip</code></p>
           <p class="article_text">If you have any additional zips you want to flash(ie: gapps, magisk) go into 'Apply update' -> 'Apply update from adb' and run <code class="article_code">adb sideload /path/to/package.zip</code>, once the signature verification failed messages appears select yes.</p>
           <p class="article_text">If you get a not enough space on system partion error when flashing gapps go into 'Factory reset/Format data' and format the system partition, then re-flash lineageOS and gapps.</p>
           <p class="article_text">Select the 'Reboot system'</p>
@@ -510,28 +511,30 @@ pre {
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">Updating to a newer LineageOS UNOFFICIAL build</h3>
-        <p class="article_date">Last editied: Apr 30 2026</p>
+        <p class="article_date">Last editied: May 19 2026</p>
       </label>
       <input type="checkbox" id="article_krab_update" name="article_krab_update">
         <div class="article_contents" id="article_krab_update_contents">
           <p class="article_divider"></p>
-          <h4 class="article_header">1: Prerequsites</h4>
+          <h4 class="article_header">1: Requirements</h4>
           <p class="article_text">You have ADB and fastboot installed</p>
           <p class="article_text">You are running a build released *AFTER* March 04 2026. If your on a build older then this date or one posted on XDA you will need to follow the flashing LineageOS section of the install guide above, doing so will wipe your device.</p>
           <p class="article_text">NOTE: If you need to downgrade you can do so with the recovery update method.</p>
+          <p class="article_text">If you are updating to android 16 you need to update from recovery *AND* wipe your data</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">2.1: Updating without a computer (recommended)</h4>
           <p class="article_text">NOTE: Updating this way does not keep root.</p>
-          <p class="article_text">Download the latest rom version posted on discord, <a href="https://mega.nz/file/xAgSQRDQ#SH1kS5XRl8jjbRHeXoAIPuo34ge3EjrNfycPOIq0dvk">currently that's 1.8a</a>.</p>
+          <p class="article_text">Download the latest rom version, for android 15 it's <a href="https://mega.nz/file/xAgSQRDQ#SH1kS5XRl8jjbRHeXoAIPuo34ge3EjrNfycPOIq0dvk">1.8a</a> or <a href="https://mega.nz/file/BMZimQyB#2eONwQPzAnDRh2Ca-dihAWL7_s1q-V1vJMzFAiOQotQ">1.20a alpha</a> and <a href="https://mega.nz/file/dFRHjB5K#0UGDzY6eADtvdTaadqhJ3NGuAsbO0ATABJHD1SOYxI0">2.0f alpha</a> for android 16.</p>
           <p class="article_text">NOTE: If the file is larger then the MEGA mobile site allows enable the show desktop site option in your browser's settings</p>
           <p class="article_text">Extract the zip file you downloaded.</p>
           <p class="article_text">Go to Settings  -> System -> System Update.</p>
           <p class="article_text">Tap the 3 dots in the top corner and select Local update.</p>
-          <p class="article_text">Select the zip file following <code class="article_code">lineage-22.2-{date}-UNOFFICIAL-krab-{versionNumber}-athena.zip</code> naming format.</p>
+          <p class="article_text">Select the zip file following <code class="article_code">lineage-{lineageOS version}-{date}-UNOFFICIAL-krab-{version}-athena.zip</code> naming format.</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">2.2: Updating via recovery</h4>
-          <p class="article_text">Download the latest rom version posted on discord, <a href="https://mega.nz/file/xAgSQRDQ#SH1kS5XRl8jjbRHeXoAIPuo34ge3EjrNfycPOIq0dvk">currently that's 1.8a</a>.</p>
-          <p class="article_text">Once your download finishes extract the downloaded .zip file, and enter the directory you extracted it to.</p>
+          <p class="article_text">Download the latest rom version, for android 15 it's <a href="https://mega.nz/file/xAgSQRDQ#SH1kS5XRl8jjbRHeXoAIPuo34ge3EjrNfycPOIq0dvk">1.8a</a> or <a href="https://mega.nz/file/BMZimQyB#2eONwQPzAnDRh2Ca-dihAWL7_s1q-V1vJMzFAiOQotQ">1.20a alpha</a> and <a href="https://mega.nz/file/dFRHjB5K#0UGDzY6eADtvdTaadqhJ3NGuAsbO0ATABJHD1SOYxI0">2.0f alpha</a> for android 16.</p>
+          <p class="article_text">Once your rom download finishes extract it's .zip file, and enter the directory it extracted to.</p>
+          <p class="article_text">NOTE: If you want google services on android 16 you need to use <a href="https://github.com/MindTheGapps/16.0.0-arm64/releases/latest">MindTheGapps 16</a>.</p>
           <p class="article_text">If your phone is rooted patch the boot.img file included with the new build.</p>
           <p class="article_divider_small"></p>
           <p class="article_text">Power off you device then hold volume down and power until the bootloader menu is shown</p>
@@ -541,14 +544,14 @@ pre {
             <li><code class="article_code">fastboot flash boot /path/to/recovery.img</code></li>
             <li><code class="article_code">fastboot reboot</code></li>
           </ul>
-          <p class="article_text">Once the LineageOS recovery appears select 'Apply update' -> 'Apply update from adb'</p>
-          <p class="article_text">Run <code class="article_code">adb sideload /path/to/lineage-22.2-{date}-UNOFFICIAL-krab-{versionNumber}-athena.zip</code></p>
+          <p class="article_text">If your updating to android 16 select 'Factory Reset' -> 'Format data / factory reset'</p>
+          <p class="article_text">Select 'Apply update' -> 'Apply update from adb'</p>
+          <p class="article_text">Run <code class="article_code">adb sideload /path/to/lineage-{lineageOS version}-{date}-UNOFFICIAL-krab-{version}-athena.zip</code></p>
           <p class="article_text">If you have google services installed go into 'Apply update' -> 'Apply update from adb' and run <code class="article_code">adb sideload /path/to/gapps.zip</code> once the signature verification failed messages appears select yes.</p>
           <p class="article_text">If your rooted select 'Advanced' then 'Reboot to bootloader', once the bootloader appears flash your moddified boot.img file and boot the system.</p>
           <p class="article_text">If it's not rooted select 'Reboot system'</p>
           <p class="article_divider_small"></p>
-          <h4 class="article_header">3: Fixing app installs failing</h4>
-          <p class="article_text">NOTE: This is a rare bug that only happens when downgrading, if this happens to you when upgrading please contact 'Krab-Ubica' in the discord server</p>
+          <h4 class="article_header">3: Fixing app installs failing or being unable to set a passcode</h4>
           <p class="article_text">Boot into recovery</p>
           <p class="article_text">NOTE: The easiest way to get into recovery is by using the 'Advanced restart' option in settings</p>
           <p class="article_text">Once the recovery menu appears select Advanced -> Enable ADB</p>
@@ -563,12 +566,108 @@ pre {
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">LineageOS UNOFFICIAL changelog</h3>
-        <p class="article_date">Last editied: Apr 25 2026</p>
+        <p class="article_date">Last editied: May 19 2026</p>
       </label>
       <input type="checkbox" id="article_key2_changelog" name="article_key2_changelog">
         <div class="article_contents" id="article_key2_changelog_contents">
           <p class="article_divider"></p>
-          <h4 class="article_header">This ONLY covers releases made after BotchedRPR left the project</h4>
+          <h4 class="article_header">-- Android 16 ALPHA --</h4>
+          <p class="article_divider_small"></p>
+          <h4 class="article_header">Tested</h4>
+          <ul class="article_list">
+            <li class="article_text">Boots to OS: OK</li>
+            <li class="article_text">Screen+touch: OK</li>
+            <li class="article_text">USB + adb: OK</li>
+            <li class="article_text">Wi-Fi: OK</li>
+            <li class="article_text">Sound: OK</li>
+            <li class="article_text">Bluetooth: OK</li>
+            <li class="article_text">Encryption: OK</li>
+            <li class="article_text">Keyboard: OK</li>
+            <li class="article_text">Voice calls: OK</li>
+            <li class="article_text">Camera: OK</li>
+            <li class="article_text">Keyboard-backlight: OK</li>
+            <li class="article_text">Keyboard-touch: OK</li>
+            <li class="article_text">Mobile-hotspot: OK</li>
+            <li class="article_text">Notificaiton led: OK</li>
+            <li class="article_text">Fingerprint: OK</li>
+            <li class="article_text">LTE: OK</li>
+            <li class="article_text">NFC: OK</li>
+            <li class="article_text">VOIP: OK</li>
+            <li class="article_text">HDR+ OR GCAM88: OK</li>
+            <li class="article_text">WIRED HEADSET: TESTING</li>
+            <li class="article_text">Haptics/Vibro: TESTING</li>
+          </ul>
+          <p class="article_divider_small"></p>
+          <h4 class="article_header">Todo</h4>
+          <ul class="article_list">
+            <li class="article_text">Good solution for Synaptics LCD colors/saturation</li>
+            <li class="article_text">NFC driver/hal upgrade</li>
+            <li class="article_text">Haptic driver to led upgrade</li>
+          </ul>
+          <p class="article_divider_small"></p>
+          <h4 class="article_header">Known bugs</h4>
+          <ul class="article_list">
+            <li class="article_text">Yellow flashlight-torch</li>
+            <li class="article_text">Nav-buttons backlight turn-off on good-light conditions</li>
+            <li class="article_text">Haptic/vibro is not accurate on volume and brightness change</li>
+            <li class="article_text">BT-sound lags every time upon device unlock (every time after very first beeing gone into deep-sleep)</li>
+          </ul>
+          <p class="article_divider_small"></p>
+          <h4 class="article_header"><a href="https://mega.nz/file/dFRHjB5K#0UGDzY6eADtvdTaadqhJ3NGuAsbO0ATABJHD1SOYxI0">2.0f May 19 2026 PUBLIC ALPHA</a></h4>
+          <p class="article_text">Fixed: Convenience key;</p>
+          <p class="article_text">Fixed: Wi-Fi disabled upon device sleep;</p>
+          <p class="article_text">Fixed: Low-latency pin entering on unlocking;</p>
+          <p class="article_text">Fixed: Slow LCD enabling after sleep;</p>
+          <p class="article_divider_small"></p>
+          <h4 class="article_header"><a href="https://mega.nz/file/VZgxCYwC#AwB6wFvo0EheuA711dARDTjlpBbv1CIVd5OsRlPH0mc">2.0e May 04 2026 PUBLIC ALPHA</a></h4>
+          <p class="article_text">Fixed: Device hang on blackberry screen upon reboot (sometimes);</p>
+          <p class="article_text">Low performance and lags after wake from sleep;</p>
+          <p class="article_text">TRY-FIX: Gcam88 camera hangs-up device under load;</p>
+          <p class="article_text">TRY-FIX: BT-sound lags under cpu pressure;</p>
+          <p class="article_text">Haptics/Vibro more precise (but not as accurate as needed);</p>
+          <p class="article_text">Performance and memory tunings;</p>
+          <p class="article_divider_small"></p>
+          <h4 class="article_header"><a href="https://mega.nz/file/MZYUGa5K#RrbGgfkAkxTApB4wSr1xB2li1DW03GOiMLfdpRQ_k-8">2.0d Apr 30 2026 PUBLIC ALPHA</a></h4>
+          <p class="article_text">Fixed. K12KB: Back-button not work in text inputs;</p>
+          <p class="article_text">Voip better;</p>
+          <p class="article_text">ired head-set sound fixed;</p>
+          <p class="article_text">Fixed: Virtual nav-buttons settings toggle;</p>
+          <p class="article_text">TRY-FIX: Gcam88 preview freeze on some boots;</p>
+          <p class="article_text">Fixed: Keyboard-press was waking device;</p>
+          <p class="article_text">Led breathing and setting fixed;</p>
+          <p class="article_text">Keyboard backlight timeouts controlled both with nav-btns;</p>
+          <p class="article_text">Swappiness 60->100 (better swap->zram usage);</p>
+          <p class="article_text">Low-light adaptive brightness flickering fixed;</p>
+          <p class="article_text">NFC better;</p>
+          <p class="article_divider_small"></p>
+          <h4 class="article_header"><a href="https://mega.nz/file/MIYlFBJQ#g2QyoiS2Axeqh3dWezCdv5Y7w8uxRGoz8JVeTPVm2Jg">2.0c Apr 25 2026 PUBLIC ALPHA</a></h4>
+          <p class="article_text">Fixed: Convenience key;</p>
+          <p class="article_text">USB-OTG and MMC-flashes, including exFAT, NTFS;</p>
+          <p class="article_text">Recovery activated restore "choose from disk";</p>
+          <p class="article_text">USB mode changes via preferences unlocked;</p>
+          <p class="article_text">Camera fixed (was broken by selinux);</p>
+          <p class="article_text">Fingerprint better;</p>
+          <p class="article_text">GPS better;</p>
+          <p class="article_text">Darkening GUI-colors on Synaptics LCD temporary hacky fix;</p>
+          <p class="article_text">VOIP better;</p>
+          <p class="article_text">Laggy wakeups/Deep sleep better;</p>
+          <p class="article_text">Shed/CPU freq scaling better tnx @Wumbomumbo;</p>
+          <p class="article_text">Keyboard-backlight from LOS22-krab-v1.8 tnx @Sadako</p>
+          <p class="article_divider_small"></p>
+          <h4 class="article_header"><a href="https://mega.nz/file/1cBkWZaJ#3_I28jpJnXDroiMhuS43YLaih77OhIUUDO4XqVQi3U4">2.0b Apr 17 2026 PUBLIC ALPHA</a></h4>
+          <p class="article_text">recovery adb sideload fixed;</p>
+          <p class="article_text">Unlocking performance issue fixed;</p>
+          <p class="article_text">Selinux: enforced</p>
+          <p class="article_divider_small"></p>
+          <h4 class="article_header"><a href="https://mega.nz/file/EBgAGaCQ#RDR0G-Pd7szDlk-7Ix3JzIFR12mv_fmIrvx1d3QlJ1U">2.0a Apr 16 2026 PUBLIC ALPHA</a></h4>
+          <p class="article_text">Android 16 and kernel 4.19</p>
+          <p class="article_divider_small"></p>
+          <p class="article_divider"></p>
+          <h4 class="article_header">-- Android 15 --</h4>
+          <p class="article_divider_small"></p>
+          <h4 class="article_header"><a href="https://mega.nz/file/BMZimQyB#2eONwQPzAnDRh2Ca-dihAWL7_s1q-V1vJMzFAiOQotQ">1.20a May 19 2026 PUBLIC ALPHA</a></h4>
+          <p class="article_text">Update to linux kernel 4.19 from 4.4</p>
+          <p class="article_text">Todo: Good solution for Synaptics LCD colors/saturation</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header"><a href="https://mega.nz/file/xAgSQRDQ#SH1kS5XRl8jjbRHeXoAIPuo34ge3EjrNfycPOIq0dvk">1.8a Apr 25 2026</a></h4>
           <p class="article_text">Keyboard-blacklight Sadako's algo implemented,</p>
@@ -634,30 +733,31 @@ pre {
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"
          id="path1"></path>
         </svg>
-        <h3 class="article_name">Community made apps & tweaks</h3>
-        <p class="article_date">Last editied: Apr 30 2026</p>
+        <h3 class="article_name">Apps & tweaks</h3>
+        <p class="article_date">Last editied: May 16 2026</p>
       </label>
       <input type="checkbox" id="article_key2_apps" name="article_key2_apps">
         <div class="article_contents" id="article_key2_apps_contents">
           <p class="article_divider"></p>
           <h4 class="article_header">Keyboards</h4>
-          <p class="article_text"><a href="https://github.com/palsoftware/pastiera">Pastiera</a>: A foss keyboard app built for android phones with hardware keyboards. It's the default on Bochenek's rom builds. Make sure to the latest nightly build since the stable has issues with the ALT and SYM keys.</p>
-          <p class="article_text"><a href="https://github.com/tim-ecoder/K12KB">K12KB</a>: The keyboard app made by Krab-ubica, comes pre-installed with their rom builds. Currently requires enableing 'Allow on-screen keyboard' in Settings -> System -> BlackBerry keyboard to work properly</p>
-          <p class="article_text"><a href="https://mega.nz/file/UcRRRQLL#77rrFSjS-Ho7yD6Ij6BNMNdvIVZeW179ErudUBxp8gI">BlackBerry Keyboard</a>: An unmodified version of the BlackBerry keyboard from android 8.1</p>
-          <p class="article_text"><a href="https://mega.nz/file/ZBJQXY4Q#2shEOGdU56T2yYTq02Zz4o5ARtkIMQhfK8h__AuAtZo">Krab-ubica's bb-keyboard</a>: A modified version of the blackberry keyboard with working gestures. Chloeejp has made a version with all language packs available <a href="https://mega.nz/file/Ry40wJLC#jOgVAl-g5AdfvTznBI7EBa1EeIMpf4oeBCdp6FNOTa8">here</a> & one with only vietnamese available <a href="https://mega.nz/file/tmAShbRa#2Sf9X3QNpOSuQZEEahy76o2ibs7eWSOipvJ4Vf_j9Kc">here</a>.</p>
-          <p class="article_text"><a href="https://www.reddit.com/r/TheMinimalCompany/comments/1on6gmw/blackberry_keyboard_for_minimal_phone_test_2/">Hazem's BlackBerry Keyboard</a>: A modified version of the blackberry keyboard with material you colors and various fixes, it's language packs are available <a href="https://drive.google.com/drive/folders/1JhDQKay7i6ayRks8VvUDY4khAhSqIflp?usp=share_link">here</a>.</p>
+          <p class="article_text"><a href="https://github.com/palsoftware/pastiera">Pastiera</a>: A foss keyboard app built for android phones with hardware keyboards. It's the default on Bochenek's rom builds. Make sure to use the latest nightly build, the stable has issues with the ALT and SYM keys.</p>
+          <p class="article_text"><a href="https://github.com/tim-ecoder/K12KB">K12KB</a>: The keyboard app made by Krab-ubica, comes pre-installed with his rom builds. Currently requires enableing 'Allow on-screen keyboard' in Settings -> System -> BlackBerry keyboard to work properly</p>
+          <p class="article_text"><a href="https://mega.nz/file/ZBJQXY4Q#2shEOGdU56T2yYTq02Zz4o5ARtkIMQhfK8h__AuAtZo">Krab-ubica's BlackBerry Keyboard</a>: A modified version of the blackberry keyboard with working keyboard gestures. Chloejp has made a version with all language packs available <a href="https://mega.nz/file/Ry40wJLC#jOgVAl-g5AdfvTznBI7EBa1EeIMpf4oeBCdp6FNOTa8">here</a> & one with only vietnamese available <a href="https://mega.nz/file/tmAShbRa#2Sf9X3QNpOSuQZEEahy76o2ibs7eWSOipvJ4Vf_j9Kc">here</a>.</p>
+          <p class="article_text"><a href="https://www.reddit.com/r/TheMinimalCompany/comments/1plzief/new_blackberry_keyboard_w_full_minimal_phone/">Hazem's BlackBerry Keyboard</a>: A heavily modified version of the blackberry keyboard with material you colors, working keyboard gestures, newer emojis and a ton of various fixes, it's language packs are available <a href="https://drive.google.com/drive/folders/1JhDQKay7i6ayRks8VvUDY4khAhSqIflp?usp=share_link">here</a>.</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">Launchers</h4>
-          <p class="article_text"><a href="https://mega.nz/file/McxwVCyK#pBmpcu1kTb3mF45K3hTXb4G2HjlL0XQXSi1-iwhIeK0">BlackBerry Launcher</a>: The default launcher from android 8.1. It's default wallpaper set is also available <a href="https://archive.org/details/bbkey2_wallpapers">on this archive.org page</a>.</p>
+          <p class="article_text"><a href="https://mega.nz/file/McxwVCyK#pBmpcu1kTb3mF45K3hTXb4G2HjlL0XQXSi1-iwhIeK0">Krab-ubica's BlackBerry Launcher</a>: The default launcher from android 8.1 with performance improvements and modifications to make it work on LOS. The default 8.1 wallpaper set is also available <a href="https://archive.org/details/bbkey2_wallpapers">on this archive.org page</a>.</p>
           <p class="article_text"><a href="https://www.reddit.com/r/blackberry/comments/1rzgfur/blackberry_inspired_android_launcher/">Torchlight Launcher (PAID)</a>: A clone of blackberry OS 7 as an android launcher</p>
           <p class="article_text"><a href="https://kisslauncher.com/">KISS</a>: A blazingly fast launcher focused on search</p>
           <p class="article_text"><a href="https://kvaesitso.mm20.de/">Kvaesitso</a>: A seach-focused launcher, currently needs the <a href="https://github.com/Magisk-Modules-Alt-Repo/enable-blurs">enable-blurs</a> magisk module for blur effects to work on the key2.</p>
           <p class="article_text"><a href="https://lawnchair.app/">Lawnchair</a>: An open-source clone of google's pixel launcher</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">Other</h4>
-          <p class="article_text"><a href="https://mega.nz/file/QZ5DwTTS#DUc2Oo_Dc6MZwkEUul9ViSHdiu99TRs8OXx9BUW8jxg">BigKaka 8.8 MOD</a>: A build of Bigkaka's google camera mod with fixes for the key2.</p>
-          <p class="article_text"><a href="https://github.com/aistra0528/Hail">Hail</a>: An app to stop certain apps from running in the background or being cached to ram, useful if your trying use as your main phone or have alot of apps installed</p>
+          <p class="article_text"><a href="https://mega.nz/file/QZ5DwTTS#DUc2Oo_Dc6MZwkEUul9ViSHdiu99TRs8OXx9BUW8jxg">BigKaka 8.8 mod</a>: A build of Bigkaka's google camera mod with fixes for the key2's hardware.</p>
+          <p class="article_text"><a href="https://github.com/aistra0528/Hail">Hail</a>: Freeze certain apps to stop them from running in the background</p>
+          <p class="article_text"><a href="https://github.com/PeterCxy/Shelter">Shelter</a>/<a href="https://github.com/proletarius101/Insular">Insular</a>/<a href="https://github.com/oasisfeng/island">Island</a>: Add apps to a work profile to isolate them from other apps, stop them from auto starting or install multiable versions to once.</p>
           <p class="article_text"><a href="https://github.com/keymapperorg/KeyMapper">KeyMapper</a>: Remap any button and set custom key binds easily</p>
+          <p class="article_text"><a href="https://github.com/Aliucord/Aliucord">Aliucord</a>: An extremely light-weight discord client based on a version from before it was a wrapper for the mobile website</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">Resizing Swap</h4>
           <p class="article_text">NOTE: This does not work without root</p>
@@ -694,7 +794,7 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">Reverting to Android 8.1</h3>
-        <p class="article_date">Last editied: Apr 30 2026</p>
+        <p class="article_date">Last editied: May 08 2026</p>
       </label>
       <input type="checkbox" id="article_key2_a8" name="article_key2_a8">
         <div class="article_contents" id="article_key2_a8_contents">
@@ -708,7 +808,7 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
           <p class="article_text">From a computer run <code class="article_code">adb shell wipe-frp</code></p>
           <p class="article_text">Power off your device then hold volume down and power until the bootloader menu is show.</p>
           <p class="article_text">Run the flashall.bat script from the ACQ160 autoloader.</p>
-          <p class="article_text">A linux version of the flashall.bat script is available <a href="https://daphnis-past-midnight.neocities.org/flash.sh">here</a>.</p>
+          <p class="article_text">NOTE: A linux version of the flashall.bat script is available <a href="https://daphnis-past-midnight.neocities.org/flash.sh">here</a>.</p>
           <p class="article_text">If you want to relock the bootloader or have an india model follow the locking the bootloader section for your operating system.</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">2.1: Locking the bootloader (Windows)</h4>
@@ -731,16 +831,16 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
           <p class="article_divider_small"></p>
           <h4 class="article_header">3: Fixing wifi, bluetooth & cellular not working</h4>
           <p class="article_text">NOTE: This section is on how to fix a rare bug, you will most likely not experience it when reverting.</p>
-          <p class="article_text">If you relocked the bootloader unlock it again as shown in install guide.</p>
-          <p class="article_text">Download the LineageOS recovery from <a href="https://fumo.enterprises/recovery-athena.img">here</a>.</p>
+          <p class="article_text">If you relocked the bootloader unlock it again as shown in the install guide.</p>
+          <p class="article_text">Download the LineageOS recovery from <a href="https://mega.nz/file/uiQEDCiK#fwgRSKxjlSEUIKLLivn11ZV8Z11Uv9DeBhKj9IgAcFY">here</a>.</p>
           <p class="article_text">Run the following commands:</p>
           <ul class="article_list">
-            <li><code class="article_code">fastboot flash boot /path/to/recovery-athena.img</code></li>
+            <li><code class="article_code">fastboot flash boot /path/to/recovery.img</code></li>
             <li><code class="article_code">fastboot reboot</code></li>
           </ul>
           <p class="article_text">Once the recovery menu appears select 'Advanced' -> 'Enable ADB'</p>
           <p class="article_text">Download the persist partition patch from <a href="https://github.com/Luna-Terra-CG/daphnis-past-midnight.neocities.org/raw/refs/heads/main/assets_fumo.enterprises/persist.7z">here</a> then extract the downloaded 7z file.</p>
-          <p class="article_text">Open a terminal where you extracted the <code class="article_code">persist</code> to, then run the following commands:</p>
+          <p class="article_text">Open a terminal where you extracted the file <code class="article_code">persist</code> to, then run the following commands:</p>
           <ul class="article_list">
             <li><code class="article_code">adb push persist /tmp/</code></li>
             <li><code class="article_code">adb shell dd if=/tmp/persist of=/dev/block/by-name/persist</code></li>
