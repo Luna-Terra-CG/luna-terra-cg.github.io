@@ -236,6 +236,14 @@ a:active {
   font-size: 15px;
   font-family: 'Roboto';
 }
+.article-date-var {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 600;
+  word-spacing: -5px;
+  font-size: 14px;
+}
 .article_arrow {
   height: 25px;
   display: flex;
@@ -258,15 +266,16 @@ a:active {
   bottom: 0px;
   right: 0%;
   left: calc(316px + 9%);
-  background: linear-gradient(to bottom in oklab, rgba(var(--base-rgb), 0.5) , rgba(var(--base-rgb), 0.63));
-  backdrop-filter: blur(2px);
+  background: linear-gradient(to bottom in oklab, rgba(var(--base-rgb), 0.45) , rgba(var(--base-rgb), 0.57));
+  backdrop-filter: blur(4px);
   display: flex;
   flex-direction: column;
   overflow: scroll;
 }
 .article_contents {
-  color: var(--text);
+  color: var(--subtext1);
   padding-left: 25px;
+  padding-right: 12px;
   width: auto;
   margin-right: var(--article-padding);
 }
@@ -280,6 +289,7 @@ a:active {
 .article_code {
   background-color: rgba(var(--surface0-rgb), 0.3);
   border: 1px solid var(--surface1);
+  color: var(--text);
   font-size: 15px;
   margin-right: 1px;
   margin-left: 1px;
@@ -298,6 +308,7 @@ li {
   text-transform: uppercase;
   margin-top: 4px;
   margin-bottom: 4px;
+  color: var(--text);
 }
 .article_divider {
   background: transparent;
@@ -305,7 +316,7 @@ li {
 }
 .article_divider_small {
   background: transparent;
-  height: 2px;
+  height: 3px;
 }
 pre {
   width:auto;
@@ -382,25 +393,25 @@ pre {
         <p class="article_section_text">BlackBerry Key2</p>
         <p class="article_section_right"></p>
       </div>
-      <h3 class="article_name" style="color:var(--text);text-align:center;margin-right:var(--article-padding);">Due to lack of free time krab-ubica has put rom development on indefinent pause</h3>
+      <h4 class="article_name" style="color:var(--text);text-align:center;margin-right:var(--article-padding);">Due to lack of free time krab-ubica has put rom development on indefinent pause</h4>
       <label for="article_integritySpoofing" class="article_title">
         <p class="article_name_divider"></p>
         <svg class="article_arrow" viewBox="0 0 54 85" xmlns="http://www.w3.org/2000/svg">
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">Play Integrity Spoofing</h3>
-        <p class="article_date">Last editied: Apr 13 2026</p>
+        <p class="article_date"><var class="article-date-var">Last editied:</var> Apr 13 2026</p>
       </label>
       <input type="checkbox" id="article_integritySpoofing" name="article_integritySpoofing">
         <div class="article_contents" id="article_integritySpoofing_contents">
           <p class="article_divider"></p>
-          <h4 class="article_header">1: Requirements</h4>
+          <h4 class="article_header">Requirements</h4>
           <p class="article_text">NOTE: The tutorial is meant for the blackberry key2(le) but will work for other android devices.
           <p class="article_text">You have ADB and fastboot installed</p>
           <p class="article_text">Your device is running LineageOS, if it's not see the article below</p>
           <p class="article_text">The APatch app is installed from either <a href="https://github.com/bmax121/APatch">github</a> or <a href="https://f-droid.org/packages/me.bmax.apatch/">F-Droid</a>.</p>
           <p class="article_divider_small"></p>
-          <h4 class="article_header">2.1: Patching boot.img</h4>
+          <h4 class="article_header">Patching boot.img</h4>
           <p class="article_text">Get the boot.img from inside of the zip file of the ROM you currently have flashed and move it to your devices's internal storage</p>
           <p class="article_text">Open the APatch app and select the left most icon in the top bar</p>
           <p class="article_text">Select 'Select a boot image to patch' and point it to your boot.img</p>
@@ -408,7 +419,7 @@ pre {
           <p class="article_text">NOTE: Make sure to write it down somewhere as you will need it later</p>
           <p class="article_text">Move the outputted .img file to you computer.</p>
           <p class="article_divider_small"></p>
-          <h4 class="article_header">2.2: Flashing APatch</h4>
+          <h4 class="article_header">Flashing APatch</h4>
           <p class="article_text">Power off your phone.</p>
           <p class="article_text">Once you phone is fully powered off hold the power and volume down buttons until the bootloader is shown.</p>
           <p class="article_text">Connect your phone to your computer</p>
@@ -420,7 +431,7 @@ pre {
           <p class="article_text">Once the device finishes booting open the APatch app</p>
           <p class="article_text">Enter your SuperKey into the superkey box then select 'Install Android Patch'</p>
           <p class="article_divider_small"></p>
-          <h4 class="article_header">3: Flashing Modules</h4>
+          <h4 class="article_header">Flashing Modules</h4>
           <p class="article_text">Download Integrity-Box <a href="https://github.com/MeowDump/Integrity-Box/releases/latest">from here</a>, you need '{version}-Integrity-Box-{DD}-{MM}-{YYYY}.zip'.</p>
           <p class="article_text">Download NeoZygisk <a href="https://github.com/JingMatrix/NeoZygisk/releases/latest">from here</a>, you need 'NeoZygisk-{version}-release.zip'.</p>
           <p class="article_text">Download TEESimulator <a href="https://github.com/JingMatrix/TEESimulator/releases/latest">from here</a>, you need 'TEESimulator-{version}-Release.zip'.</p>
@@ -444,12 +455,12 @@ pre {
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">Install Guide for LineageOS UNOFFICIAL</h3>
-        <p class="article_date">Last editied: May 19 2026</p>
+        <p class="article_date"><var class="article-date-var">Last editied:</var> May 19 2026</p>
       </label>
       <input type="checkbox" id="article_krab" name="article_krab">
         <div class="article_contents" id="article_krab_contents">
           <p class="article_divider"></p>
-          <h4 class="article_header">1: Requirements</h4>
+          <h4 class="article_header">Requirements</h4>
           <p class="article_text">NOTE: If you have any questions or issues you can ask in the BlackBerry Android hideout discord server, the invite is <a href="https://discord.gg/BuJURQD6Qb">https://discord.gg/BuJURQD6Qb</a></p>
           <p class="article_text">A BlackBerry key2, the key2le is not currently supported.</p>
           <p class="article_text">A Windows or linux computer</p>
@@ -457,36 +468,47 @@ pre {
           <p class="article_text">(Windows): You have the <a href="https://mega.nz/file/YVI0VKpR#38iPAMEtTwjMHS5Ykts37pLegy9ktQ2t1X-Ro2M82WI">BlackBerry USB drivers</a> installed</p>
           <p class="article_text">NOTE: If you don't know the path of a file you can drag it from your filemanager into a terminal window</p>
           <p class="article_divider_small"></p>
-          <h4 class="article_header">2: Stock Firmware Preparation</h4>
+          <h4 class="article_header">Stock Firmware Preparation</h4>
           <p class="article_text">Remove your lockscreen password and google account from your device</p>
           <p class="article_text">If the option to set your screen lock to swipe is grayed out factory reset your phone from settings AFTER removing your google account.</p>
           <p class="article_text">If you do not remember your password follow <a href="https://youtu.be/HPddEUfth7A">theses instructions</a> from the device setup.</p>
           <p class="article_text">Download the <a href="https://mega.nz/file/pdBjAARa#l5WNgDKoaRWN-ORkK-lBPhGqkwyFqz91HlU3r-CGWfs">ACQ160 Autoloader</a>.</p>
-          <p class="article_text">Power off your device then hold volume down and power until the bootloader menu is shown</p>
-          <p class="article_text">You will need to flash the firmware twice, to do so extract the downloaded 7z file and run the included 'flashall.bat' file, once the phone boots up to the setup reboot to the bootloader and repeat once.</p>
+          <p class="article_text">Power off your device then boot into the bootloader by holding volume down and the power button.</p>
+          <p class="article_text">You will need to flash the firmware twice, to do so extract the downloaded 7z file and run the included 'flashall.bat' file, once the phone boots up to the setup reboot to the bootloader again.</p>
+          <p class="article_text">Repeat the previous step once.</p>
           <p class="article_text">NOTE: A linux version of the flashall.bat script is available <a href="https://daphnis-past-midnight.neocities.org/flash.sh">here</a>.</p>
           <p class="article_text">If you get this error message: <code class="article_code">error: cannot load '.\img\oem_getvar:subvariantFAILED.img(remote:GetVarVariableNotFound)': Invalid argument</code> you can ignore it.</p>
           <p class="article_divider_small"></p>
           <p class="article_text">Power off your device then boot into the bootloader again.</p>
-          <h4 class="article_header">3.1: Unlocking the bootloader (Windows)</h4>
+          <h4 class="article_header">Unlocking the bootloader (Windows)</h4>
           <p class="article_text">Download the windows unlock tool from <a href="https://mega.nz/file/dIIGUaJA#Zx-GFWvQgLoDZ--qLKJ-SGh8lnp734VozBlmPNKHFJE">here</a> and extract the zip file, if you don't already have it installed you may need to install the microslop <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version">VC++ redists</a>.</p>
           <p class="article_text">Open the unlock tool.</p>
           <p class="article_text">Press the scan in the upper right corner, once your devices is found press the 'Unlock BootLoader' button</p>
           <p class="article_text">NOTE: The progress bar will stay at 75% even once the bootloader unlock finishes</p>
-          <p class="article_text">If the unlock was successful, on the phone MODE: will change from <code class="article_code">PRODUCT</code> to <code class="article_code">FACTORY</code></p>
+          <p class="article_text">If the unlock was successful, on the phone <code class="article_code">MODE:</code> will change from <code class="article_code">PRODUCT</code> to <code class="article_code">FACTORY</code></p>
+          <p class="article_text">Power off you device</p>
           <p class="article_divider_small"></p>
-          <h4 class="article_header">3.2: Unlocking the bootloader (Linux)</h4>
+          <h4 class="article_header">Unlocking the bootloader (Linux)</h4>
           <p class="article_text">Download kibo from <a href="https://github.com/BotchedRPR/kibo/releases">Bochenek's github page</a> and extract the zip file you downloaded.</p>
           <p class="article_text">Mark the kibo binary included with the zip file as executable.</p>
           <p class="article_text">From a terminal run <code class="article_code">./kibo unlock</code></p>
-          <p class="article_text">If the unlock was successful, on the phone MODE: will change from <code class="article_code">PRODUCT</code> to <code class="article_code">FACTORY</code></p>
+          <p class="article_text">If the unlock was successful, on the phone <code class="article_code">MODE:</code> will change from <code class="article_code">PRODUCT</code> to <code class="article_code">FACTORY</code></p>
+          <p class="article_text">Power off you device</p>
           <p class="article_divider_small"></p>
-          <h4 class="article_header">4: Flashing LineageOS</h4>
-          <p class="article_text">Download the latest rom version, for android 15 it's <a href="https://mega.nz/file/xAgSQRDQ#SH1kS5XRl8jjbRHeXoAIPuo34ge3EjrNfycPOIq0dvk">1.8a</a> or <a href="https://mega.nz/file/BMZimQyB#2eONwQPzAnDRh2Ca-dihAWL7_s1q-V1vJMzFAiOQotQ">1.20a alpha</a> and <a href="https://mega.nz/file/dFRHjB5K#0UGDzY6eADtvdTaadqhJ3NGuAsbO0ATABJHD1SOYxI0">2.0f alpha</a> for android 16.</p>
-          <p class="article_text">The package for gapps(Google Services) is not included with the rom download, if you want them you will need to download it seperately. The recommended package for android 15 is <a href="https://github.com/MindTheGapps/15.0.0-arm64/releases/latest">MindTheGapps 15</a>, and <a href="https://github.com/MindTheGapps/16.0.0-arm64/releases/latest">MindTheGapps 16</a> for android 16.</p>
+          <h4 class="article_header">Flashing LineageOS</h4>
+          <p class="article_text"><var class="article_header">Alpha builds are *NOT* ready for daily use and are for TESTING PURPOSES ONLY.</var></p>
+          <p class="article_text">Download the lastest version of the build you'd like to use</p>
+          <p class="article_text">NOTE: If you intend to use as your main phone or are not sure which you want use standard android 15</p>
+          <ul class="article_list">
+            <li class="article_text">For standard android 15 that's <a href="https://mega.nz/file/xAgSQRDQ#SH1kS5XRl8jjbRHeXoAIPuo34ge3EjrNfycPOIq0dvk">1.8a</a></li>
+            <li class="article_text">For android 16 that's <a href="https://mega.nz/file/dFRHjB5K#0UGDzY6eADtvdTaadqhJ3NGuAsbO0ATABJHD1SOYxI0">2.0f alpha</a></li>
+            <li class="article_text">For android 15 with kernel 4.19 that's <a href="https://mega.nz/file/BMZimQyB#2eONwQPzAnDRh2Ca-dihAWL7_s1q-V1vJMzFAiOQotQ">1.20a alpha</a></li>
+          </ul>
+          <p class="article_text">The package for gapps(Google Services) is not included with the rom download, if you want them you will need to download it seperately.
+          <p class="article_text">The recommended gapps package for android 15 is <a href="https://github.com/MindTheGapps/15.0.0-arm64/releases/latest">MindTheGapps 15</a>, and <a href="https://github.com/MindTheGapps/16.0.0-arm64/releases/latest">MindTheGapps 16</a> for android 16.</p>
           <p class="article_text">Once your rom download finishes extract it's .zip file, and enter the directory it extracted to.</p>
           <p class="article_divider_small"></p>
-          <p class="article_text">Power off you device then hold volume down and power until the bootloader menu is shown</p>
+          <p class="article_text">Boot into the bootloader by holding volume down and the power button.</p>
           <p class="article_text">Run the following commands:
           <ul class="article_list">
             <li><code class="article_code">fastboot -w</code></li>
@@ -511,28 +533,39 @@ pre {
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">Updating to a newer LineageOS UNOFFICIAL build</h3>
-        <p class="article_date">Last editied: May 19 2026</p>
+        <p class="article_date"><var class="article-date-var">Last editied:</var> May 19 2026</p>
       </label>
       <input type="checkbox" id="article_krab_update" name="article_krab_update">
         <div class="article_contents" id="article_krab_update_contents">
           <p class="article_divider"></p>
-          <h4 class="article_header">1: Requirements</h4>
+          <h4 class="article_header">Requirements</h4>
           <p class="article_text">You have ADB and fastboot installed</p>
           <p class="article_text">You are running a build released *AFTER* March 04 2026. If your on a build older then this date or one posted on XDA you will need to follow the flashing LineageOS section of the install guide above, doing so will wipe your device.</p>
           <p class="article_text">NOTE: If you need to downgrade you can do so with the recovery update method.</p>
-          <p class="article_text">If you are updating to android 16 you need to update from recovery *AND* wipe your data</p>
           <p class="article_divider_small"></p>
-          <h4 class="article_header">2.1: Updating without a computer (recommended)</h4>
-          <p class="article_text">NOTE: Updating this way does not keep root.</p>
-          <p class="article_text">Download the latest rom version, for android 15 it's <a href="https://mega.nz/file/xAgSQRDQ#SH1kS5XRl8jjbRHeXoAIPuo34ge3EjrNfycPOIq0dvk">1.8a</a> or <a href="https://mega.nz/file/BMZimQyB#2eONwQPzAnDRh2Ca-dihAWL7_s1q-V1vJMzFAiOQotQ">1.20a alpha</a> and <a href="https://mega.nz/file/dFRHjB5K#0UGDzY6eADtvdTaadqhJ3NGuAsbO0ATABJHD1SOYxI0">2.0f alpha</a> for android 16.</p>
+          <h4 class="article_header">Updating without a computer (recommended)</h4>
+          <p class="article_text">NOTE: Updating this way does not keep root, do *NOT* update to another build type this way, if you are going to use recovery update.</p>
+          <p class="article_text">Download the latest rom build for your version</p>
+          <ul class="article_list">
+            <li class="article_text">For standard android 15 that's <a href="https://mega.nz/file/xAgSQRDQ#SH1kS5XRl8jjbRHeXoAIPuo34ge3EjrNfycPOIq0dvk">1.8a</a></li>
+            <li class="article_text">For android 16 that's <a href="https://mega.nz/file/dFRHjB5K#0UGDzY6eADtvdTaadqhJ3NGuAsbO0ATABJHD1SOYxI0">2.0f alpha</a></li>
+            <li class="article_text">For android 15 with kernel 4.19 that's <a href="https://mega.nz/file/BMZimQyB#2eONwQPzAnDRh2Ca-dihAWL7_s1q-V1vJMzFAiOQotQ">1.20a alpha</a></li>
+          </ul>
           <p class="article_text">NOTE: If the file is larger then the MEGA mobile site allows enable the show desktop site option in your browser's settings</p>
           <p class="article_text">Extract the zip file you downloaded.</p>
           <p class="article_text">Go to Settings  -> System -> System Update.</p>
           <p class="article_text">Tap the 3 dots in the top corner and select Local update.</p>
-          <p class="article_text">Select the zip file following <code class="article_code">lineage-{lineageOS version}-{date}-UNOFFICIAL-krab-{version}-athena.zip</code> naming format.</p>
+          <p class="article_text">Select the zip file following <code class="article_code">lineage-{lineageVersion}-{date}-UNOFFICIAL-krab-{version}-athena.zip</code> naming format.</p>
           <p class="article_divider_small"></p>
-          <h4 class="article_header">2.2: Updating via recovery</h4>
-          <p class="article_text">Download the latest rom version, for android 15 it's <a href="https://mega.nz/file/xAgSQRDQ#SH1kS5XRl8jjbRHeXoAIPuo34ge3EjrNfycPOIq0dvk">1.8a</a> or <a href="https://mega.nz/file/BMZimQyB#2eONwQPzAnDRh2Ca-dihAWL7_s1q-V1vJMzFAiOQotQ">1.20a alpha</a> and <a href="https://mega.nz/file/dFRHjB5K#0UGDzY6eADtvdTaadqhJ3NGuAsbO0ATABJHD1SOYxI0">2.0f alpha</a> for android 16.</p>
+          <h4 class="article_header">Updating via recovery</h4>
+          <p class="article_text">NOTE: Alpha builds are *NOT* ready for daily usage do not update to one unless you want to test it.</p>
+          <p class="article_text">Download the latest rom build for your version</p>
+          <ul class="article_list">
+            <li class="article_text">For standard android 15 that's <a href="https://mega.nz/file/xAgSQRDQ#SH1kS5XRl8jjbRHeXoAIPuo34ge3EjrNfycPOIq0dvk">1.8a</a></li>
+            <li class="article_text">For android 16 that's <a href="https://mega.nz/file/dFRHjB5K#0UGDzY6eADtvdTaadqhJ3NGuAsbO0ATABJHD1SOYxI0">2.0f alpha</a></li>
+            <li class="article_text">For android 15 with kernel 4.19 that's <a href="https://mega.nz/file/BMZimQyB#2eONwQPzAnDRh2Ca-dihAWL7_s1q-V1vJMzFAiOQotQ">1.20a alpha</a></li>
+          </ul>
+          <p class="article_text">NOTE: If you are updating to android 16 from android 15 you need to wipe your data</p>
           <p class="article_text">Once your rom download finishes extract it's .zip file, and enter the directory it extracted to.</p>
           <p class="article_text">NOTE: If you want google services on android 16 you need to use <a href="https://github.com/MindTheGapps/16.0.0-arm64/releases/latest">MindTheGapps 16</a>.</p>
           <p class="article_text">If your phone is rooted patch the boot.img file included with the new build.</p>
@@ -548,10 +581,10 @@ pre {
           <p class="article_text">Select 'Apply update' -> 'Apply update from adb'</p>
           <p class="article_text">Run <code class="article_code">adb sideload /path/to/lineage-{lineageOS version}-{date}-UNOFFICIAL-krab-{version}-athena.zip</code></p>
           <p class="article_text">If you have google services installed go into 'Apply update' -> 'Apply update from adb' and run <code class="article_code">adb sideload /path/to/gapps.zip</code> once the signature verification failed messages appears select yes.</p>
-          <p class="article_text">If your rooted select 'Advanced' then 'Reboot to bootloader', once the bootloader appears flash your moddified boot.img file and boot the system.</p>
+          <p class="article_text">If your rooted select 'Advanced' then 'Reboot to bootloader', once the bootloader appears flash your modified boot.img file and boot up the system.</p>
           <p class="article_text">If it's not rooted select 'Reboot system'</p>
           <p class="article_divider_small"></p>
-          <h4 class="article_header">3: Fixing app installs failing or being unable to set a passcode</h4>
+          <h4 class="article_header">Fixing app installs failing or being unable to set a passcode</h4>
           <p class="article_text">Boot into recovery</p>
           <p class="article_text">NOTE: The easiest way to get into recovery is by using the 'Advanced restart' option in settings</p>
           <p class="article_text">Once the recovery menu appears select Advanced -> Enable ADB</p>
@@ -566,52 +599,74 @@ pre {
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">LineageOS UNOFFICIAL changelog</h3>
-        <p class="article_date">Last editied: May 19 2026</p>
+        <p class="article_date"><var class="article-date-var">Last editied:</var> May 19 2026</p>
       </label>
       <input type="checkbox" id="article_key2_changelog" name="article_key2_changelog">
         <div class="article_contents" id="article_key2_changelog_contents">
           <p class="article_divider"></p>
-          <h4 class="article_header">-- Android 16 ALPHA --</h4>
+          <div class="article_section" style="margin:0px!important;">
+            <p class="article_section_left"></p>
+            <p class="article_section_text">Android 16 Alpha</p>
+            <p class="article_section_right"></p>
+          </div>
           <p class="article_divider_small"></p>
-          <h4 class="article_header">Tested</h4>
-          <ul class="article_list">
-            <li class="article_text">Boots to OS: OK</li>
-            <li class="article_text">Screen+touch: OK</li>
-            <li class="article_text">USB + adb: OK</li>
-            <li class="article_text">Wi-Fi: OK</li>
-            <li class="article_text">Sound: OK</li>
-            <li class="article_text">Bluetooth: OK</li>
-            <li class="article_text">Encryption: OK</li>
-            <li class="article_text">Keyboard: OK</li>
-            <li class="article_text">Voice calls: OK</li>
-            <li class="article_text">Camera: OK</li>
-            <li class="article_text">Keyboard-backlight: OK</li>
-            <li class="article_text">Keyboard-touch: OK</li>
-            <li class="article_text">Mobile-hotspot: OK</li>
-            <li class="article_text">Notificaiton led: OK</li>
-            <li class="article_text">Fingerprint: OK</li>
-            <li class="article_text">LTE: OK</li>
-            <li class="article_text">NFC: OK</li>
-            <li class="article_text">VOIP: OK</li>
-            <li class="article_text">HDR+ OR GCAM88: OK</li>
-            <li class="article_text">WIRED HEADSET: TESTING</li>
-            <li class="article_text">Haptics/Vibro: TESTING</li>
-          </ul>
-          <p class="article_divider_small"></p>
-          <h4 class="article_header">Todo</h4>
-          <ul class="article_list">
-            <li class="article_text">Good solution for Synaptics LCD colors/saturation</li>
-            <li class="article_text">NFC driver/hal upgrade</li>
-            <li class="article_text">Haptic driver to led upgrade</li>
-          </ul>
-          <p class="article_divider_small"></p>
-          <h4 class="article_header">Known bugs</h4>
-          <ul class="article_list">
-            <li class="article_text">Yellow flashlight-torch</li>
-            <li class="article_text">Nav-buttons backlight turn-off on good-light conditions</li>
-            <li class="article_text">Haptic/vibro is not accurate on volume and brightness change</li>
-            <li class="article_text">BT-sound lags every time upon device unlock (every time after very first beeing gone into deep-sleep)</li>
-          </ul>
+          <div style="display:flex;flex-direction:row;">
+            <div>
+              <h4 class="article_header">Tested:</h4>
+              <ul class="article_list">
+                <li class="article_text">Boots to OS: OK</li>
+                <li class="article_text">Screen+touch: OK</li>
+                <li class="article_text">USB + adb: OK</li>
+                <li class="article_text">Wi-Fi: OK</li>
+                <li class="article_text">Sound: OK</li>
+                <li class="article_text">Bluetooth: OK</li>
+                <li class="article_text">Encryption: OK</li>
+                <li class="article_text">Keyboard: OK</li>
+                <li class="article_text">Voice calls: OK</li>
+                <li class="article_text">Camera: OK</li>
+                <li class="article_text">Keyboard-backlight: OK</li>
+                <li class="article_text">Keyboard-touch: OK</li>
+                <li class="article_text">Mobile-hotspot: OK</li>
+                <li class="article_text">Notificaiton led: OK</li>
+                <li class="article_text">Fingerprint: OK</li>
+                <li class="article_text">LTE: OK</li>
+                <li class="article_text">NFC: OK</li>
+                <li class="article_text">VOIP: OK</li>
+                <li class="article_text">HDR+ OR GCAM88: OK</li>
+                <li class="article_text">WIRED HEADSET: TESTING</li>
+                <li class="article_text">Haptics/Vibro: TESTING</li>
+              </ul>
+              </div>
+              <div>
+                <h4 class="article_header">Todo:</h4>
+                <ul class="article_list">
+                  <li class="article_text">Good solution for Synaptics LCD colors/saturation</li>
+                  <li class="article_text">NFC driver/hal upgrade</li>
+                  <li class="article_text">Haptic driver to led upgrade</li>
+                </ul>
+                <p class="article_divider_small"></p>
+                <h4 class="article_header">Known bugs:</h4>
+                <ul class="article_list">
+                  <li class="article_text">Yellow flashlight-torch</li>
+                  <li class="article_text">Nav-buttons backlight turn-off on good-light conditions</li>
+                  <li class="article_text">Haptic/vibro is not accurate on volume and brightness change</li>
+                  <li class="article_text">BT-sound lags upon device unlock (every time after going into deep-sleep for the first time)</li>
+                </ul>
+                <p class="article_divider_small"></p>
+                <h4 class="article_header">Recheck:</h4>
+                <ul class="article_list">
+                  <li class="article_text">First shot FP/USB ignored at deep-sleep;</li>
+                  <li class="article_text">Slow wake-up after deep-sleep;</li>
+                </ul>
+                <p class="article_divider_small"></p>
+                <h4 class="article_header">Investigation:</h4>
+                <ul class="article_list">
+                  <li class="article_text">USB-C storage device not detected during Lineage setup/Seedvault restore (was detected on LOS 22.2)</li>
+                  <li class="article_text">Slight UI app-transition freezez;</li>
+                  <li class="article_text">BT/VOIP after voip-call music volume lowers (did not reproduce lately);</li>
+                </ul>
+              </div>
+            </div>
           <p class="article_divider_small"></p>
           <h4 class="article_header"><a href="https://mega.nz/file/dFRHjB5K#0UGDzY6eADtvdTaadqhJ3NGuAsbO0ATABJHD1SOYxI0">2.0f May 19 2026 PUBLIC ALPHA</a></h4>
           <p class="article_text">Fixed: Convenience key;</p>
@@ -663,10 +718,16 @@ pre {
           <p class="article_text">Android 16 and kernel 4.19</p>
           <p class="article_divider_small"></p>
           <p class="article_divider"></p>
-          <h4 class="article_header">-- Android 15 --</h4>
+          <div class="article_section" style="margin:0px!important;">
+            <p class="article_section_left"></p>
+            <p class="article_section_text">Android 15</p>
+            <p class="article_section_right"></p>
+          </div>
           <p class="article_divider_small"></p>
           <h4 class="article_header"><a href="https://mega.nz/file/BMZimQyB#2eONwQPzAnDRh2Ca-dihAWL7_s1q-V1vJMzFAiOQotQ">1.20a May 19 2026 PUBLIC ALPHA</a></h4>
           <p class="article_text">Update to linux kernel 4.19 from 4.4</p>
+          <p class="article_text">Significant battery life improvements;</p>
+          <p class="article_text">Gcam stability improvements;</p>
           <p class="article_text">Todo: Good solution for Synaptics LCD colors/saturation</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header"><a href="https://mega.nz/file/xAgSQRDQ#SH1kS5XRl8jjbRHeXoAIPuo34ge3EjrNfycPOIq0dvk">1.8a Apr 25 2026</a></h4>
@@ -734,7 +795,7 @@ pre {
          id="path1"></path>
         </svg>
         <h3 class="article_name">Apps & tweaks</h3>
-        <p class="article_date">Last editied: May 16 2026</p>
+        <p class="article_date"><var class="article-date-var">Last editied:</var> May 16 2026</p>
       </label>
       <input type="checkbox" id="article_key2_apps" name="article_key2_apps">
         <div class="article_contents" id="article_key2_apps_contents">
@@ -757,7 +818,7 @@ pre {
           <p class="article_text"><a href="https://github.com/aistra0528/Hail">Hail</a>: Freeze certain apps to stop them from running in the background</p>
           <p class="article_text"><a href="https://github.com/PeterCxy/Shelter">Shelter</a>/<a href="https://github.com/proletarius101/Insular">Insular</a>/<a href="https://github.com/oasisfeng/island">Island</a>: Add apps to a work profile to isolate them from other apps, stop them from auto starting or install multiable versions to once.</p>
           <p class="article_text"><a href="https://github.com/keymapperorg/KeyMapper">KeyMapper</a>: Remap any button and set custom key binds easily</p>
-          <p class="article_text"><a href="https://github.com/Aliucord/Aliucord">Aliucord</a>: An extremely light-weight discord client based on a version from before it was a wrapper for the mobile website</p>
+          <p class="article_text"><a href="https://github.com/Aliucord/Aliucord">Aliucord</a>: A light-weight discord client based on a version from before it was a wrapper for the mobile website</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">Resizing Swap</h4>
           <p class="article_text">NOTE: This does not work without root</p>
@@ -794,12 +855,12 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">Reverting to Android 8.1</h3>
-        <p class="article_date">Last editied: May 08 2026</p>
+        <p class="article_date"><var class="article-date-var">Last editied:</var> May 08 2026</p>
       </label>
       <input type="checkbox" id="article_key2_a8" name="article_key2_a8">
         <div class="article_contents" id="article_key2_a8_contents">
           <p class="article_divider"></p>
-          <h4 class="article_header">1: Flashing Android 8.1</h4>
+          <h4 class="article_header">Flashing Android 8.1</h4>
           <p class="article_text">NOTE: If you have an indian region device you will need to flash the <a href="https://mega.nz/file/AQBxSYKS#lUPwt9xOJC4UGpazU85MVAhHKGVYLUK3uSJE20Qtaj4">ABN088 Auto Loader</a> after you have relocked the bootloader</p>
           <p class="article_text">Download the <a href="https://mega.nz/file/pdBjAARa#l5WNgDKoaRWN-ORkK-lBPhGqkwyFqz91HlU3r-CGWfs">ACQ160 Autoloader</a> and extract the 7z file it downloads as.</p>
           <p class="article_text">Enable 'Advanced restart' in Settings -> System -> Buttons -> Power menu</p>
@@ -811,25 +872,25 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
           <p class="article_text">NOTE: A linux version of the flashall.bat script is available <a href="https://daphnis-past-midnight.neocities.org/flash.sh">here</a>.</p>
           <p class="article_text">If you want to relock the bootloader or have an india model follow the locking the bootloader section for your operating system.</p>
           <p class="article_divider_small"></p>
-          <h4 class="article_header">2.1: Locking the bootloader (Windows)</h4>
+          <h4 class="article_header">Locking the bootloader (Windows)</h4>
           <p class="article_text">Download the windows unlock tool from <a href="https://mega.nz/file/dIIGUaJA#Zx-GFWvQgLoDZ--qLKJ-SGh8lnp734VozBlmPNKHFJE">here</a> and extract the zip file, if you don't already have it installed you may need to install the microslop <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version">VC++ redists</a>.</p>
           <p class="article_text">Open the unlock tool.</p>
           <p class="article_text">Press the scan in the upper right corner, once your devices is found press the 'Relock BootLoader' button.</p>
           <p class="article_text">NOTE: The progress bar may stay at 75% even once the bootloader relock finishes.</p>
           <p class="article_text">If the relock was successful, on the phone MODE: will change from <code class="article_code">FACTORY</code> to <code class="article_code">PRODUCT</code>.</p>
           <p class="article_divider_small"></p>
-          <h4 class="article_header">2.2: Locking the bootloader (Linux)</h4>
+          <h4 class="article_header">Locking the bootloader (Linux)</h4>
           <p class="article_text">Download kibo from <a href="https://github.com/BotchedRPR/kibo/releases">Bochenek's github page</a> and extract the zip file you downloaded.</p>
           <p class="article_text">Mark the kibo binary included with the zip file as executable.</p>
           <p class="article_text">From a terminal run <code class="article_code">./kibo lock</code></p>
           <p class="article_text">If the relock was successful, on the phone MODE: will change from <code class="article_code">FACTORY</code> to <code class="article_code">PRODUCT</code>.</p>
           <p class="article_divider_small"></p>
-          <h4 class="article_header">2.3: Booting with an unlocked bootloader</h4>
+          <h4 class="article_header">Booting with an unlocked bootloader</h4>
           <p class="article_text">Download the modded boot file from <a href="https://github.com/Luna-Terra-CG/daphnis-past-midnight.neocities.org/raw/refs/heads/main/assets_fumo.enterprises/acq160-mfi-boot.img">here</a>.</p>
           <p class="article_text">Open a terminal where you downloaded the file and run <code class="article_code">fastboot flash boot acq160-mfi-boot.img</code>.</p>
           <p class="article_text">NOTE: If your are want to root patch the <code class="article_code">acq-160-mfi-boot.img</code> boot file not the one from ACQ160 itself.</p>
           <p class="article_divider_small"></p>
-          <h4 class="article_header">3: Fixing wifi, bluetooth & cellular not working</h4>
+          <h4 class="article_header">Fixing wifi, bluetooth & cellular not working</h4>
           <p class="article_text">NOTE: This section is on how to fix a rare bug, you will most likely not experience it when reverting.</p>
           <p class="article_text">If you relocked the bootloader unlock it again as shown in the install guide.</p>
           <p class="article_text">Download the LineageOS recovery from <a href="https://mega.nz/file/uiQEDCiK#fwgRSKxjlSEUIKLLivn11ZV8Z11Uv9DeBhKj9IgAcFY">here</a>.</p>
