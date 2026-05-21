@@ -400,7 +400,7 @@ pre {
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">Play Integrity Spoofing</h3>
-        <p class="article_date"><var class="article-date-var">Last editied:</var> Apr 13 2026</p>
+        <p class="article_date"><var class="article-date-var">Last editied:</var> May 21 2026</p>
       </label>
       <input type="checkbox" id="article_integritySpoofing" name="article_integritySpoofing">
         <div class="article_contents" id="article_integritySpoofing_contents">
@@ -412,10 +412,10 @@ pre {
           <p class="article_text">The APatch app is installed from either <a href="https://github.com/bmax121/APatch">github</a> or <a href="https://f-droid.org/packages/me.bmax.apatch/">F-Droid</a>.</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">Patching boot.img</h4>
-          <p class="article_text">Get the boot.img from inside of the zip file of the ROM you currently have flashed and move it to your devices's internal storage</p>
+          <p class="article_text">Get the boot.img from the rom you currently have installed and copy it to your devices's internal storage</p>
           <p class="article_text">Open the APatch app and select the left most icon in the top bar</p>
-          <p class="article_text">Select 'Select a boot image to patch' and point it to your boot.img</p>
-          <p class="article_text">Enter a password the SuperKey box</p>
+          <p class="article_text">Press 'Select a boot image to patch' and point it to your boot.img file</p>
+          <p class="article_text">Enter a password into the SuperKey box</p>
           <p class="article_text">NOTE: Make sure to write it down somewhere as you will need it later</p>
           <p class="article_text">Move the outputted .img file to you computer.</p>
           <p class="article_divider_small"></p>
@@ -429,13 +429,14 @@ pre {
             <li><code class="article_code">fastboot reboot</code></li>
           </ul>
           <p class="article_text">Once the device finishes booting open the APatch app</p>
-          <p class="article_text">Enter your SuperKey into the superkey box then select 'Install Android Patch'</p>
+          <p class="article_text">Enter your SuperKey you set earlier into the superkey box then select 'Install Android Patch'</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">Flashing Modules</h4>
           <p class="article_text">Download Integrity-Box <a href="https://github.com/MeowDump/Integrity-Box/releases/latest">from here</a>, you need '{version}-Integrity-Box-{DD}-{MM}-{YYYY}.zip'.</p>
           <p class="article_text">Download NeoZygisk <a href="https://github.com/JingMatrix/NeoZygisk/releases/latest">from here</a>, you need 'NeoZygisk-{version}-release.zip'.</p>
           <p class="article_text">Download TEESimulator <a href="https://github.com/JingMatrix/TEESimulator/releases/latest">from here</a>, you need 'TEESimulator-{version}-Release.zip'.</p>
           <p class="article_text">Download Zygisk-Assistant <a href="https://github.com/snake-4/Zygisk-Assistant/releases/latest">from here</a>, you need 'Zygisk-Assistant-{version}-{commitID}-release.zip'.</p>
+          <p class="article_divider_small"></p>
           <p class="article_text">Open APatch and enter the APModule tab. (second from the right)</p>
           <p class="article_text">Press the floating button, it will open a file browser, open one of the downloaded zip files.</p>
           <p class="article_text">Once the restart button appears press the back key. DO NOT PRESS RESTART.</p>
