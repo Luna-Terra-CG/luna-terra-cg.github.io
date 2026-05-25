@@ -593,7 +593,7 @@ pre {
           <p class="article_divider_small"></p>
           <h4 class="article_header">Fixing app installs failing or being unable to set a passcode</h4>
           <p class="article_text">Boot into recovery</p>
-          <p class="article_text">NOTE: The easiest way to get into recovery is by using the 'Advanced restart' option in settings</p>
+          <p class="article_text">NOTE: The easiest way to get into recovery is by using the <code class="article_code">adb reboot recovery</code> command</p>
           <p class="article_text">Once the recovery menu appears select Advanced -> Enable ADB</p>
           <p class="article_text">From a computer run <code class="article_code">adb shell wipe-frp</code></p>
           <p class="article_text">Power off your device or reboot it using the option in the recovery menu</p>
@@ -884,22 +884,24 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">Reverting to Android 8.1</h3>
-        <p class="article_date"><var class="article-date-var">Last editied:</var> May 08 2026</p>
+        <p class="article_date"><var class="article-date-var">Last editied:</var> May 25 2026</p>
       </label>
       <input type="checkbox" id="article_key2_a8" name="article_key2_a8">
         <div class="article_contents" id="article_key2_a8_contents">
           <p class="article_divider"></p>
-          <h4 class="article_header">Flashing Android 8.1</h4>
-          <p class="article_text">NOTE: If you have an indian region device you will need to flash the <a href="https://mega.nz/file/AQBxSYKS#lUPwt9xOJC4UGpazU85MVAhHKGVYLUK3uSJE20Qtaj4">ABN088 Auto Loader</a> after you have relocked the bootloader</p>
-          <p class="article_text">Download the <a href="https://mega.nz/file/pdBjAARa#l5WNgDKoaRWN-ORkK-lBPhGqkwyFqz91HlU3r-CGWfs">ACQ160 Autoloader</a> and extract the 7z file it downloads as.</p>
-          <p class="article_text">Enable 'Advanced restart' in Settings -> System -> Buttons -> Power menu</p>
-          <p class="article_text">Hold the power button until the power menu show then select Restart -> Recovery</p>
+          <h4 class="article_header">Wiping FRP</h4>
+          <p class="article_text">NOTE: You will need the recovery.img file from the LineageOS rom, if you don't still have it you can download it <a href="https://mega.nz/file/uiQEDCiK#fwgRSKxjlSEUIKLLivn11ZV8Z11Uv9DeBhKj9IgAcFY">here</a></p>
+          <p class="article_text">Run the following commands:</p>
+          <ul class="article_list">
+            <li><code class="article_code">fastboot flash recovery /path/to/recovery.img</code></li>
+            <li><code class="article_code">fastboot flash boot /path/to/recovery.img</code></li>
+            <li><code class="article_code">fastboot reboot</code></li>
+          </ul>
           <p class="article_text">Once the recovery menu appears select Advanced -> Enable ADB</p>
           <p class="article_text">From a computer run <code class="article_code">adb shell wipe-frp</code></p>
-          <p class="article_text">Power off your device then hold volume down and power until the bootloader menu is show.</p>
-          <p class="article_text">Run the flashall.bat script from the ACQ160 autoloader.</p>
-          <p class="article_text">NOTE: A linux version of the flashall.bat script is available <a href="https://daphnis-past-midnight.neocities.org/flash.sh">here</a>.</p>
-          <p class="article_text">If you want to relock the bootloader or have an india model follow the locking the bootloader section for your operating system.</p>
+          <p class="article_text">On the phone select Advanced -> Reboot to bootloader</p>
+          <p class="article_text">At this point you need to either lock the bootloader following the instruction below or if you want to root continue onto the flash android 8.1 section.</p>
+          <p class="article_text">NOTE: If you have an indian region device you will need lock the bootloader 
           <p class="article_divider_small"></p>
           <h4 class="article_header">Locking the bootloader (Windows)</h4>
           <p class="article_text">Download the windows unlock tool from <a href="https://mega.nz/file/dIIGUaJA#Zx-GFWvQgLoDZ--qLKJ-SGh8lnp734VozBlmPNKHFJE">here</a> and extract the zip file, if you don't already have it installed you may need to install the microslop <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version">VC++ redists</a>.</p>
@@ -914,6 +916,14 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
           <p class="article_text">From a terminal run <code class="article_code">./kibo lock</code></p>
           <p class="article_text">If the relock was successful, on the phone MODE: will change from <code class="article_code">FACTORY</code> to <code class="article_code">PRODUCT</code>.</p>
           <p class="article_divider_small"></p>
+          <h4 class="article_header">Flashing android 8.1</h4>
+          <p class="article_text">NOTE: If you have an india region device you need to use the <a href="https://mega.nz/file/AQBxSYKS#lUPwt9xOJC4UGpazU85MVAhHKGVYLUK3uSJE20Qtaj4">ABN088 Auto Loader</a> instead of ACQ160.</p>
+          <p class="article_text">Download the <a href="https://mega.nz/file/pdBjAARa#l5WNgDKoaRWN-ORkK-lBPhGqkwyFqz91HlU3r-CGWfs">ACQ160 Autoloader</a> and extract the 7z file it downloads as.</p>
+          <p class="article_text">Make sure device is fully powered off then hold power and volume down until the bootloader appears</p>
+          <p class="article_text">Run the flashall.bat script from the ACQ160 autoloader.</p>
+          <p class="article_text">NOTE: A linux version of the flashall.bat script is available <a href="https://daphnis-past-midnight.neocities.org/flash.sh">here</a>.</p>
+          <p class="article_text">If you did not lock the bootloader follow the section below</p>
+          <p class="article_divider_small"></p>
           <h4 class="article_header">Booting with an unlocked bootloader</h4>
           <p class="article_text">Download the modded boot file from <a href="https://github.com/Luna-Terra-CG/daphnis-past-midnight.neocities.org/raw/refs/heads/main/assets_fumo.enterprises/acq160-mfi-boot.img">here</a>.</p>
           <p class="article_text">Open a terminal where you downloaded the file and run <code class="article_code">fastboot flash boot acq160-mfi-boot.img</code>.</p>
@@ -922,9 +932,10 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
           <h4 class="article_header">Fixing wifi, bluetooth & cellular not working</h4>
           <p class="article_text">NOTE: This section is on how to fix a rare bug, you will most likely not experience it when reverting.</p>
           <p class="article_text">If you relocked the bootloader unlock it again as shown in the install guide.</p>
-          <p class="article_text">Download the LineageOS recovery from <a href="https://mega.nz/file/uiQEDCiK#fwgRSKxjlSEUIKLLivn11ZV8Z11Uv9DeBhKj9IgAcFY">here</a>.</p>
+          <p class="article_text">NOTE: You need to use the LineageOS recovery you downloaded earlier.</p>
           <p class="article_text">Run the following commands:</p>
           <ul class="article_list">
+            <li><code class="article_code">fastboot flash recovery /path/to/recovery.img</code></li>
             <li><code class="article_code">fastboot flash boot /path/to/recovery.img</code></li>
             <li><code class="article_code">fastboot reboot</code></li>
           </ul>
@@ -936,7 +947,7 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
             <li><code class="article_code">adb shell dd if=/tmp/persist of=/dev/block/by-name/persist</code></li>
             <li><code class="article_code">adb reboot bootloader</code></li>
           </ul>
-          <p class="article_text">Then redo guide from the start.</p>
+          <p class="article_text">Then redo the flashing android 8.1 section of the guide</p>
           <p class="article_divider"></p>
         </div>
       <p class="article_name_divider" style="width:auto;margin-right:var(--article-padding);"></p>
