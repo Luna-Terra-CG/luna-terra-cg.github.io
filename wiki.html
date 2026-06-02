@@ -530,9 +530,10 @@ pre {
           <p class="article_text">If you have any additional zips you want to flash(ie: gapps, magisk) go into 'Apply update' -> 'Apply update from adb' and run <code class="article_code">adb sideload /path/to/package.zip</code>, once the signature verification failed messages appears select yes.</p>
           <p class="article_text">If you get a not enough space on system partion error when flashing gapps go into 'Factory reset/Format data' and format the system partition, then re-flash lineageOS and gapps.</p>
           <p class="article_text">Select the 'Reboot system'</p>
-          <p class="article_text">If you get set back to recovery you most likely have a 'bcb recovery' unit, to get around this boot into the bootloader and run <code class="article_code">fastboot flash recovery boot.img</code></p>
+          <p class="article_text">If you get set back to recovery and flashing the rom again does not fix it you may have a 'bcb recovery' unit, to get around that boot into the bootloader and run <code class="article_code">fastboot flash recovery boot.img</code></p>
           <p class="article_text">NOTE: The first boot can take up to 10-15 minutes</p>
-          <p class="article_text">(Optional) Once you have finished the setup set the IME switcher shortcut to Alt + Enter in Settings -> System -> BlackBerry keyboard. Doing this makes the SYM key work properly instead of opening the keyboard switcher.</p>
+          <p class="article_text">The ALT key does not work in the Key2LE's setup so you will need to open the on-screen keyboard by pressing Alt then the ABC button in the bottom left corner</p>
+          <p class="article_text">(Optional, Key2) Once you have finished the setup set the IME switcher shortcut to Alt + Enter in Settings -> System -> BlackBerry keyboard. Doing this makes the SYM key work properly instead of opening the keyboard switcher.</p>
           <p class="article_divider"></p>
         </div>
       <p class="article_name_divider" style="width:auto;margin-right:var(--article-padding);"></p>
@@ -823,6 +824,7 @@ pre {
             <p class="article_section_text">Key2LE: Android 15</p>
             <p class="article_section_right"></p>
           </div>
+          <p class="article_divider_small"></p>
           <h4 class="article_header">Working:</h4>
           <ul class="article_list">
             <li class="article_text">WiFi</li>
