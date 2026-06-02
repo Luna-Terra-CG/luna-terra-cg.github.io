@@ -43,7 +43,7 @@ a:active {
 }
 
 .background {
-  background-image: linear-gradient(to bottom in oklab, var(--base) , #706d91);
+  background: linear-gradient(to bottom in oklab, var(--base) , color-mix(in oklab, var(--mauve) 30%, var(--surface2)));
   position: fixed;
   top: 0px;
   bottom: 0px;
@@ -456,14 +456,13 @@ pre {
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">Install Guide for LineageOS UNOFFICIAL</h3>
-        <p class="article_date"><var class="article-date-var">Last editied:</var> May 25 2026</p>
+        <p class="article_date"><var class="article-date-var">Last editied:</var> Jun 02 2026</p>
       </label>
       <input type="checkbox" id="article_krab" name="article_krab">
         <div class="article_contents" id="article_krab_contents">
           <p class="article_divider"></p>
           <h4 class="article_header">Requirements</h4>
           <p class="article_text">NOTE: If you have any questions or issues you can ask in the BlackBerry Android hideout discord server, the invite is <a href="https://discord.gg/BuJURQD6Qb">https://discord.gg/BuJURQD6Qb</a></p>
-          <p class="article_text">A BlackBerry key2, the key2le is not currently supported.</p>
           <p class="article_text">A Windows or linux computer</p>
           <p class="article_text">You have the android platform tools installed, if you don't you can get them for windows <a href="https://developer.android.com/tools/releases/platform-tools">here</a> and on linux it's packaged as <code class="article_code">android-tools</code> on most distros and as <code class="article_code">android-sdk-platform-tools</code> on debian linux and it derivatives.</p>
           <p class="article_text">(Windows): You have the <a href="https://mega.nz/file/YVI0VKpR#38iPAMEtTwjMHS5Ykts37pLegy9ktQ2t1X-Ro2M82WI">BlackBerry USB drivers</a> installed</p>
@@ -473,9 +472,11 @@ pre {
           <p class="article_divider_small"></p>
           <h4 class="article_header">Stock Firmware Preparation</h4>
           <p class="article_text">Remove your lockscreen password and google account from your device</p>
-          <p class="article_text">If the option to set your screen lock to swipe is grayed out factory reset your phone from settings AFTER removing your google account.</p>
+          <p class="article_text">If the option to remove your passcode is grayed out factory reset your phone from settings AFTER removing your google account.</p>
           <p class="article_text">If you do not remember your password follow <a href="https://youtu.be/HPddEUfth7A">theses instructions</a> from the device setup.</p>
-          <p class="article_text">Download the <a href="https://mega.nz/file/pdBjAARa#l5WNgDKoaRWN-ORkK-lBPhGqkwyFqz91HlU3r-CGWfs">ACQ160 Autoloader</a>.</p>
+          <p class="article_divider_small"></p>
+          <p class="article_text">For the Key2 (Athena) download the <a href="https://mega.nz/file/pdBjAARa#l5WNgDKoaRWN-ORkK-lBPhGqkwyFqz91HlU3r-CGWfs">ACQ160 Autoloader</a>.</p>
+          <p class="article_text">For the Key2LE (Luna) download the <a href="https://mega.nz/file/5doWRJRL#G6dQcZo4bGgZJIDHchV9oW_cxBwlUu1CxLzdxCrg9Ec">ACT575 Autoloader</a>.</p>
           <p class="article_text">Power off your device then boot into the bootloader by holding volume down and the power button.</p>
           <p class="article_text">You will need to flash the firmware twice, to do so extract the downloaded 7z file and run the included 'flashall.bat' file, once the phone boots up to the setup reboot to the bootloader again.</p>
           <p class="article_text">Repeat the previous step once.</p>
@@ -500,16 +501,18 @@ pre {
           <p class="article_divider_small"></p>
           <h4 class="article_header">Flashing LineageOS</h4>
           <p class="article_text"><var class="article_header">Alpha and beta builds are *NOT* ready for daily use and are for TESTING PURPOSES ONLY.</var></p>
-          <p class="article_text">Download the lastest version of the build you'd like to use</p>
+          <p class="article_text">If you have a Key2 (Athena) download the latest build of you preferred rom varient</p>
           <p class="article_text">NOTE: If you intend to use as your main phone or are not sure which you want use standard android 15</p>
           <ul class="article_list">
             <li class="article_text">For standard android 15 that's <a href="https://mega.nz/file/xAgSQRDQ#SH1kS5XRl8jjbRHeXoAIPuo34ge3EjrNfycPOIq0dvk">1.8A</a></li>
             <li class="article_text">For android 15 with kernel 4.19 that's <a href="https://mega.nz/file/YUokzIxR#vmu1D63GdfjG36FRs8YlUB9O8NnlsF9QK-g4SX20BYY">1.20D beta</a></li>
             <li class="article_text">For android 16 that's <a href="https://mega.nz/file/gFREDByL#L7f9MEKMTAGozB1x8XHvb6pnE924CsPirIl6OrIa_2w">2.0G alpha</a></li>
           </ul>
+          <p class="article_text">If you have a Key2LE (Luna) download build <a href="https://mega.nz/file/v4cCVZhA#sBIOP5fDSfaseBaRy5WGQbpxCBTUcatgwc6Ro2WuwUc">20260602</a>.</p>
           <p class="article_text">The package for gapps(Google Services) is not included with the rom download, if you want them you will need to download it seperately.
           <p class="article_text">The recommended gapps package for android 15 is <a href="https://github.com/MindTheGapps/15.0.0-arm64/releases/latest">MindTheGapps 15</a>, and <a href="https://github.com/MindTheGapps/16.0.0-arm64/releases/latest">MindTheGapps 16</a> for android 16.</p>
           <p class="article_text">Once your rom download finishes extract it's .zip file, and enter the directory it extracted to.</p>
+          <p class="article_text">If you have Key2LE *DO NOT* delete the zip file, it's the rom image you will be flashing</p>
           <p class="article_divider_small"></p>
           <p class="article_text">Boot into the bootloader by holding volume down and the power button.</p>
           <p class="article_text">Run the following commands:
@@ -522,7 +525,8 @@ pre {
           <p class="article_text">NOTE: You navigate the recovery by using the volume keys to move the cursor and the power button the select.</p>
           <p class="article_text">Once the LineageOS recovery appears select 'Apply update' -> 'Apply update from adb'</p>
           <p class="article_text">NOTE: If your flashing android 16 you need to cancel out of the apply update menu then go back in for it to work</p>
-          <p class="article_text">Run <code class="article_code">adb sideload /path/to/lineage-{lineageVersion}-{date}-UNOFFICIAL-krab-{version}-athena.zip</code></p>
+          <p class="article_text">If you have a Key2 run <code class="article_code">adb sideload /path/to/lineage-{lineageVersion}-{date}-UNOFFICIAL-krab-{version}-athena.zip</code></p>
+          <p class="article_text">If you have a Key2LE run <code class="article_code">adb sideload /path/to/lineage-22.2-{build}-UNOFFICIAL-luna.zip</code></p>
           <p class="article_text">If you have any additional zips you want to flash(ie: gapps, magisk) go into 'Apply update' -> 'Apply update from adb' and run <code class="article_code">adb sideload /path/to/package.zip</code>, once the signature verification failed messages appears select yes.</p>
           <p class="article_text">If you get a not enough space on system partion error when flashing gapps go into 'Factory reset/Format data' and format the system partition, then re-flash lineageOS and gapps.</p>
           <p class="article_text">Select the 'Reboot system'</p>
@@ -550,7 +554,7 @@ pre {
           <p class="article_divider_small"></p>
           <h4 class="article_header">Updating without a computer (recommended)</h4>
           <p class="article_text">NOTE: Updating this way does not keep root. You must use the recovery update method if your going to change version</p>
-          <p class="article_text">Download the latest rom build for your version</p>
+          <p class="article_text">If you have a Key2 download the latest build for your rom version</p>
           <ul class="article_list">
             <li class="article_text">For standard android 15 that's <a href="https://mega.nz/file/xAgSQRDQ#SH1kS5XRl8jjbRHeXoAIPuo34ge3EjrNfycPOIq0dvk">1.8A</a></li>
             <li class="article_text">For android 15 with kernel 4.19 that's <a href="https://mega.nz/file/YUokzIxR#vmu1D63GdfjG36FRs8YlUB9O8NnlsF9QK-g4SX20BYY">1.20D beta</a></li>
@@ -564,7 +568,7 @@ pre {
           <p class="article_divider_small"></p>
           <h4 class="article_header">Updating via recovery</h4>
           <p class="article_text">NOTE: Alpha and beta builds are *NOT* ready for daily usage do not update to one unless you want to test it.</p>
-          <p class="article_text">Download the latest rom build for your version</p>
+          <p class="article_text">If you have a Key2 download the latest build for your rom version</p>
           <ul class="article_list">
             <li class="article_text">For standard android 15 that's <a href="https://mega.nz/file/xAgSQRDQ#SH1kS5XRl8jjbRHeXoAIPuo34ge3EjrNfycPOIq0dvk">1.8A</a></li>
             <li class="article_text">For android 15 with kernel 4.19 that's <a href="https://mega.nz/file/YUokzIxR#vmu1D63GdfjG36FRs8YlUB9O8NnlsF9QK-g4SX20BYY">1.20D beta</a></li>
@@ -606,14 +610,14 @@ pre {
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">LineageOS UNOFFICIAL changelog</h3>
-        <p class="article_date"><var class="article-date-var">LOS 22.2:</var> 1.8A <var class="article-date-var">LOS 22.2 + K4.19:</var> 1.20D <var class="article-date-var">LOS 23.2:</var> 2.0G</p>
+        <p class="article_date"><var class="article-date-var">LOS 22.2:</var> 1.8A <var class="article-date-var">LOS 22.2 + K4.19:</var> 1.20D <var class="article-date-var">LOS 23.2:</var> 2.0G <var class="article-date-var">Key2LE:</var> 20260602</p>
       </label>
       <input type="checkbox" id="article_key2_changelog" name="article_key2_changelog">
         <div class="article_contents" id="article_key2_changelog_contents">
           <p class="article_divider"></p>
           <div class="article_section" style="margin:0px!important;">
             <p class="article_section_left"></p>
-            <p class="article_section_text">Android 16 Alpha</p>
+            <p class="article_section_text">Key2: Android 16 Alpha</p>
             <p class="article_section_right"></p>
           </div>
           <p class="article_divider_small"></p>
@@ -663,8 +667,6 @@ pre {
                   <li class="article_text">NFC driver/hal upgrade</li>
                   <li class="article_text">Haptic driver to led upgrade</li>
                 </ul>
-                <p class="article_divider_small"></p>
-                <p class="article_divider_small"></p>
                 <p class="article_divider_small"></p>
                 <h4 class="article_header">Investigation:</h4>
                 <ul class="article_list">
@@ -730,7 +732,7 @@ pre {
           <p class="article_divider"></p>
           <div class="article_section" style="margin:0px!important;">
             <p class="article_section_left"></p>
-            <p class="article_section_text">Android 15</p>
+            <p class="article_section_text">Key2: Android 15</p>
             <p class="article_section_right"></p>
           </div>
           <p class="article_divider_small"></p>
@@ -814,6 +816,49 @@ pre {
           <p class="article_text">Lineage KeyDisabler support,</p>
           <p class="article_text">USB init fix,</p>
           <p class="article_text">USB tethering fix</p>
+          <p class="article_divider_small"></p>
+          <p class="article_divider"></p>
+          <div class="article_section" style="margin:0px!important;">
+            <p class="article_section_left"></p>
+            <p class="article_section_text">Key2LE: Android 15</p>
+            <p class="article_section_right"></p>
+          </div>
+          <h4 class="article_header">Working:</h4>
+          <ul class="article_list">
+            <li class="article_text">WiFi</li>
+            <li class="article_text">Bluetooth</li>
+            <li class="article_text">Bluetooth audio</li>
+            <li class="article_text">Headphone audio</li>
+            <li class="article_text">NFC</li>
+            <li class="article_text">System sounds (for media audio see below)</li>
+            <li class="article_text">Fingerprint scanner</li>
+            <li class="article_text">Sensors</li>
+            <li class="article_text">SD Cards</li>
+            <li class="article_text">USB storage</li>
+            <li class="article_text">GPS</li>
+            <li class="article_text">SELinux and encryption</li>
+          </ul>
+          <p class="article_divider_small"></p>
+          <h4 class="article_header">Not working</h4>
+          <ul class="article_list">
+            <li class="article_text">Camera</li>
+            <li class="article_text">Flashlight</li>
+            <li class="article_text">Media audio using phone speakers</li>
+            <li class="article_text">Videos using phone speakers</li>
+          </ul>
+          <p class="article_divider_small"></p>
+          <h4 class="article_header">Untested. If you can test please post you results in the <a href="https://discord.gg/BuJURQD6Qb">BlackBerry Android hideout discord server</a></h4>
+          <ul class="article_list">
+            <li class="article_text">SIM card and phone functions (calling, SMS, data, etc)</li>
+          </ul>
+          <p class="article_divider_small"></p>
+          <h4 class="article_header"><a href="https://mega.nz/file/v4cCVZhA#sBIOP5fDSfaseBaRy5WGQbpxCBTUcatgwc6Ro2WuwUc">20260602</a></h4>
+          <p class="article_text">May 2026 security patch</p>
+          <p class="article_text">SELinux and encryption both enabled</p>
+          <p class="article_text">Changed input method switcher shortcut from SYM key to Alt + Enter to avoid interfering with SYM key function in keyboard apps</p>
+          <p class="article_text">SYM key and speed key returned to their default functions as in stock BB-Android (SYM key now works to pull up symbols in the bundled Pastiera keyboard app)</p>
+          <p class="article_text">Serial console disabled (should improve performance)</p>
+          <p class="article_text">Build no longer signed with public keys (should improve security)</p>
           <p class="article_divider"></p>
         </div>
       <p class="article_name_divider" style="width:auto;margin-right:var(--article-padding);"></p>
@@ -884,13 +929,13 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">Reverting to Android 8.1</h3>
-        <p class="article_date"><var class="article-date-var">Last editied:</var> May 25 2026</p>
+        <p class="article_date"><var class="article-date-var">Last editied:</var> Jun 02 2026</p>
       </label>
       <input type="checkbox" id="article_key2_a8" name="article_key2_a8">
         <div class="article_contents" id="article_key2_a8_contents">
           <p class="article_divider"></p>
           <h4 class="article_header">Wiping FRP</h4>
-          <p class="article_text">NOTE: You will need the recovery.img file from the LineageOS rom, if you don't still have it you can download it <a href="https://mega.nz/file/uiQEDCiK#fwgRSKxjlSEUIKLLivn11ZV8Z11Uv9DeBhKj9IgAcFY">here</a></p>
+          <p class="article_text">NOTE: You will need the recovery.img file from the LineageOS rom, if you don't still have it you can download one for the Key2 <a href="https://mega.nz/file/uiQEDCiK#fwgRSKxjlSEUIKLLivn11ZV8Z11Uv9DeBhKj9IgAcFY">here</a> and one for the Key2LE <a href="https://mega.nz/file/Ozp0jZgb#13ZLLkhfk5x3MYdmg9UIyt-4j9n2ksUEXRS7OGtAmh4">here</a>.</p>
           <p class="article_text">Run the following commands:</p>
           <ul class="article_list">
             <li><code class="article_code">fastboot flash recovery /path/to/recovery.img</code></li>
@@ -900,8 +945,8 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
           <p class="article_text">Once the recovery menu appears select Advanced -> Enable ADB</p>
           <p class="article_text">From a computer run <code class="article_code">adb shell wipe-frp</code></p>
           <p class="article_text">On the phone select Advanced -> Reboot to bootloader</p>
-          <p class="article_text">At this point you need to either lock the bootloader following the instruction below or if you want to root continue onto the flash android 8.1 section.</p>
-          <p class="article_text">NOTE: If you have an indian region device you will need lock the bootloader 
+          <p class="article_text">Follow the locking the bootloader section for your operating system or if your device uses ACQ160 you can boot with an unlocked bootloader instead</p>
+          <p class="article_text">NOTE: You must lock the bootloader when using an india region Key2 or a Key2LE units</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">Locking the bootloader (Windows)</h4>
           <p class="article_text">Download the windows unlock tool from <a href="https://mega.nz/file/dIIGUaJA#Zx-GFWvQgLoDZ--qLKJ-SGh8lnp734VozBlmPNKHFJE">here</a> and extract the zip file, if you don't already have it installed you may need to install the microslop <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version">VC++ redists</a>.</p>
@@ -917,14 +962,17 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
           <p class="article_text">If the relock was successful, on the phone MODE: will change from <code class="article_code">FACTORY</code> to <code class="article_code">PRODUCT</code>.</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">Flashing android 8.1</h4>
-          <p class="article_text">NOTE: If you have an india region device you need to use the <a href="https://mega.nz/file/AQBxSYKS#lUPwt9xOJC4UGpazU85MVAhHKGVYLUK3uSJE20Qtaj4">ABN088 Auto Loader</a> instead of ACQ160.</p>
-          <p class="article_text">Download the <a href="https://mega.nz/file/pdBjAARa#l5WNgDKoaRWN-ORkK-lBPhGqkwyFqz91HlU3r-CGWfs">ACQ160 Autoloader</a> and extract the 7z file it downloads as.</p>
+          <p class="article_text">For non-india region Key2's download <a href="https://mega.nz/file/pdBjAARa#l5WNgDKoaRWN-ORkK-lBPhGqkwyFqz91HlU3r-CGWfs">ACQ160 Autoloader</a>.</p>
+          <p class="article_text">If you have an india region Key2 download the <a href="https://mega.nz/file/AQBxSYKS#lUPwt9xOJC4UGpazU85MVAhHKGVYLUK3uSJE20Qtaj4">ABN088 Auto Loader</a> instead of ACQ160.</p>
+          <p class="article_text">For non-india region Key2LE's download <a href="https://mega.nz/file/5doWRJRL#G6dQcZo4bGgZJIDHchV9oW_cxBwlUu1CxLzdxCrg9Ec">ACT575 Autoloader</a>.</p>
+          <p class="article_text">If you have an india region Key2LE download the <a href="https://mega.nz/#!MYVE1CxY!HG2YuoaUvR08nzpJDaIS8jRPL1PqpyIeCCgmPPIFHsA">ABL911 Auto Loader</a> instead of ACT575.</p>
+          <p class="article_text">Once your rom download finishes extract the zip file it downloads as</p>
           <p class="article_text">Make sure device is fully powered off then hold power and volume down until the bootloader appears</p>
           <p class="article_text">Run the flashall.bat script from the ACQ160 autoloader.</p>
           <p class="article_text">NOTE: A linux version of the flashall.bat script is available <a href="https://daphnis-past-midnight.neocities.org/flash.sh">here</a>.</p>
           <p class="article_text">If you did not lock the bootloader follow the section below</p>
           <p class="article_divider_small"></p>
-          <h4 class="article_header">Booting with an unlocked bootloader</h4>
+          <h4 class="article_header">Booting ACQ160 with an unlocked bootloader</h4>
           <p class="article_text">Download the modded boot file from <a href="https://github.com/Luna-Terra-CG/daphnis-past-midnight.neocities.org/raw/refs/heads/main/assets_fumo.enterprises/acq160-mfi-boot.img">here</a>.</p>
           <p class="article_text">Open a terminal where you downloaded the file and run <code class="article_code">fastboot flash boot acq160-mfi-boot.img</code>.</p>
           <p class="article_text">NOTE: If your are want to root patch the <code class="article_code">acq-160-mfi-boot.img</code> boot file not the one from ACQ160 itself.</p>
@@ -947,7 +995,7 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
             <li><code class="article_code">adb shell dd if=/tmp/persist of=/dev/block/by-name/persist</code></li>
             <li><code class="article_code">adb reboot bootloader</code></li>
           </ul>
-          <p class="article_text">Then redo the flashing android 8.1 section of the guide</p>
+          <p class="article_text">Lock your bootloader again then follow flashing android 8.1 section of the guide</p>
           <p class="article_divider"></p>
         </div>
       <p class="article_name_divider" style="width:auto;margin-right:var(--article-padding);"></p>
