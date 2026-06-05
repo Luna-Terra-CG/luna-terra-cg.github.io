@@ -3,7 +3,7 @@
 
 <head>
   <title>Key2 LineageOS stuff</title>
-  <link rel="icon" type="image/x-icon" href="nonbinary.ico">
+  <link rel="icon" type="image/x-icon" href="assets/nonbinary.ico">
   <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <link rel="stylesheet" href="colors.css">
@@ -51,7 +51,7 @@ a:active {
   left: 0px;
 }
 .background_stars {
-  background-image: url("background.png");
+  background-image: url("assets_hwbm/background.png");
   background-repeat: repeat;
   position: fixed;
   top: 0px;
@@ -60,7 +60,7 @@ a:active {
   left: 0px;
 }
 .background_scanLines {
-  background-image: url("scanlines.png");
+  background-image: url("assets/scanlines.png");
   background-repeat: repeat;
   opacity: 0.135;
   position: fixed;
@@ -70,7 +70,7 @@ a:active {
   left: 0px;
 }
 .background_glitch {
-  background-image: url("mailglitch.png");
+  background-image: url("assets_hwbm/mailglitch.png");
   position: fixed;
   width: 455px;
   height: 512px;
@@ -323,6 +323,17 @@ pre {
   padding: 0px;
   overflow: scroll;
   margin-block: 0em 0em;
+}
+footer {
+  color: var(--text);
+  width: 100%;
+  text-align: center;
+  background: rgba(var(--mantle-rgb), 0.3);
+  margin-top: auto;
+  font-size: 15px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-family: 'Source Code Pro';
 }
 
 </style>
@@ -970,11 +981,11 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
           <p class="article_text">Once your rom download finishes extract the zip file it downloads as</p>
           <p class="article_text">Make sure device is fully powered off then hold power and volume down until the bootloader appears</p>
           <p class="article_text">Run the flashall.bat script from the ACQ160 autoloader.</p>
-          <p class="article_text">NOTE: A linux version of the flashall.bat script is available <a href="https://daphnis-past-midnight.neocities.org/flash.sh">here</a>.</p>
+          <p class="article_text">NOTE: A linux version of the flashall.bat script is available <a href="https://github.com/Luna-Terra-CG/daphnis-past-midnight.neocities.org/raw/refs/heads/main/files_bochenek/flash.sh">here</a>.</p>
           <p class="article_text">If you did not lock the bootloader follow the section below</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">Booting ACQ160 with an unlocked bootloader</h4>
-          <p class="article_text">Download the modded boot file from <a href="https://github.com/Luna-Terra-CG/daphnis-past-midnight.neocities.org/raw/refs/heads/main/assets_fumo.enterprises/acq160-mfi-boot.img">here</a>.</p>
+          <p class="article_text">Download the modded boot file from <a href="https://github.com/Luna-Terra-CG/daphnis-past-midnight.neocities.org/raw/refs/heads/main/files_bochenek/acq160-mfi-boot.img">here</a>.</p>
           <p class="article_text">Open a terminal where you downloaded the file and run <code class="article_code">fastboot flash boot acq160-mfi-boot.img</code>.</p>
           <p class="article_text">NOTE: If your are want to root patch the <code class="article_code">acq-160-mfi-boot.img</code> boot file not the one from ACQ160 itself.</p>
           <p class="article_divider_small"></p>
@@ -989,7 +1000,7 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
             <li><code class="article_code">fastboot reboot</code></li>
           </ul>
           <p class="article_text">Once the recovery menu appears select 'Advanced' -> 'Enable ADB'</p>
-          <p class="article_text">Download the persist partition patch from <a href="https://github.com/Luna-Terra-CG/daphnis-past-midnight.neocities.org/raw/refs/heads/main/assets_fumo.enterprises/persist.7z">here</a> then extract the downloaded 7z file.</p>
+          <p class="article_text">Download the persist partition patch from <a href="https://github.com/Luna-Terra-CG/daphnis-past-midnight.neocities.org/raw/refs/heads/main/files_bochenek/persist.7z">here</a> then extract the downloaded 7z file.</p>
           <p class="article_text">Open a terminal where you extracted the file <code class="article_code">persist</code> to, then run the following commands:</p>
           <ul class="article_list">
             <li><code class="article_code">adb push persist /tmp/</code></li>
@@ -1000,6 +1011,9 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
           <p class="article_divider"></p>
         </div>
       <p class="article_name_divider" style="width:auto;margin-right:var(--article-padding);"></p>
+      <footer>
+        <p>CC BY-NC 4.0 license - hosted on <a href="https://daphnis-past-midnight.neocities.org/wiki">neocitites.org</a> & <a href="https://luna-terra-cg.github.io/wiki">github.io</a> - <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io.git">source code</a></p>
+      </footer>
     </div>
   </div>
 </body>

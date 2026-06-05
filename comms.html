@@ -3,7 +3,7 @@
 
 <head>
   <title>NSES sucks btw</title>
-  <link rel="icon" type="image/x-icon" href="nonbinary.ico">
+  <link rel="icon" type="image/x-icon" href="assets/nonbinary.ico">
   <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <link rel="stylesheet" href="colors.css">
@@ -52,7 +52,7 @@ a:active {
   left: 0px;
 }
 .background_stars {
-  background-image: url("background.png");
+  background-image: url("assets_hwbm/background.png");
   background-repeat: repeat;
   position: fixed;
   top: 0px;
@@ -61,7 +61,7 @@ a:active {
   left: 0px;
 }
 .background_scanLines {
-  background-image: url("scanlines.png");
+  background-image: url("assets/scanlines.png");
   background-repeat: repeat;
   opacity: 0.04;
   position: fixed;
@@ -159,11 +159,13 @@ a:active {
   top: 0%;
   bottom: 0%;
   background: rgba(var(--surface0-rgb), 0.8);
-  padding: 20px;
 }
 .atabook {
-  height: 100%;
+  height: calc(100% - 24px);
   width: 470px;
+  padding: 20px;
+  padding-bottom: 0px;
+  padding-top: 0px;
   border: transparent 0px solid;
 }
 .visitCounter {
