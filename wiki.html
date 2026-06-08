@@ -997,11 +997,11 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
           <p class="article_text">Once your rom download finishes extract the zip file it downloads as</p>
           <p class="article_text">Make sure device is fully powered off then hold power and volume down until the bootloader appears</p>
           <p class="article_text">Run the flashall.bat script from the ACQ160 autoloader.</p>
-          <p class="article_text">NOTE: A linux version of the flashall.bat script is available <a href="https://daphnis-past-midnight.neocities.org/flash.sh">here</a>.</p>
+          <p class="article_text">NOTE: A linux version of the flashall.bat script is available <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/main/files_bochenek/flash.sh">here</a>.</p>
           <p class="article_text">If you did not lock the bootloader follow the section below</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">Booting ACQ160 with an unlocked bootloader</h4>
-          <p class="article_text">Download the modded boot file from <a href="https://github.com/Luna-Terra-CG/daphnis-past-midnight.neocities.org/raw/refs/heads/main/assets_fumo.enterprises/acq160-mfi-boot.img">here</a>.</p>
+          <p class="article_text">Download the modded boot file from <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/main/files_bochenek/acq160-mfi-boot.img">here</a>.</p>
           <p class="article_text">Open a terminal where you downloaded the file and run <code class="article_code">fastboot flash boot acq160-mfi-boot.img</code>.</p>
           <p class="article_text">NOTE: If your are want to root patch the <code class="article_code">acq-160-mfi-boot.img</code> boot file not the one from ACQ160 itself.</p>
           <p class="article_divider_small"></p>
@@ -1016,7 +1016,7 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
             <li><code class="article_code">fastboot reboot</code></li>
           </ul>
           <p class="article_text">Once the recovery menu appears select 'Advanced' -> 'Enable ADB'</p>
-          <p class="article_text">Download the persist partition patch from <a href="https://github.com/Luna-Terra-CG/daphnis-past-midnight.neocities.org/raw/refs/heads/main/assets_fumo.enterprises/persist.7z">here</a> then extract the downloaded 7z file.</p>
+          <p class="article_text">Download the persist partition patch from <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/main/files_bochenek/persist.7z">here</a> then extract the downloaded 7z file.</p>
           <p class="article_text">Open a terminal where you extracted the file <code class="article_code">persist</code> to, then run the following commands:</p>
           <ul class="article_list">
             <li><code class="article_code">adb push persist /tmp/</code></li>
