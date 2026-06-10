@@ -20,30 +20,30 @@ p, h4, h3 {
 }
 /* link text */
 a:link {
-  color: #c6a0f6;
+  color: var(--mauve);
 }
 a:visited {
-  color: #f5bde6;
+  color: var(--pink);
 }
 a:hover {
-  color: #f5bde6;
+  color: var(--pink);
 }
 a:active {
-  color: #8aadf4;
+  color: var(--sky);
 }
 /* highlight */
 ::-moz-selection {
   color: var(--base);
-  background: var(--mauve);
+  background: var(--accent-alt);
 }
 ::selection {
   color: var(--base);
-  background: var(--mauve);
-  background-color: var(--mauve) !important;
+  background: var(--accent-alt);
+  background-color: var(--accent-alt) !important;
 }
 
 .background {
-  background: linear-gradient(to bottom in oklab, var(--base) , color-mix(in oklab, var(--mauve) 30%, var(--surface2)));
+  background: linear-gradient(165deg in oklab, color-mix(var(--base) 69%, var(--mantle) ), color-mix(var(--accent) 30%, var(--surface2)));
   position: fixed;
   top: 0px;
   bottom: 0px;
@@ -88,17 +88,18 @@ a:active {
   --sidebar-padding-top: 13px;
   --sidebar-padding-bottom: 30px;
   --sidebar-padding-right: 24px;
+  --sidebar-background: rgba(var(--base-rgb), 0.5);
 }
 .sidebar {
-  border-top: 22px solid var(--mauve);
+  border-top: 22px solid var(--accent-alt);
   bottom: 15%;
   position: absolute;
 }
 .sidebar_items {
   padding-top: 0px;
   padding-left: 16px;
-  background: rgba(var(--base-rgb), 0.65);
-  backdrop-filter: blur(2px);
+  background: var(--sidebar-background);
+  backdrop-filter: blur(5px);
   color: var(--text);
   width: 300px;
 }
@@ -146,8 +147,8 @@ a:active {
   padding-top: var(--sidebar-padding-bottom);
   padding-bottom: var(--sidebar-padding-bottom);
   padding-left: 13px;
-  background: rgba(var(--base-rgb), 0.65);
-  backdrop-filter: blur(2px);
+  background: var(--sidebar-background);
+  backdrop-filter: blur(5px);
   color: var(--text);
 }
 .sidebar_backarrow_icon {
@@ -155,12 +156,12 @@ a:active {
 }
 /* change active tab color */
 .sidebar_wiki {
-  background: var(--mauve);
+  background: var(--accent-alt);
   color: var(--base);
-  outline: 2px solid var(--mauve);
+  outline: 2px solid var(--accent-alt);
 }
 .sidebar_wiki:hover {
-  outline: 2px solid var(--mauve);
+  outline: 2px solid var(--accent-alt);
 }
 
 /* article catagory */
@@ -266,7 +267,7 @@ a:active {
   bottom: 0px;
   right: 0%;
   left: calc(316px + 9%);
-  background: linear-gradient(to bottom in oklab, rgba(var(--base-rgb), 0.45) , rgba(var(--base-rgb), 0.57));
+  background: linear-gradient(170deg in oklab, color-mix(in oklab, var(--base) 45%, transparent) , color-mix(in oklab, color-mix(in oklab, var(--base) 90%, var(--accent)) 57%, transparent));
   backdrop-filter: blur(4px);
   display: flex;
   flex-direction: column;
@@ -283,11 +284,11 @@ a:active {
   word-wrap: break-word;
   font-family: 'Roboto';
   font-size: 16px;
-  margin-top: 3px;
-  align-self: flex-start;
+  margin-bottom: 3px;
+  font-weight: 500;
 }
 .article_code {
-  background-color: rgba(var(--surface0-rgb), 0.3);
+  background-color: color-mix(in oklab, var(--surface0) 10%, transparent);
   border: 1px solid var(--surface1);
   color: var(--text);
   font-size: 15px;
@@ -309,6 +310,7 @@ li {
   margin-top: 4px;
   margin-bottom: 4px;
   color: var(--text);
+  font-weight: 800 !important;
 }
 .article_divider {
   background: transparent;
@@ -328,7 +330,7 @@ footer {
   color: var(--text);
   width: 100%;
   text-align: center;
-  background: rgba(var(--mantle-rgb), 0.3);
+  background: color-mix(in oklab, var(--mantle) 30%, transparent);
   margin-top: auto;
   font-size: 15px;
   padding-top: 2px;
@@ -467,7 +469,7 @@ footer {
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">Install Guide for LineageOS UNOFFICIAL</h3>
-        <p class="article_date"><var class="article-date-var">Last editied:</var> Jun 06 2026</p>
+        <p class="article_date"><var class="article-date-var">Last editied:</var> Jun 10 2026</p>
       </label>
       <input type="checkbox" id="article_krab" name="article_krab">
         <div class="article_contents" id="article_krab_contents">
@@ -491,8 +493,8 @@ footer {
           <p class="article_text">Power off your device then boot into the bootloader by holding volume down and the power button.</p>
           <p class="article_text">You will need to flash the firmware twice, to do so extract the downloaded 7z file and run the included 'flashall.bat' file, once the phone boots up to the setup reboot to the bootloader again.</p>
           <p class="article_text">Repeat the previous step once.</p>
-          <p class="article_text">NOTE: A linux version of the flashall.bat script is available <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/main/files_bochenek/flash.sh">here</a>.</p>
-          <p class="article_text">If you get an <code class="article_code">error: cannot load</code> message you can ignore it.</p>
+          <p class="article_text">NOTE: A linux version of the flashall.bat script is available <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_bochenek/flash.sh">here</a>.</p>
+          <p class="article_text">If you get any <code class="article_code">error: cannot load</code> messages you can ignore them.</p>
           <p class="article_divider_small"></p>
           <p class="article_text">Power off your device then boot into the bootloader again.</p>
           <h4 class="article_header">Unlocking the bootloader (Windows)</h4>
@@ -513,7 +515,7 @@ footer {
           <h4 class="article_header">Flashing LineageOS</h4>
           <p class="article_text"><var class="article_header">Alpha and beta builds are *NOT* ready for daily use and are for TESTING PURPOSES ONLY.</var></p>
           <p class="article_text">If you have a Key2 (Athena) download the latest build of your preferred rom varient</p>
-          <p class="article_text">NOTE: If you intend to use as your main phone or are not sure which you want use standard android 15</p>
+          <p class="article_text">NOTE: If you intend to use as your main phone or are not sure which you version want, use standard android 15</p>
           <ul class="article_list">
             <li class="article_text">For standard android 15 that's <a href="https://mega.nz/file/xAgSQRDQ#SH1kS5XRl8jjbRHeXoAIPuo34ge3EjrNfycPOIq0dvk">1.8A</a></li>
             <li class="article_text">For android 15 with kernel 4.19 that's <a href="https://mega.nz/file/MBYX3I4J#WFQ04jrdC120pkh66xbCyKQATm7cio4sBemHieTnovQ">1.20E beta</a></li>
@@ -533,7 +535,9 @@ footer {
             <li><code class="article_code">fastboot reboot</code></li>
           </ul>
           <p class="article_text">NOTE: You navigate the recovery by using the volume keys to move the cursor and the power button the select.</p>
-          <p class="article_text">Once the LineageOS recovery appears select 'Apply update' -> 'Apply update from adb'</p>
+          <p class="article_text">Once the recovery menu appears select Advanced -> Enable ADB</p>
+          <p class="article_text">From a computer run <code class="article_code">adb shell wipe-frp</code></p>
+          <p class="article_text">Then select 'Apply update' -> 'Apply update from adb'</p>
           <p class="article_text">NOTE: If your flashing android 16 you need to cancel out of the apply update menu then go back in for it to work</p>
           <p class="article_text">If you have a Key2 run <code class="article_code">adb sideload /path/to/lineage-{lineageVersion}-{date}-UNOFFICIAL-krab-{version}-athena.zip</code></p>
           <p class="article_text">If you have a Key2LE run <code class="article_code">adb sideload /path/to/lineage-22.2-{build}-UNOFFICIAL-luna.zip</code></p>
@@ -588,7 +592,7 @@ footer {
             <li class="article_text">For android 16 that's <a href="https://mega.nz/file/gFREDByL#L7f9MEKMTAGozB1x8XHvb6pnE924CsPirIl6OrIa_2w">2.0G alpha</a></li>
           </ul>
           <p class="article_text">If you have a Key2LE download build <a href="https://mega.nz/file/To1hXZbA#0xwxp1adJuqrCEopKlSii4gFw3VbSVvn4RYZ2tsEQJc">20260606</a></p>
-          <p class="article_text">NOTE: If you are switching to a version with a different kernel or downgrading to an older android version you need to wipe your data.</p>
+          <p class="article_text">NOTE: If you are switching to a version with a different kernel or downgrading to an older android version you must wipe your data.</p>
           <p class="article_text">Once your rom download finishes extract it's .zip file, and enter the directory it extracted to.</p>
           <p class="article_text">NOTE: If your updating to android 16 and want google services you need to use <a href="https://github.com/MindTheGapps/16.0.0-arm64/releases/latest">MindTheGapps 16</a>.</p>
           <p class="article_text">If your phone is rooted patch the boot.img file included with the new build.</p>
@@ -615,7 +619,7 @@ footer {
           <p class="article_text">NOTE: The easiest way to get into recovery is by using the <code class="article_code">adb reboot recovery</code> command</p>
           <p class="article_text">Once the recovery menu appears select Advanced -> Enable ADB</p>
           <p class="article_text">From a computer run <code class="article_code">adb shell wipe-frp</code></p>
-          <p class="article_text">Power off your device or reboot it using the option in the recovery menu</p>
+          <p class="article_text">Power off your device or reboot it using the options in the recovery menu</p>
           <p class="article_divider"></p>
         </div>
       <p class="article_name_divider" style="width:auto;margin-right:var(--article-padding);"></p>
@@ -871,7 +875,7 @@ footer {
             <li class="article_text">Camera</li>
             <li class="article_text">Flashlight</li>
             <li class="article_text">VoIP calling</li>
-            <li class="article_text">Anything else not listed here :0</li>
+            <li class="article_text">Anything else not listed here probably doesn't work :0</li>
           </ul>
           <p class="article_divider_small"></p>
           <h4 class="article_header"><a href="https://mega.nz/file/To1hXZbA#0xwxp1adJuqrCEopKlSii4gFw3VbSVvn4RYZ2tsEQJc">20260606</a></h4>
@@ -906,7 +910,7 @@ footer {
           <p class="article_text"><a href="https://github.com/palsoftware/pastiera">Pastiera</a>: A foss keyboard app built for android phones with hardware keyboards. It's the default on Bochenek's rom builds.</p>
           <p class="article_text"><a href="https://github.com/tim-ecoder/K12KB">K12KB</a>: The keyboard app made by Krab-ubica, comes pre-installed with his rom builds. Currently requires enableing 'Allow on-screen keyboard' in Settings -> System -> BlackBerry keyboard to work properly</p>
           <p class="article_text"><a href="https://mega.nz/file/ZBJQXY4Q#2shEOGdU56T2yYTq02Zz4o5ARtkIMQhfK8h__AuAtZo">Krab-ubica's BlackBerry Keyboard</a>: A modified version of the blackberry keyboard with working keyboard gestures. Chloejp has made a version with all language packs available <a href="https://mega.nz/file/Ry40wJLC#jOgVAl-g5AdfvTznBI7EBa1EeIMpf4oeBCdp6FNOTa8">here</a> & one with only vietnamese available <a href="https://mega.nz/file/tmAShbRa#2Sf9X3QNpOSuQZEEahy76o2ibs7eWSOipvJ4Vf_j9Kc">here</a>.</p>
-          <p class="article_text"><a href="https://www.reddit.com/r/TheMinimalCompany/comments/1plzief/new_blackberry_keyboard_w_full_minimal_phone/">Hazem's BlackBerry Keyboard</a>: A heavily modified version of the blackberry keyboard with material you colors, working keyboard gestures, newer emojis and a ton of various fixes, it's language packs are available <a href="https://drive.google.com/drive/folders/1JhDQKay7i6ayRks8VvUDY4khAhSqIflp?usp=share_link">here</a>.</p>
+          <p class="article_text"><a href="https://www.reddit.com/r/TheMinimalCompany/comments/1plzief/new_blackberry_keyboard_w_full_minimal_phone/">Hazem's BlackBerry Keyboard</a>: A heavily modified version of the blackberry keyboard with material you colors, working keyboard gestures, newer emojis and a ton of various fixes. It's language packs are available <a href="https://drive.google.com/drive/folders/1JhDQKay7i6ayRks8VvUDY4khAhSqIflp?usp=share_link">here</a>.</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">Launchers</h4>
           <p class="article_text"><a href="https://mega.nz/file/McxwVCyK#pBmpcu1kTb3mF45K3hTXb4G2HjlL0XQXSi1-iwhIeK0">Krab-ubica's BlackBerry Launcher</a>: The default launcher from android 8.1 with performance improvements and modifications to make it work on LOS. The default 8.1 wallpaper set is also available <a href="https://archive.org/details/bbkey2_wallpapers">on this archive.org page</a>.</p>
@@ -918,7 +922,7 @@ footer {
           <h4 class="article_header">Other</h4>
           <p class="article_text"><a href="https://mega.nz/file/QZ5DwTTS#DUc2Oo_Dc6MZwkEUul9ViSHdiu99TRs8OXx9BUW8jxg">BigKaka 8.8 mod</a>: A build of Gcam modified by krab-ubica to work with key2's hardware. If your using a rom build with the 4.19 kernel use <a href="https://mega.nz/file/VZwRgBJJ#m6_BhwMDKOy56h4hmww1B1bu5-HQkkFd8zXan7OeQ5c">this version instead</a>.</p>
           <p class="article_text"><a href="https://github.com/aistra0528/Hail">Hail</a>: Freeze certain apps to stop them from running in the background</p>
-          <p class="article_text"><a href="https://github.com/PeterCxy/Shelter">Shelter</a>/<a href="https://github.com/proletarius101/Insular">Insular</a>/<a href="https://github.com/oasisfeng/island">Island</a>: Add apps to a work profile to isolate them from other apps, stop them from auto starting or install multiable versions to once.</p>
+          <p class="article_text"><a href="https://github.com/PeterCxy/Shelter">Shelter</a>/<a href="https://github.com/proletarius101/Insular">Insular</a>/<a href="https://github.com/oasisfeng/island">Island</a>: Add apps to a work profile to isolate them from other apps, stop them from auto starting or install multiable versions at once.</p>
           <p class="article_text"><a href="https://github.com/keymapperorg/KeyMapper">KeyMapper</a>: Remap any button and set custom key binds easily</p>
           <p class="article_text"><a href="https://github.com/Aliucord/Aliucord">Aliucord</a>: A light-weight discord client based on a version from before it was a wrapper for the mobile website</p>
           <p class="article_divider_small"></p>
@@ -997,11 +1001,11 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
           <p class="article_text">Once your rom download finishes extract the zip file it downloads as</p>
           <p class="article_text">Make sure device is fully powered off then hold power and volume down until the bootloader appears</p>
           <p class="article_text">Run the flashall.bat script from the ACQ160 autoloader.</p>
-          <p class="article_text">NOTE: A linux version of the flashall.bat script is available <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/main/files_bochenek/flash.sh">here</a>.</p>
+          <p class="article_text">NOTE: A linux version of the flashall.bat script is available <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_bochenek/flash.sh">here</a>.</p>
           <p class="article_text">If you did not lock the bootloader follow the section below</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">Booting ACQ160 with an unlocked bootloader</h4>
-          <p class="article_text">Download the modded boot file from <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/main/files_bochenek/acq160-mfi-boot.img">here</a>.</p>
+          <p class="article_text">Download the modded boot file from <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_bochenek/acq160-mfi-boot.img">here</a>.</p>
           <p class="article_text">Open a terminal where you downloaded the file and run <code class="article_code">fastboot flash boot acq160-mfi-boot.img</code>.</p>
           <p class="article_text">NOTE: If your are want to root patch the <code class="article_code">acq-160-mfi-boot.img</code> boot file not the one from ACQ160 itself.</p>
           <p class="article_divider_small"></p>
@@ -1016,7 +1020,7 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
             <li><code class="article_code">fastboot reboot</code></li>
           </ul>
           <p class="article_text">Once the recovery menu appears select 'Advanced' -> 'Enable ADB'</p>
-          <p class="article_text">Download the persist partition patch from <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/main/files_bochenek/persist.7z">here</a> then extract the downloaded 7z file.</p>
+          <p class="article_text">Download the persist partition patch from <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_bochenek/persist.7z">here</a> then extract the downloaded 7z file.</p>
           <p class="article_text">Open a terminal where you extracted the file <code class="article_code">persist</code> to, then run the following commands:</p>
           <ul class="article_list">
             <li><code class="article_code">adb push persist /tmp/</code></li>
@@ -1028,7 +1032,7 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
         </div>
       <p class="article_name_divider" style="width:auto;margin-right:var(--article-padding);"></p>
       <footer>
-        <p>CC BY-NC 4.0 license - hosted on <a href="https://daphnis-past-midnight.neocities.org/wiki">neocitites.org</a> & <a href="https://luna-terra-cg.github.io/wiki">github.io</a> - <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io.git">source code</a></p>
+        <p>CC BY-SA 4.0 license — hosted on <a href="https://daphnis-past-midnight.neocities.org/wiki">neocitites.org</a> & <a href="https://luna-terra-cg.github.io/wiki">github.io</a> — <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io.git">source code</a></p>
       </footer>
     </div>
   </div>

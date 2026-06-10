@@ -23,34 +23,37 @@ SOFTWARE.
 */
 
 :root {
-    --crust: #181926;
-    --crust-rgb: 24, 25, 38;
-    --mantle: #1e2030;
-    --mantle-rgb: 30, 32, 48;
-    --base: #24273a;
-    --base-rgb: 36, 39, 58;
-    --surface0: #363a4f;
-    --surface0-rgb: 54, 58, 79;
-    --surface1: #494d64;
-    --surface2: #5b6078;
-    --overlay0: #6e738d;
-    --overlay1: #8087a2;
-    --overlay2: #939ab7;
-    --subtext0: #a5adcb;
-    --subtext1: #b8c0e0;
-    --text: #cad3f5;
-    --lavender: #b7bdf8;
-    --blue: #8aadf4;
-    --sapphire: #7dc4e4;
-    --sky: #91d7e3;
-    --teal: #8bd5ca;
-    --green: #a6da95;
-    --yellow: #eed49f;
-    --peach: #f5a97f;
-    --maroon: #ee99a0;
-    --red: #ed8796;
-    --mauve: #c6a0f6;
-    --pink: #f5bde6;
-    --flamingo: #f0c6c6;
-    --rosewater: #f4dbd6;
+  --crust: #181926;
+  --crust-rgb: 24, 25, 38;
+  --mantle: #1e2030;
+  --mantle-rgb: 30, 32, 48;
+  --base: #24273a;
+  --base-rgb: 36, 39, 58;
+  --surface0: #363a4f;
+  --surface0-rgb: 54, 58, 79;
+  --surface1: #494d64;
+  --surface2: #5b6078;
+  --overlay0: #6e738d;
+  --overlay1: #8087a2;
+  --overlay2: #939ab7;
+  --subtext0: #a5adcb;
+  --subtext1: #b8c0e0;
+  --text: #cad3f5;
+  --lavender: #b7bdf8;
+  --blue: #8aadf4;
+  --sapphire: #7dc4e4;
+  --sky: #91d7e3;
+  --teal: #8bd5ca;
+  --green: #a6da95;
+  --yellow: #eed49f;
+  --peach: #f5a97f;
+  --maroon: #ee99a0;
+  --red: #ed8796;
+  --mauve: #c6a0f6;
+  --pink: #f5bde6;
+  --flamingo: #f0c6c6;
+  --rosewater: #f4dbd6;
+  
+  --accent: var(--mauve);
+  --accent-alt: color-mix(in oklab, var(--accent) 80%, var(--overlay2));
 }
