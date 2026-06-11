@@ -499,7 +499,7 @@ footer {
           <p class="article_text">You now need to flash the autoloader, to do so extract the downloaded 7z file and run the included 'flashall.bat' file</p>
           <p class="article_text">NOTE: A linux version of the flashall.bat script is available <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_bochenek/flash.sh">here</a>.</p>
           <p class="article_text">If you get any <code class="article_code">error: cannot load</code> messages you can ignore them.</p>
-          <p class="article_text">The phone will boot to either the setup or an 'Error!' screen.</p>
+          <p class="article_text">The phone will now boot to either the setup or an 'Error!' screen, it does not matter which.</p>
           <p class="article_text">Reboot to the bootloader then run flashall.bat again</p>
           <p class="article_text">Power off your device then boot into the bootloader.</p>
           <p class="article_divider_small"></p>
@@ -973,7 +973,7 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
         <div class="article_contents" id="article_key2_a8_contents">
           <p class="article_divider"></p>
           <h4 class="article_header">Wiping FRP</h4>
-          <p class="article_text">NOTE: You will need the recovery.img file from the LineageOS rom, if you don't still have it you can download one for the Key2 <a href="https://mega.nz/file/uiQEDCiK#fwgRSKxjlSEUIKLLivn11ZV8Z11Uv9DeBhKj9IgAcFY">here</a> and one for the Key2LE <a href="https://mega.nz/file/Ozp0jZgb#13ZLLkhfk5x3MYdmg9UIyt-4j9n2ksUEXRS7OGtAmh4">here</a>.</p>
+          <p class="article_text">NOTE: You will need the recovery.img file from the LineageOS rom, if you don't have it you can download one for the Key2 <a href="https://mega.nz/file/uiQEDCiK#fwgRSKxjlSEUIKLLivn11ZV8Z11Uv9DeBhKj9IgAcFY">here</a> and one for the Key2LE <a href="https://mega.nz/file/Ozp0jZgb#13ZLLkhfk5x3MYdmg9UIyt-4j9n2ksUEXRS7OGtAmh4">here</a>.</p>
           <p class="article_text">Run the following commands:</p>
           <ul class="article_list">
             <li><code class="article_code">fastboot flash recovery /path/to/recovery.img</code></li>
@@ -1018,7 +1018,7 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
           <h4 class="article_header">Fixing wifi, bluetooth & cellular not working</h4>
           <p class="article_text">NOTE: This section is on how to fix a rare bug, you will most likely not experience it when reverting.</p>
           <p class="article_text">If you relocked the bootloader unlock it again as shown in the install guide.</p>
-          <p class="article_text">NOTE: You need to use the LineageOS recovery you downloaded earlier.</p>
+          <p class="article_text">NOTE: You need to use the same LineageOS recovery file you used earlier.</p>
           <p class="article_text">Run the following commands:</p>
           <ul class="article_list">
             <li><code class="article_code">fastboot flash recovery /path/to/recovery.img</code></li>
