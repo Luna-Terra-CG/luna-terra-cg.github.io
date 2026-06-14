@@ -408,7 +408,7 @@ footer {
     <div class="article_container">
       <div class="article_section">
         <p class="article_section_left"></p>
-        <p class="article_section_text">BlackBerry Key2</p>
+        <p class="article_section_text">BlackBerry Key2 & Key2LE</p>
         <p class="article_section_right"></p>
       </div>
       <h4 class="article_name" style="color:var(--text);text-align:center;margin-right:var(--article-padding);">Due to lack of free time krab-ubica has put android 16 development on indefinent pause</h4>
@@ -967,7 +967,7 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">Reverting to Android 8.1</h3>
-        <p class="article_date"><var class="article-date-var">Last editied:</var> Jun 02 2026</p>
+        <p class="article_date"><var class="article-date-var">Last editied:</var> Jun 14 2026</p>
       </label>
       <input type="checkbox" id="article_key2_a8" name="article_key2_a8">
         <div class="article_contents" id="article_key2_a8_contents">
@@ -983,37 +983,35 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
           <p class="article_text">Once the recovery menu appears select Advanced -> Enable ADB</p>
           <p class="article_text">From a computer run <code class="article_code">adb shell wipe-frp</code></p>
           <p class="article_text">On the phone select Advanced -> Reboot to bootloader</p>
-          <p class="article_text">Follow the locking the bootloader section for your operating system or if your device uses ACQ160 you can boot with an unlocked bootloader instead</p>
-          <p class="article_text">NOTE: You must lock the bootloader when using an india region Key2 or a Key2LE units</p>
+          <p class="article_text">Next follow the locking the bootloader section for your operating system</p>
+          <p class="article_text">or if you have a Key2 you can boot with an unlocked bootloader instead</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">Locking the bootloader (Windows)</h4>
           <p class="article_text">Download the windows unlock tool from <a href="https://mega.nz/file/dIIGUaJA#Zx-GFWvQgLoDZ--qLKJ-SGh8lnp734VozBlmPNKHFJE">here</a> and extract the zip file, if you don't already have it installed you may need to install the microslop <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version">VC++ redists</a>.</p>
           <p class="article_text">Open the unlock tool.</p>
-          <p class="article_text">Press the scan in the upper right corner, once your devices is found press the 'Relock BootLoader' button.</p>
+          <p class="article_text">Press the scan button in the upper right corner, once your devices is found press the 'Relock BootLoader' button.</p>
           <p class="article_text">NOTE: The progress bar may stay at 75% even once the bootloader relock finishes.</p>
           <p class="article_text">If the relock was successful, on the phone MODE: will change from <code class="article_code">FACTORY</code> to <code class="article_code">PRODUCT</code>.</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">Locking the bootloader (Linux)</h4>
           <p class="article_text">Download kibo from <a href="https://github.com/BotchedRPR/kibo/releases">Bochenek's github page</a> and extract the zip file you downloaded.</p>
           <p class="article_text">Mark the kibo binary included with the zip file as executable.</p>
-          <p class="article_text">From a terminal run <code class="article_code">./kibo lock</code></p>
+          <p class="article_text">Open a terminal where kibo is located and run <code class="article_code">./kibo unlock</code></p>
           <p class="article_text">If the relock was successful, on the phone MODE: will change from <code class="article_code">FACTORY</code> to <code class="article_code">PRODUCT</code>.</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">Flashing android 8.1</h4>
-          <p class="article_text">For non-india region Key2's download <a href="https://mega.nz/file/pdBjAARa#l5WNgDKoaRWN-ORkK-lBPhGqkwyFqz91HlU3r-CGWfs">ACQ160 Autoloader</a>.</p>
-          <p class="article_text">If you have an india region Key2 download the <a href="https://mega.nz/file/AQBxSYKS#lUPwt9xOJC4UGpazU85MVAhHKGVYLUK3uSJE20Qtaj4">ABN088 Auto Loader</a> instead of ACQ160.</p>
-          <p class="article_text">For non-india region Key2LE's download <a href="https://mega.nz/file/5doWRJRL#G6dQcZo4bGgZJIDHchV9oW_cxBwlUu1CxLzdxCrg9Ec">ACT575 Autoloader</a>.</p>
-          <p class="article_text">If you have an india region Key2LE download the <a href="https://mega.nz/#!MYVE1CxY!HG2YuoaUvR08nzpJDaIS8jRPL1PqpyIeCCgmPPIFHsA">ABL911 Auto Loader</a> instead of ACT575.</p>
+          <p class="article_text">If you have a Key2 download <a href="https://mega.nz/file/pdBjAARa#l5WNgDKoaRWN-ORkK-lBPhGqkwyFqz91HlU3r-CGWfs">ACQ160 Autoloader</a>.</p>
+          <p class="article_text">If you have a Key2LE download <a href="https://mega.nz/file/5doWRJRL#G6dQcZo4bGgZJIDHchV9oW_cxBwlUu1CxLzdxCrg9Ec">ACT575 Autoloader</a>.</p>
           <p class="article_text">Once your rom download finishes extract the zip file it downloads as</p>
           <p class="article_text">Make sure device is fully powered off then hold power and volume down until the bootloader appears</p>
-          <p class="article_text">Run the flashall.bat script from the ACQ160 autoloader.</p>
+          <p class="article_text">Run the flashall.bat script from the autoloader.</p>
           <p class="article_text">NOTE: A linux version of the flashall.bat script is available <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_bochenek/flash.sh">here</a>.</p>
           <p class="article_text">If you did not lock the bootloader follow the section below</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">Booting ACQ160 with an unlocked bootloader</h4>
           <p class="article_text">Download the modded boot file from <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_bochenek/acq160-mfi-boot.img">here</a>.</p>
           <p class="article_text">Open a terminal where you downloaded the file and run <code class="article_code">fastboot flash boot acq160-mfi-boot.img</code>.</p>
-          <p class="article_text">NOTE: If your are want to root patch the <code class="article_code">acq-160-mfi-boot.img</code> boot file not the one from ACQ160 itself.</p>
+          <p class="article_text">If your going to root patch the <code class="article_code">acq-160-mfi-boot.img</code> boot file not the one from ACQ160 itself.</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">Fixing wifi, bluetooth & cellular not working</h4>
           <p class="article_text">NOTE: This section is on how to fix a rare bug, you will most likely not experience it when reverting.</p>
@@ -1033,7 +1031,7 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
             <li><code class="article_code">adb shell dd if=/tmp/persist of=/dev/block/by-name/persist</code></li>
             <li><code class="article_code">adb reboot bootloader</code></li>
           </ul>
-          <p class="article_text">Lock your bootloader again then follow flashing android 8.1 section of the guide</p>
+          <p class="article_text">Lock your bootloader again then redo the section flashing android 8.1 of the guide</p>
           <p class="article_divider"></p>
         </div>
       <p class="article_name_divider" style="width:auto;margin-right:var(--article-padding);"></p>
