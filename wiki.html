@@ -474,7 +474,7 @@ footer {
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">Install Guide for LineageOS UNOFFICIAL</h3>
-        <p class="article_date"><var class="article-date-var">Last editied:</var> Jun 11 2026</p>
+        <p class="article_date"><var class="article-date-var">Last editied:</var> Jun 22 2026</p>
       </label>
       <input type="checkbox" id="article_krab" name="article_krab">
         <div class="article_contents" id="article_krab_contents">
@@ -527,7 +527,7 @@ footer {
             <li class="article_text">For android 15 with kernel 4.19 that's <a href="https://mega.nz/file/MBYX3I4J#WFQ04jrdC120pkh66xbCyKQATm7cio4sBemHieTnovQ">1.20E beta</a></li>
             <li class="article_text">For android 16 that's <a href="https://mega.nz/file/gFREDByL#L7f9MEKMTAGozB1x8XHvb6pnE924CsPirIl6OrIa_2w">2.0G alpha</a></li>
           </ul>
-          <p class="article_text">If you have a Key2LE (Luna) download android 15 build <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/20260615/LOS22_Key2LE_20260615.zip">20260615</a>.</p>
+          <p class="article_text">If you have a Key2LE (Luna) download android 15 build <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.0a/LOS22_Key2LE_ZKrab-v1.0a.zip">ZKrab-v1.0a</a>.</p>
           <p class="article_text">The package for gapps(Google Services) is not included with the rom download, if you want them you will need to download it seperately.</p>
           <p class="article_text">The recommended gapps package for android 15 is <a href="https://github.com/MindTheGapps/15.0.0-arm64/releases/latest">MindTheGapps 15</a>, and <a href="https://github.com/MindTheGapps/16.0.0-arm64/releases/latest">MindTheGapps 16</a> for android 16.</p>
           <p class="article_text">Once your rom download finishes extract it's .zip file, and enter the directory it extracted to.</p>
@@ -547,12 +547,13 @@ footer {
           <p class="article_text">NOTE: If your flashing android 16 you need to cancel out of the apply update menu then go back in for it to work</p>
           <p class="article_text">If you have a Key2 run <code class="article_code">adb sideload /path/to/lineage-{lineageVersion}-{date}-UNOFFICIAL-krab-{version}-athena.zip</code></p>
           <p class="article_text">If you have a Key2LE run <code class="article_code">adb sideload /path/to/lineage-22.2-{build}-UNOFFICIAL-luna.zip</code></p>
-          <p class="article_text">If you have any additional zips you want to flash(ie: gapps, magisk) go into 'Apply update' -> 'Apply update from adb' and run <code class="article_code">adb sideload /path/to/package.zip</code>, once the signature verification failed messages appears select yes.</p>
-          <p class="article_text">If you get a not enough space on system partion error when flashing gapps go into 'Factory reset/Format data' and format the system partition, then re-flash lineageOS and gapps.</p>
+          <p class="article_text">If you have any additional zips to flash(ie: gapps, magisk) go into 'Apply update' -> 'Apply update from adb' and run <code class="article_code">adb sideload /path/to/package.zip</code>, once the signature verification failed messages appears select yes.</p>
+          <p class="article_text">If you get a not enough space on system partion error when flashing gapps go into 'Factory reset/Format data' and format the system partition, then re-sideload lineageOS and gapps.</p>
           <p class="article_text">Select the 'Reboot system'</p>
           <p class="article_text">If you get set back to recovery and sideloading the rom again does not fix it you may have a 'bcb recovery' unit, to get around that boot into the bootloader and run <code class="article_code">fastboot flash recovery boot.img</code></p>
+          <p class="article_divider_small"></p>
           <p class="article_text">NOTE: The first boot can take up to 10-15 minutes</p>
-          <p class="article_text">The ALT key does not work in the Key2LE's setup so you will need to open the on-screen keyboard by pressing Alt then the ABC button in the bottom left corner</p>
+          <p class="article_text">(Optional) Download a keyboard app that supports the physical keyboard from the Apps & Tweaks article</p>
           <p class="article_text">(Optional, Key2) Once you have finished the setup set the IME switcher shortcut to Alt + Enter in Settings -> System -> BlackBerry keyboard. Doing this makes the SYM key work properly instead of opening the keyboard switcher.</p>
           <p class="article_divider"></p>
         </div>
@@ -580,7 +581,7 @@ footer {
             <li class="article_text">For android 15 with kernel 4.19 that's <a href="https://mega.nz/file/MBYX3I4J#WFQ04jrdC120pkh66xbCyKQATm7cio4sBemHieTnovQ">1.20E beta</a></li>
             <li class="article_text">For android 16 that's <a href="https://mega.nz/file/gFREDByL#L7f9MEKMTAGozB1x8XHvb6pnE924CsPirIl6OrIa_2w">2.0G alpha</a></li>
           </ul>
-          <p class="article_text">If you have a Key2LE download build <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/20260615/lineage-22.2-20260615-UNOFFICIAL-luna.zip">20260615 (local update)</a></p>
+          <p class="article_text">If you have a Key2LE download build <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.0a/lineage-22.2-20260622-UNOFFICIAL-zkrab-v1.0a-luna.zip">ZKrab-v1.0a (local update)</a></p>
           <p class="article_text">NOTE: You can get around the file too large popup by enabling the show desktop site option in your browser's settings</p>
           <p class="article_text">If you have a Key2 extract the zip file you downloaded, you don't need too on a Key2LE</p>
           <p class="article_text">Go to Settings  -> System -> System Update.</p>
@@ -596,7 +597,7 @@ footer {
             <li class="article_text">For android 15 with kernel 4.19 that's <a href="https://mega.nz/file/MBYX3I4J#WFQ04jrdC120pkh66xbCyKQATm7cio4sBemHieTnovQ">1.20E beta</a></li>
             <li class="article_text">For android 16 that's <a href="https://mega.nz/file/gFREDByL#L7f9MEKMTAGozB1x8XHvb6pnE924CsPirIl6OrIa_2w">2.0G alpha</a></li>
           </ul>
-          <p class="article_text">If you have a Key2LE download build <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/20260615/LOS22_Key2LE_20260615.zip">20260615</a></p>
+          <p class="article_text">If you have a Key2LE (Luna) download android 15 build <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.0a/LOS22_Key2LE_ZKrab-v1.0a.zip">ZKrab-v1.0a</a>.</p>
           <p class="article_text">NOTE: If you are switching to a version with a different kernel or downgrading to an older android version you must wipe your data.</p>
           <p class="article_text">Once your rom download finishes extract it's .zip file, and enter the directory it extracted to.</p>
           <p class="article_text">NOTE: If your updating to android 16 and want google services you need to use <a href="https://github.com/MindTheGapps/16.0.0-arm64/releases/latest">MindTheGapps 16</a>.</p>
@@ -634,7 +635,7 @@ footer {
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">LineageOS UNOFFICIAL changelog</h3>
-        <p class="article_date"><var class="article-date-var">LOS 22.2:</var> 1.8A <var class="article-date-var">LOS 22.2 + K4.19:</var> 1.20E <var class="article-date-var">LOS 23.2:</var> 2.0G <var class="article-date-var">Key2LE:</var> 20260606</p>
+        <p class="article_date"><var class="article-date-var">LOS 22.2:</var> 1.8A <var class="article-date-var">LOS 22.2 + K4.19:</var> 1.20E <var class="article-date-var">LOS 23.2:</var> 2.0G <var class="article-date-var">Key2LE:</var> ZKrab-v1.0a</p>
       </label>
       <input type="checkbox" id="article_key2_changelog" name="article_key2_changelog">
         <div class="article_contents" id="article_key2_changelog_contents">
@@ -857,31 +858,23 @@ footer {
             <p class="article_section_right"></p>
           </div>
           <p class="article_divider_small"></p>
-          <h4 class="article_header">Working:</h4>
-          <ul class="article_list">
-            <li class="article_text">WiFi</li>
-            <li class="article_text">Bluetooth</li>
-            <li class="article_text">NFC</li>
-            <li class="article_text">System sounds</li>
-            <li class="article_text">Fingerprint scanner</li>
-            <li class="article_text">Sensors</li>
-            <li class="article_text">SD Cards</li>
-            <li class="article_text">USB storage</li>
-            <li class="article_text">GPS</li>
-            <li class="article_text">SELinux and encryption</li>
-            <li class="article_text">Media audio</li>
-            <li class="article_text">Cellular data (basic testing)</li>
-            <li class="article_text">SMS (basic testing)</li>
-            <li class="article_text">2G/3G calling (basic testing)</li>
-            <li class="article_text">Camera</li>
-            <li class="article_text">Flashlight</li>
-          </ul>
-          <p class="article_divider_small"></p>
-          <h4 class="article_header">Not working</h4>
-          <ul class="article_list">
-            <li class="article_text">VoIP calling</li>
-            <li class="article_text">Anything else not listed here probably doesn't work :0</li>
-          </ul>
+          <h4 class="article_header"><a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.0a/LOS22_Key2LE_ZKrab-v1.0a.zip">ZKrab-v1.0a</a></h4>
+          <p class="article_text">FIXED: Video recording with front-facing camera</p>
+          <p class="article_text">FIXED: Video recording with other camera apps (Open Camera, Gcam)</p>
+          <p class="article_text">The auxiliary rear camera is now selectable (it gives a slightly wider field of view than the main camera)  For videos, switch to maximum resolution to avoid cropping</p>
+          <p class="article_text">Other camera improvement patches adapted from Key2</p>
+          <p class="article_text">VoLTE/VT/WFC enabled (not tested), IMS package updated</p>
+          <p class="article_text">Default ZRAM size increased from 1 GB to 2 GB</p>
+          <p class="article_text">Alt-key handing fixed with all keyboard apps</p>
+          <p class="article_text">Holding Alt for alt-lock and holding Shift for caps-lock now supported</p>
+          <p class="article_text">QWERTY/AZERTY keyboard layouts/symbols fixed</p>
+          <p class="article_text">Pastiera keyboard removed (can be manually installed from https://github.com/palsoftware/pastiera/releases/latest)</p>
+          <p class="article_text">Stock screen density value is now used (you may want to change the settings in Settings/Display/Display size and text to suit your preferences after this update)</p>
+          <p class="article_text">VOIP update (not tested)</p>
+          <p class="article_text">exfat support enabled (not tested)</p>
+          <p class="article_text">Other LTE updates (not tested)</p>
+          <p class="article_text">BT SCO/VOIP update (not tested)</p>
+          <p class="article_text">GPS config fix (not tested)</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header"><a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/20260615/LOS22_Key2LE_20260615.zip">20260615</a></h4>
           <p class="article_text">FIXED: Camera and flashlight</p>
