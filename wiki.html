@@ -480,7 +480,7 @@ footer {
         <div class="article_contents" id="article_krab_contents">
           <p class="article_divider"></p>
           <h4 class="article_header">Requirements</h4>
-          <p class="article_text">NOTE: If you have any questions or issues you can ask in the BlackBerry Android hideout discord server, the invite is <a href="https://discord.gg/BuJURQD6Qb">https://discord.gg/BuJURQD6Qb</a></p>
+          <p class="article_text">NOTE: If you have any questions or issues ask in the BlackBerry Android hideout discord server, the invite is <a href="https://discord.gg/BuJURQD6Qb">https://discord.gg/BuJURQD6Qb</a></p>
           <p class="article_text">A Windows or linux computer</p>
           <p class="article_text">You have the android platform tools installed, if you don't you can get them for windows <a href="https://developer.android.com/tools/releases/platform-tools">here</a> and on linux it's packaged as <code class="article_code">android-tools</code> on most distros and as <code class="article_code">android-sdk-platform-tools</code> on debian linux and it derivatives.</p>
           <p class="article_text">(Windows): You have the <a href="https://mega.nz/file/YVI0VKpR#38iPAMEtTwjMHS5Ykts37pLegy9ktQ2t1X-Ro2M82WI">BlackBerry USB drivers</a> installed</p>
@@ -937,6 +937,16 @@ footer {
           <h4 class="article_header">Root Tweaks</h4>
           <p class="article_text"><a href="https://github.com/nozerorma/key2-tweaks">Key2 Tweaks</a>: A small utility app to enable keyboard passcode entry, disable the nav keys when the keyboard is open and replace the built in EQ.</p>
           <p class="article_text"><a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_wumbomumbo/k2prodfix.zip">k2prodfix</a>: A magisk module by wumbomumbo lets you download BlackBerry services from the play store and make them think that they're running on an unmoddified Key2, it also adds more volume steps and hardware bluetooth A2DP offload. If you have bluetooth issues after installing use <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_wumbomumbo/k2prodfixlite.zip">the lite version</a> instead.</p>
+          <p class="article_divider_small"></p>
+          <h4 class="article_header">Increase smoothness</h4>
+          <p class="article_text">Go into Settings -> Apps -> App battery usage</p>
+          <p class="article_text">Set the drop down to 'Optimized'</p>
+          <p class="article_text">Disable background usage for ALL apps you don't need to run in the background</p>
+          <p class="article_text">NOTE: Make sure NOT disable any apps you get notifications from, use to play media or have set as a default app (keyboard app, launcher, etc)</p>
+          <p class="article_text">Next go into Setting -> System -> Developer options</p>
+          <p class="article_text">Enable USB debugging and plug the device into your computer</p>
+          <p class="article_text">Run <code class="article_code">adb shell "settings put global animator_duration_scale 0.8"</code> then click allow on the phone</p>
+          <p class="article_text">Disable USB debugging</p>
           <p class="article_divider_small"></p>
           <h4 class="article_header">Resizing ZRAM</h4>
           <p class="article_text">NOTE: Do NOT install this, I'm currently in the process of rewriting it into a magisk module</p>
