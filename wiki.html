@@ -227,7 +227,8 @@ a:active {
 .article_title {
   color: var(--text);
   width: auto;
-  margin-right: var(--article-padding)
+  margin-right: var(--article-padding);
+  text-shadow: 2px 2px 10px color-mix(in oklab, var(--mantle) 70%, transparent);
 }
 .article_name {
   text-transform: uppercase;
@@ -241,6 +242,7 @@ a:active {
   margin-top: 8px;
   margin-bottom: 8px;
   min-height: 2px;
+  box-shadow: 2px 2px 10px color-mix(in oklab, var(--mantle) 70%, transparent);
 }
 .article_date {
   font-size: 15px;
@@ -295,6 +297,7 @@ a:active {
   font-size: 16px;
   margin-bottom: 3px;
   font-weight: 500;
+  text-shadow: 2px 2px 10px color-mix(in oklab, var(--mantle) 70%, transparent);
 }
 .article_code {
   background-color: color-mix(in oklab, var(--surface0) 10%, transparent);
@@ -320,6 +323,7 @@ li {
   margin-bottom: 4px;
   color: var(--text);
   font-weight: 800 !important;
+  text-shadow: 2px 2px 10px color-mix(in oklab, var(--mantle) 80%, transparent);
 }
 .article_divider {
   background: transparent;
@@ -441,7 +445,7 @@ footer {
             <p class="article_text">Press 'Select a boot image to patch' and point it to your boot.img file</p>
             <p class="article_text">Enter a password into the SuperKey box</p>
             <p class="article_text">NOTE: Make sure to write it down somewhere as you will need it later</p>
-            <p class="article_text">Move the outputted .img file to you computer.</p>
+            <p class="article_text">Move the .img file it output to you computer.</p>
           <p class="article_divider_small"></p>
           
           <h4 class="article_header">Flashing APatch</h4>
@@ -485,7 +489,7 @@ footer {
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">LineageOS port FAQ</h3>
-        <p class="article_date"><var class="article-date-var">Last editied:</var> Jun 26 2026</p>
+        <p class="article_date"><var class="article-date-var">Last editied:</var> Jun 29 2026</p>
       </label>
       <input type="checkbox" id="article_faq" name="article_faq">
         <div class="article_contents" id="article_faq_contents">
@@ -561,7 +565,7 @@ footer {
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">Install Guide for LineageOS UNOFFICIAL</h3>
-        <p class="article_date"><var class="article-date-var">Last editied:</var> Jun 26 2026</p>
+        <p class="article_date"><var class="article-date-var">Last editied:</var> Jun 29 2026</p>
       </label>
       <input type="checkbox" id="article_krab" name="article_krab">
         <div class="article_contents" id="article_krab_contents">
@@ -573,7 +577,6 @@ footer {
             <p class="article_text">You have the android platform tools installed, if you don't you can get them for windows <a href="https://developer.android.com/tools/releases/platform-tools">here</a> and on linux it's packaged as <code class="article_code">android-tools</code> on most distros and as <code class="article_code">android-sdk-platform-tools</code> on debian linux and it derivatives.</p>
             <p class="article_text">(Windows): You have the <a href="https://mega.nz/file/YVI0VKpR#38iPAMEtTwjMHS5Ykts37pLegy9ktQ2t1X-Ro2M82WI">BlackBerry USB drivers</a> installed</p>
             <p class="article_text">NOTE: If you don't know the path of a file you can drag it from your filemanager into a terminal window</p>
-            <p class="article_text">You have read the FAQ article</p>
           <p class="article_divider_small"></p>
           
           <h4 class="article_header">If your bootloader is already unlocked skip to the flashing lineageos section</h4>
@@ -664,7 +667,7 @@ footer {
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">Updating to a newer LineageOS UNOFFICIAL build</h3>
-        <p class="article_date"><var class="article-date-var">Last editied:</var> Jun 26 2026</p>
+        <p class="article_date"><var class="article-date-var">Last editied:</var> Jun 29 2026</p>
       </label>
       <input type="checkbox" id="article_krab_update" name="article_krab_update">
         <div class="article_contents" id="article_krab_update_contents">
@@ -987,7 +990,7 @@ footer {
           </div>
           <p class="article_divider_small"></p>
           
-          <h4 class="article_header"><a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/20260615/LOS22_Key2LE_20260615.zip">ZKrab-v1.1a Jun 28</a></h4>
+          <h4 class="article_header"><a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/20260615/LOS22_Key2LE_20260615.zip">ZKrab-v1.1a Jun 28 2026</a></h4>
             <p class="article_text">QWERTY/AZERTY keyboard layouts/symbols fixed (for real this time)</p>
             <p class="article_text">IME Switcher: Enable choosing keyboard shortcut in Settings/System/Blackberry keyboard (default Alt+Enter)</p>
             <p class="article_text">Keyboard and nav button brightness settings moved to Settings/System/Blackberry keyboard</p>
@@ -998,7 +1001,7 @@ footer {
             <p class="article_text">NFC stability fix</p>
           <p class="article_divider_small"></p>
           
-          <h4 class="article_header"><a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.0a/LOS22_Key2LE_ZKrab-v1.0a.zip">ZKrab-v1.0a Jun 22</a></h4>
+          <h4 class="article_header"><a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.0a/LOS22_Key2LE_ZKrab-v1.0a.zip">ZKrab-v1.0a Jun 22 2026</a></h4>
             <p class="article_text">FIXED: Video recording with front-facing camera</p>
             <p class="article_text">FIXED: Video recording with other camera apps (Open Camera, Gcam)</p>
             <p class="article_text">The auxiliary rear camera is now selectable (it gives a slightly wider field of view than the main camera)  For videos, switch to maximum resolution to avoid cropping</p>
