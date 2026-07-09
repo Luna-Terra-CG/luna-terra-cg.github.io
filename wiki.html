@@ -1203,7 +1203,7 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
           <h4 class="article_header">Booting ACQ160 with an unlocked bootloader</h4>
             <p class="article_text">Download the modded boot file from <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_bochenek/acq160-mfi-boot.img">here</a>.</p>
             <p class="article_text">Or if you want to root you need to use <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_krab/boot160-nosfi-pt0-root290.img">this boot file</a> and <a href="https://github.com/topjohnwu/Magisk/releases#release-v29.0">and Magisk v29.0</a></p>
-            <p class="article_text">Open a terminal where you downloaded the file and run <code class="article_code">fastboot flash boot acq160-mfi-boot.img</code>, or if your rooting run <code class="article_code"><code class="article_code">fastboot flash boot boot160-nosfi-pt0-root290.img</code></p>
+            <p class="article_text">Open a terminal where you downloaded the file and run <code class="article_code">fastboot flash boot acq160-mfi-boot.img</code>, or if your rooting run <code class="article_code">fastboot flash boot boot160-nosfi-pt0-root290.img</code></p>
           <p class="article_divider_small"></p>
           
           <h4 class="article_header">Fixing wifi, bluetooth & cellular not working</h4>
@@ -1224,7 +1224,7 @@ swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /
               <li><code class="article_code">adb shell dd if=/tmp/persist of=/dev/block/by-name/persist</code></li>
               <li><code class="article_code">adb reboot bootloader</code></li>
             </ul>
-            <p class="article_text">Lock your bootloader again then redo the section flashing android 8.1 of the guide</p>
+            <p class="article_text">Lock your bootloader again then redo the flashing section android 8.1 of the guide</p>
           <p class="article_divider"></p>
           
         </div>
