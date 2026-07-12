@@ -419,7 +419,7 @@ footer {
         <p class="article_section_text">BlackBerry Key2 & Key2LE</p>
         <p class="article_section_right"></p>
       </div>
-      <h4 class="article_name" style="color:var(--text);text-align:center;margin-right:var(--article-padding);">Due to lack of free time krab-ubica has put android 16 development on indefinent pause</h4>
+      <h4 class="article_name" style="color:var(--text);text-align:center;margin-right:var(--article-padding);">All rom development is on hold indefinitely</h4>
       <label for="article_integritySpoofing" class="article_title">
         <p class="article_name_divider"></p>
         <svg class="article_arrow" viewBox="0 0 54 85" xmlns="http://www.w3.org/2000/svg">
@@ -1104,6 +1104,8 @@ footer {
           <h4 class="article_header">Root Tweaks</h4>
             <p class="article_text"><a href="https://github.com/nozerorma/key2-tweaks">Key2 Tweaks</a>: A small utility app to enable keyboard passcode entry, disable the nav keys when the keyboard is open and replace the built in EQ.</p>
             <p class="article_text"><a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_wumbomumbo/k2prodfix.zip">k2prodfix v2.1</a>: A magisk module by wumbomumbo that lets you download BlackBerry services from the play store and make them think that they're running on an unmoddified Key2, it also adds more volume steps, hardware bluetooth A2DP offload, set swappiness to 60, and increase the max aquired buffers in SurfaceFlinger. If you have bluetooth issues after installing use <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_wumbomumbo/k2prodfixlite.zip">the lite version</a> instead.</p>
+            <p class="article_text">Resize ZRAM: Changes the zram to a larger size, only useful on android 15 + kernel 4.4 available in <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_luna/zram-2g.zip">2GB</a>, <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_luna/zram-3g.zip">3GB</a> & <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_luna/zram-4g.zip">4GB</a> versions.</p>
+            <p class="article_text"><a href="https://github.com/kgr17/Key2Toolbox">Key2 Toolbox</a>: A root app that bundles a quite a few tweaks into one app, the full list is on the github repo</p>
           <p class="article_divider_small"></p>
           
           <h4 class="article_header">Increase UI smoothness</h4>
@@ -1116,33 +1118,7 @@ footer {
             <p class="article_text">Run <code class="article_code">adb shell "settings put global animator_duration_scale 0.8"</code> then click allow on the phone</p>
             <p class="article_text">Disable USB debugging</p>
           <p class="article_divider_small"></p>
-          
-          <h4 class="article_header">Resizing ZRAM</h4>
-            <p class="article_text">NOTE: Do NOT install this, I'm currently in the process of rewriting it into a magisk module</p>
-            <p class="article_text">Enable 'USB debugging' and 'Rooted debugging' in developer options</p>
-            <p class="article_text">Run <code class="article_code">adb root</code></p>
-            <p class="article_text">If you want 2gb of swap run this command</p>
-            <p class="article_divider_small"></p>
-<pre class="article_code">adb shell "mkdir -p /data/adb/service.d && echo '#!/system/bin/sh
-echo 3 > /proc/sys/vm/drop_caches
-swapoff /dev/block/zram0
-echo 1 > /sys/block/zram0/reset
-echo 2147483648 > /sys/block/zram0/disksize
-mkswap /dev/block/zram0
-swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /data/adb/service.d/99_delayed_zram.sh"
-</pre>
-            <p class="article_divider_small"></p>
-            <p class="article_divider_small"></p>
-            <p class="article_text">If you want 4gb of swap run this command</p>
-            <p class="article_divider_small"></p>
-<pre class="article_code">adb shell "mkdir -p /data/adb/service.d && echo '#!/system/bin/sh
-echo 3 > /proc/sys/vm/drop_caches
-swapoff /dev/block/zram0
-echo 1 > /sys/block/zram0/reset
-echo 4294967296 > /sys/block/zram0/disksize
-mkswap /dev/block/zram0
-swapon /dev/block/zram0' > /data/adb/service.d/99_delayed_zram.sh && chmod 755 /data/adb/service.d/99_delayed_zram.sh"
-</pre>
+
           <p class="article_divider"></p>
           
         </div>
