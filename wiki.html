@@ -467,7 +467,6 @@ footer {
             <p class="article_text">Download Integrity-Box <a href="https://github.com/MeowDump/Integrity-Box/releases/latest">from here</a>, you need '{version}-Integrity-Box-{DD}-{MM}-{YYYY}.zip'.</p>
             <p class="article_text">Download NeoZygisk <a href="https://github.com/JingMatrix/NeoZygisk/releases/latest">from here</a>, you need 'NeoZygisk-{version}-release.zip'.</p>
             <p class="article_text">Download TEESimulator <a href="https://github.com/JingMatrix/TEESimulator/releases/latest">from here</a>, you need 'TEESimulator-{version}-Release.zip'.</p>
-            <p class="article_text">Download Zygisk-Assistant <a href="https://github.com/snake-4/Zygisk-Assistant/releases/latest">from here</a>, you need 'Zygisk-Assistant-{version}-{commitID}-release.zip'.</p>
             <p class="article_divider_small"></p>
           
             <p class="article_text">Open APatch and enter the APModule tab. (second from the right)</p>
@@ -571,7 +570,7 @@ footer {
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">Install Guide for LineageOS UNOFFICIAL</h3>
-        <p class="article_date"><var class="article-date-var">Last editied:</var> Jul 15 2026</p>
+        <p class="article_date"><var class="article-date-var">Last editied:</var> Jul 17 2026</p>
       </label>
       <input type="checkbox" id="article_krab" name="article_krab">
         <div class="article_contents" id="article_krab_contents">
@@ -591,7 +590,7 @@ footer {
           <h4 class="article_header">Stock Firmware Preparation</h4>
             <p class="article_text">Remove your lockscreen password and google account from your device</p>
             <p class="article_text">If the option to remove you passcode or google account is grayed out factory reset from settings</p>
-            <p class="article_text">If you do not remember your password follow <a href="https://youtu.be/HPddEUfth7A">theses instructions</a> from the device setup.</p>
+            <p class="article_text">If you do not remember your password put in random passwords until the device automatically factory resets, then follow <a href="https://youtu.be/HPddEUfth7A">theses instructions</a> from the device setup.</p>
             <p class="article_divider_small"></p>
             
             <p class="article_text">For the Key2 (Athena) download the <a href="https://mega.nz/file/pdBjAARa#l5WNgDKoaRWN-ORkK-lBPhGqkwyFqz91HlU3r-CGWfs">ACQ160 Autoloader</a>.</p>
@@ -606,7 +605,7 @@ footer {
           <p class="article_divider_small"></p>
           
           <h4 class="article_header">Unlocking the bootloader (Windows)</h4>
-            <p class="article_text">Download the windows unlock tool from <a href="https://mega.nz/file/dIIGUaJA#Zx-GFWvQgLoDZ--qLKJ-SGh8lnp734VozBlmPNKHFJE">here</a> and extract the zip file, if you don't already have it installed you may need to install the microslop <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version">VC++ redists</a>.</p>
+            <p class="article_text">Download the windows unlock tool from <a href="https://mega.nz/file/dIIGUaJA#Zx-GFWvQgLoDZ--qLKJ-SGh8lnp734VozBlmPNKHFJE">here</a> and extract the zip file, if you don't already have it you may need to install the microslop <a href="https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-supported-redistributable-version">VC++ redists</a>.</p>
             <p class="article_text">Open the unlock tool.</p>
             <p class="article_text">Press the scan in the upper right corner, once your devices is found press the 'Unlock BootLoader' button</p>
             <p class="article_text">NOTE: The progress bar will stay at 75% even once the bootloader unlock finishes</p>
@@ -652,8 +651,8 @@ footer {
             <p class="article_text">NOTE: If your flashing android 16 you need to cancel out of the apply update menu then go back in for it to work</p>
             <p class="article_text">If you have a Key2 run <code class="article_code">adb sideload /path/to/lineage-{lineageVersion}-{date}-UNOFFICIAL-krab-{version}-athena.zip</code></p>
             <p class="article_text">If you have a Key2LE run <code class="article_code">adb sideload /path/to/lineage-22.2-{date}-UNOFFICIAL-{build}-luna.zip</code></p>
-            <p class="article_text">If you have any additional zips to flash(ie: gapps, magisk) go into 'Apply update' -> 'Apply update from adb' and run <code class="article_code">adb sideload /path/to/package.zip</code>, once the signature verification failed messages appears select yes.</p>
-            <p class="article_text">If you get a not enough space on system partion error when flashing gapps go into 'Factory reset/Format data' and format the system partition, then re-sideload lineageOS and gapps.</p>
+            <p class="article_text">If you have any additional zips to flash(ie: gapps, magisk) go into 'Apply update' -> 'Apply update from adb' and run <code class="article_code">adb sideload /path/to/package.zip</code>, once the signature verification failed message appears select yes.</p>
+            <p class="article_text">If you get a not enough space on system partion error when flashing gapps go into 'Factory reset/Format data' and format the system partition, then re-sideload LineageOS and gapps.</p>
             <p class="article_text">Select the 'Reboot system'</p>
             <p class="article_text">If you get set back to recovery and sideloading the rom again does not fix it you may have a 'bcb recovery' unit, to get around that boot into the bootloader and run <code class="article_code">fastboot flash recovery boot.img</code></p>
             <p class="article_divider_small"></p>
@@ -673,7 +672,7 @@ footer {
           <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
         </svg>
         <h3 class="article_name">Updating to a newer LineageOS UNOFFICIAL build</h3>
-        <p class="article_date"><var class="article-date-var">Last editied:</var> Jul 15 2026</p>
+        <p class="article_date"><var class="article-date-var">Last editied:</var> Jul 17 2026</p>
       </label>
       <input type="checkbox" id="article_krab_update" name="article_krab_update">
         <div class="article_contents" id="article_krab_update_contents">
@@ -681,9 +680,10 @@ footer {
           
           <h4 class="article_header">Requirements</h4>
             <p class="article_text">You have ADB and fastboot installed</p>
-            <p class="article_text">NOTE: If you need to downgrade you can do so with the recovery update method. (If your on a K2LE you can't downgrade to a version under 1.4a without wiping you data)</p>
-            <p class="article_text">NOTE: The Key2LE rom has full OTA updates, you can update just like you would on any other android phone!</p>
             <p class="article_text">Your updating to a rom of the *same* varient, if not follow the 'Flashing LineageOS' section of the install guide.</p>
+            <p class="article_text">If you need to downgrade you can do so with the recovery update method.
+            <p class="article_text">NOTE: If your on a Key2LE you can't downgrade to a version under 1.4a without wiping you data</p>
+            <p class="article_text">The Key2LE rom has full OTA updates, you don't need this guide and can just update from settings</p>
             <p class="article_divider_small"></p>
             <h4 class="article_header">Updating without a computer (recommended)</h4>
             <p class="article_text">NOTE: Updating this way does not keep root</p>
@@ -730,7 +730,7 @@ footer {
             <p class="article_text">If your rooted select 'Advanced' then 'Reboot to bootloader', once the bootloader appears flash your modified boot.img file and boot up the system.</p>
           <p class="article_divider_small"></p>
           
-          <h4 class="article_header">Fixing app installs failing or being unable to set a passcode</h4>
+          <h4 class="article_header">Fixing app installs failing, being unable to set a passcode or developer settings crashing</h4>
             <p class="article_text">Boot into recovery</p>
             <p class="article_text">NOTE: The easiest way to get into recovery is by using the <code class="article_code">adb reboot recovery</code> command</p>
             <p class="article_text">Once the recovery menu appears select Advanced -> Enable ADB</p>
@@ -1100,7 +1100,7 @@ footer {
          id="path1"></path>
         </svg>
         <h3 class="article_name">Apps & tweaks</h3>
-        <p class="article_date"><var class="article-date-var">Last editied:</var> Jul 12 2026</p>
+        <p class="article_date"><var class="article-date-var">Last editied:</var> Jul 17 2026</p>
       </label>
       <input type="checkbox" id="article_key2_apps" name="article_key2_apps">
         <div class="article_contents" id="article_key2_apps_contents">
@@ -1136,14 +1136,19 @@ footer {
           <p class="article_divider_small"></p>
           
           <h4 class="article_header">Increase UI smoothness</h4>
+            <p class="article_text">NOTE: This also makes battery life a little better</p>
             <p class="article_text">Go into Settings -> Apps -> App battery usage</p>
             <p class="article_text">Set the drop down to 'Optimized'</p>
             <p class="article_text">Disable background usage for ALL apps you don't need to run in the background</p>
             <p class="article_text">NOTE: Make sure NOT disable any apps you get notifications from, use to play media or have set as a default app (keyboard app, launcher, etc)</p>
-            <p class="article_text">Next go into Setting -> System -> Developer options</p>
-            <p class="article_text">Enable USB debugging and plug the device into your computer</p>
-            <p class="article_text">Run <code class="article_code">adb shell "settings put global animator_duration_scale 0.8"</code> then click allow on the phone</p>
-            <p class="article_text">Disable USB debugging</p>
+          <p class="article_divider_small"></p>
+          
+          <h4 class="article_header">Using gesture navigation</h4>
+            <p class="article_text">Go into Settings -> System -> Buttons</p>
+            <p class="article_text">Enable the 'Enable on-screen nav bar' toggle</p>
+            <p class="article_text">Check the 'Gesture navigation' radio button in Settings -> System -> Gestures -> Navigation mode</p>
+            <p class="article_text">Reboot to make the back gesture work</p>
+            <p class="article_text">NOTE: If you want to go back to using the hardware keys disable the 'Enable on-screen nav bar' setting</p>
           <p class="article_divider_small"></p>
 
           <p class="article_divider"></p>

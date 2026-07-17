@@ -2,7 +2,7 @@
 <html lang="en_NS">
 
 <head>
-  <title>Boring and undecorated guestbook</title>
+  <title>Media</title>
   <link rel="icon" type="image/x-icon" href="assets/nonbinary.ico">
   <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -10,7 +10,7 @@
 <style>
 
 :root {
-  --accent: var(--green) !important;
+  --accent: var(--maroon) !important;
   --accent-alt: color-mix(in oklab, var(--accent) 80%, var(--overlay2)) !important;
 }
 /* basics */
@@ -47,7 +47,7 @@ a:active {
 
 /* background */
 .background {
-  background: linear-gradient(180deg in oklab, color-mix(var(--base) 69%, var(--mantle) ), color-mix(var(--accent) 30%, var(--surface0)));
+  background: linear-gradient(165deg in oklab, color-mix(var(--base) 69%, var(--mantle) ), color-mix(var(--accent) 30%, var(--surface2)));
   position: fixed;
   top: 0px;
   bottom: 0px;
@@ -66,12 +66,17 @@ a:active {
 .background_scanLines {
   background-image: url("assets/scanlines.png");
   background-repeat: repeat;
-  opacity: 0.04;
+  opacity: 0.135;
   position: fixed;
   top: 0px;
   bottom: 0px;
   right: 0px;
   left: 0px;
+}
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 /* sidebar */
@@ -85,7 +90,6 @@ a:active {
   border-top: 22px solid var(--accent-alt);
   bottom: 15%;
   position: absolute;
-  left: 0px;
 }
 .sidebar_items {
   padding-top: 0px;
@@ -147,50 +151,25 @@ a:active {
   width: 38px;
 }
 /* change active tab color */
-.sidebar_comms {
+.sidebar_media {
   background: var(--accent-alt);
   color: var(--base);
   outline: 2px solid var(--accent-alt);
 }
-.sidebar_comms:hover {
+.sidebar_media:hover {
   outline: 2px solid var(--accent-alt);
 }
 
-/* site */
-.guestbook {
-  position: fixed;
-  right: 0%;
-  left: auto;
-  top: 0%;
-  bottom: 0%;
-  background: linear-gradient(170deg in oklab, color-mix(in oklab, color-mix(in oklab, var(--base) 90%, var(--accent)) 57%, transparent) , color-mix(in oklab, var(--base) 45%, transparent));
-  backdrop-filter: blur(4px);
-}
-.atabook_container {
-  width: 600px;
-  height: 100%;
-}
-.atabook {
-  height: 100%;
-  width: 100%;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  border: transparent 0px solid;
-}
-.visitCounter {
-  padding-top: 16px;
-  color: var(--text);
-}
 
 </style>
 </head>
 
 <body>
   <div class="container">
-    <div class="background">
+    <aside class="background">
       <p class="background_stars"></p>
       <p class="background_scanLines"></p>
-    </div>
+    </aside>
     <aside class="sidebar">
       <div class="sidebar_items">
         <p class="ghost_margin"> </p>
@@ -243,12 +222,5 @@ a:active {
         </svg>
       </div>
     </aside>
-    <div class="guestbook">
-      <div class="atabook_container">
-        <iframe class="atabook" src="https://daphnis-past-midnight.atabook.org/"></iframe>
-      </div>
-    </div>
   </div>
 </body>
-
-</html>
