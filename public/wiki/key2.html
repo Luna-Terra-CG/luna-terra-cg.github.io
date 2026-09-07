@@ -488,7 +488,7 @@ footer {
                 <p class="article_text">Version <a href="https://github.com/bmax121/APatch/releases#release-11142">11142 of the APatch app</a> is installed.</p>
               <p class="article_divider_small"></p>
 
-              <h4 class="article_header">apatch version 11219 is known to cause a bootloop on the Key2(LE) don't update to it!!!</h4>
+              <h4 class="article_header">apatch version 11219 and newer is known to cause a bootloop on the Key2(LE) on roms with kernel 4.4!!!</h4>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Patching boot.img</h4>
@@ -539,7 +539,7 @@ footer {
               <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
             </svg>
             <h3 class="article_name">LineageOS port FAQ</h3>
-            <p class="article_date"><var class="article-date-var">Last editied:</var> 04 Sep 2026</p>
+            <p class="article_date"><var class="article-date-var">Last editied:</var> 07 Sep 2026</p>
           </label>
           <input type="checkbox" id="article_faq" name="article_faq">
             <div class="article_contents" id="article_faq_contents">
@@ -554,7 +554,7 @@ footer {
 
               <h4 class="article_header">Is performance better than android 8.1?</h4>
                 <p class="article_text">Yes! The combination of optimizations from newer android and lighter weight rom can make it noticeably faster, even on android 15 with kernel 4.4</p>
-                <p class="article_text">Though becuase of it being an older mid-range phone it does heavily depend on how you've configured it and what apps you have installed</p>
+                <p class="article_text">Though becuase of it being an older mid-range phone it does <i>*heavily*</i> depend on how you've configured it and what apps you have installed</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Will I get timely security updates?</h4>
@@ -571,6 +571,16 @@ footer {
 
               <h4 class="article_header">Can I do this with abx563, abn088, acw142, etc rom build installed?</h4>
                 <p class="article_text">It doesn't matter what android 8.1 build you currently have installed, flashing the rom build required for the bootloader unlock is part of the guide.</p>
+              <p class="article_divider_small"></p>
+
+              <h4 class="article_header">Will this work with my carrier?</h4>
+                <p class="article_text">If your sim card works on the stock roms it will most likely work on Lineage OS, but it cannot be guaranteed.</p>
+                <p class="article_text">Some carriers in France and Vietnam are known have to problems with VoLTE be registered (Unfortunately I cannot find a list at time of writing)</p>
+              <p class="article_divider_small"></p>
+
+              <h4 class="article_header">Does dual sim work?</h4>
+                <p class="article_text">Sometimes. For an unkown reason some devices do not see the second IMEI on LineageOS.</p>
+                <p class="article_text">And the devs aren't able to fix it right now because it works on their dual sim devices.</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Will this LineageOS port ever be made official?</h4>
@@ -591,7 +601,7 @@ footer {
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">What is the difference between the ROMs here and on CrackBerry?</h4>
-                <p class="article_text">The ROMs linked here are the builds put out by the rom developers, the one on CrackBerry is the Key2's 1.20G rom with a newer android security patch.</p>
+                <p class="article_text">The ROMs linked here are the builds put out by the rom developers, the one on CrackBerry is the Key2's 1.20G rom with a newer android security patch applied via AI.</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Will versions of android older than 15 ever be ported?</h4>
@@ -599,13 +609,21 @@ footer {
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Can I pay someone to do this to my device?</h4>
-                <p class="article_text">Call and ask few a local repair shops or a techy person you know, and ask if you can pay them to install a custom rom on your phone. At least one should be able too. And it should be much much quicker than mailing it to someone.</p>
+                <p class="article_text">Call a local repair shops or a techy person you know, and ask if you can pay them to install a custom rom on your phone.</p>
+                <p class="article_text">At least one should be able too. And it should be much much quicker than mailing it to someone.</p>
                 <p class="article_text">Note: Make sure to call and ASK, some repair shops won't do this and almost none advertise doing this.</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Who are the rom developers?</h4>
                 <p class="article_text">Key2: zzach(zapaca), krab-ubica(tim-ecoder) Previously: BotchedRPR</p>
                 <p class="article_text">Key2LE: zzach(zapaca) Previously: BotchedRPR</p>
+              <p class="article_divider_small"></p>
+
+              <h4 class="article_header">Why are there 4 people putting out roms?</h4>
+                <p class="article_text">BotchedRPR (Bochenek) was the original person releasing roms, but he quit in early march 2026.</p>
+                <p class="article_text">Krab-Ubica was helping develop the roms even before they were public, so he started releasing Key2 roms after BotchedRPR left.</p>
+                <p class="article_text">zzach picked development of the Key2LE roms in June 2026, and started releasing Key2 roms with the 4.4 kernel since krab-ubica stopped developing them in favor of the 4.19 kernel roms in mid April.</p>
+                <p class="article_text">coniteCB is kinda just putting them on crackberry and is not doing any actual development.</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Who runs this website, is it official?</h4>
@@ -616,6 +634,7 @@ footer {
               <h4 class="article_header">I want to contribute, where is the source code?</h4>
                 <p class="article_text">Key2: Kernel 4.4 <a href="https://github.com/orgs/Lineage-BBKey2">https://github.com/orgs/Lineage-BBKey2</a>, Kernel 4.19 <a href="https://github.com/tim-ecoder/lineageos_blackberry_athena">https://github.com/tim-ecoder/lineageos_blackberry_athena</a> (out of date since 1.20D)</p>
                 <p class="article_text">Key2LE: <a href="https://github.com/Lineage-BBKey2LE">https://github.com/Lineage-BBKey2LE</a></p>
+                <p class="article_text">Bootloader unlock: krab-ubica, BotchedRPR(?) and others</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Where can I contact the rom developers, the website writer, or report bugs?</h4>
@@ -639,6 +658,7 @@ footer {
 
               <h4 class="article_header">Requirements</h4>
                 <p class="article_text">Note: If you have any questions or issues ask in the BlackBerry Android hideout discord server, the invite is <a href="https://discord.gg/BuJURQD6Qb">https://discord.gg/BuJURQD6Qb</a></p>
+                <p class="article_text">Note: When asking for install help please don't DM community members, and ask in '# conversion-help' in the Key2 section, and not a random general chat</p>
                 <p class="article_text">DO NOT ASK FOR HELP WITH THIS ROM IN THE OFFICAL LINEAGEOS GROUPS, YOU WILL NOT BE HELPED AND MAY BE BANNED!</p>
                 <p class="article_text">A USB type A to USB type C cable, Usb C to C cables cause issues when flashing!!!</p>
                 <p class="article_text">A Windows or linux computer</p>
@@ -847,8 +867,13 @@ footer {
                   <p class="article_divider_small"></p>
                   <h4 class="article_header">TODO</h4>
                     <ul class="article_list">
-                      <li class="article_text">NFC driver/hal upgrade</li>
-                      <li class="article_text">Haptic driver to led upgrade</li>
+                      <li class="article_text">Solution for Synaptics LCD colors/saturation curve (same as retail)</p>
+                      <li class="article_text">NFC driver/hal upgrade</p>
+                      <li class="article_text">Haptic driver to led upgrade</p>
+                      <li class="article_text">Numpad pin-unlock</p>
+                      <li class="article_text">qwertz/azerty</p>
+                      <li class="article_text">Remove extra-spacing from virtual nav buttons</p>
+                      <li class="article_text">NFC tunings</p>
                     </ul>
                   <p class="article_divider_small"></p>
                   <h4 class="article_header">RECOMENDATION!</h4>
@@ -1206,10 +1231,11 @@ footer {
                 <h4 class="article_header"><a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.20a/LOS22_Key2LE_ZKrab-v1.20a.zip">ZKrab-v1.20a 21 Aug 2026</a></h4>
                   <p class="article_text">Update kernel from 4.4 to 4.19 with kernel adaptions and performance tunings (results in generally faster and smoother performance than kernel 4.4 ROMs)
                   <p class="article_text">Add new FM Radio app (based on https://github.com/iusmac/RevampedFMRadio):</p>
-                  <p class="article_text">Improved UI/UX, “Material You” colours, dark/light theme support, media player notification</p>
-                  <p class="article_text">Allows routing audio to Bluetooth</p>
-                  <p class="article_text">Allows playing without wired headphones as antenna (only works if station reception is strong enough)</p>
-
+                  <ul class="article_list">
+                    <li class="article_text">Improved UI/UX, “Material You” colours, dark/light theme support, media player notification</li>
+                    <li class="article_text">Allows routing audio to Bluetooth</li>
+                    <li class="article_text">Allows playing without wired headphones as antenna (only works if station reception is strong enough)</li>
+                  </ul>
                   <p class="article_text">Old Qualcomm FM Radio app kept and renamed to “FM Radio Legacy”</p>
                   <p class="article_text">Settings/System/Blackberry keyboard: Add independent keyboard and button backlight timeouts and “only light on press” toggles, fixed timeout bugs, removed “Always on” from timeout selection</p>
                   <p class="article_text">App switcher screen: Remove unnecessary padding for on-screen nav buttons when using hardware nav buttons</p>
