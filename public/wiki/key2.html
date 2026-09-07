@@ -389,6 +389,25 @@ footer {
     transform: translate(-5px, -2px);
   }
 }
+#k2-15-419-zkrab {
+   display: none;
+
+  + .changelog_divider > .changelog_arrow {
+    rotate: 270deg;
+    padding-left: 12px;
+    transform: translate(-5px, 2px);
+  }
+}
+#k2-15-419-zkrab:not(:checked) {
+  ~ #k2-15-419-zkrab_changelog {
+    display: none;
+  }
+  + .changelog_divider > .changelog_arrow {
+    rotate: 90deg;
+    padding-left: 12px;
+    transform: translate(-5px, -2px);
+  }
+}
 #k2-15-44 {
    display: none;
 
@@ -547,9 +566,10 @@ footer {
 
               <h4 class="article_header">What is the difference between the rom variants?</h4>
                 <p class="article_text">LOS 22.2-Kernel 4.4 is the most stable version, and is almost at parody with stock in terms of features, but the worst performance.</p>
-                <p class="article_text">LOS 22.2-Kernel 4.19 has the newer kernel from LineageOS 23.2 meaning you get performance and battery improvements, but on the Key2 it doesn't have OTA updates, FM radio, and bunch of misc features. On the Key2LE it is still very new, and has only had 1 release so far. It will replace LOS 22.2-kernel 4.4 as the stable version eventually.</p>
+                <p class="article_text">LOS 22.2-Kernel 4.19 has a newer linux kernel meaning you get performance and battery improvements, but is missing a bunch of misc features from, and is not as stable as LOS 22.2-Kernel 4.4.</p>
+                <p class="article_text">LOS 22.2-Kernel 4.19-zkrab gets all of the improvments from the newer 4.19 kernel but has OTA updates, may be more stable, you can move to and from it from LOS 22.2-Kernel 4.4 without wiping, will be updated more frequently, and has Key2LE support. It will replace LOS 22.2-Kernel 4.4 as the stable version soon.</p>
                 <p class="article_text">Note: LOS 23.2-Kernel 4.19 isn't available on the Key2LE</p>
-                <p class="article_text">LOS 23.2-Kernel 4.19 has the latest android version and slightly better performance but is more buggy and is missing features. GPU performance tends to be much worse because of how much heavier android 16 is.</p>
+                <p class="article_text">LOS 23.2-Kernel 4.19 has the latest android version and better performance than the kernel 4.4 roms but is more buggy and is missing features. GPU performance tends to be much worse because of how much heavier android 16 is.</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Is performance better than android 8.1?</h4>
@@ -658,7 +678,7 @@ footer {
 
               <h4 class="article_header">Requirements</h4>
                 <p class="article_text">Note: If you have any questions or issues ask in the BlackBerry Android hideout discord server, the invite is <a href="https://discord.gg/BuJURQD6Qb">https://discord.gg/BuJURQD6Qb</a></p>
-                <p class="article_text">Note: When asking for install help please don't DM community members, and ask in '# conversion-help' in the Key2 section, and not a random general chat</p>
+                <p class="article_text">Note: When asking for install help please don't DM community members, and ask in '# conversion-help' in the Key2 section, not a '# general' chat.</p>
                 <p class="article_text">DO NOT ASK FOR HELP WITH THIS ROM IN THE OFFICAL LINEAGEOS GROUPS, YOU WILL NOT BE HELPED AND MAY BE BANNED!</p>
                 <p class="article_text">A USB type A to USB type C cable, Usb C to C cables cause issues when flashing!!!</p>
                 <p class="article_text">A Windows or linux computer</p>
@@ -707,18 +727,19 @@ footer {
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Flashing LineageOS</h4>
-                <p class="article_text"><var class="article_header">Alpha and beta builds are *NOT* ready for daily use and are for TESTING PURPOSES ONLY.</var></p>
-                <p class="article_text">Note: If are going to put your sim card in it or aren't sure which variant you want, use LOS 22.2-kernel 4.4</p>
-                <p class="article_text">If you have a Key2 (Athena) download the latest build of your preferred rom variant</p>
+                <p class="article_text"><var class="article_header">Alpha and beta builds may have breaking changes and are not as stable, use at your own risk!</var></p>
+                <p class="article_text">Note: If are going to use it as your daily phone or aren't sure which variant you want, use LOS 22.2-kernel 4.4</p>
+                <p class="article_text">If you have a Key2 (Athena) download the latest build of your preferred Key2 compatable rom variant</p>
                 <ul class="article_list">
                   <li class="article_text">For LOS 22.2-kernel 4.4 download the Key2 version of build <a href="https://github.com/Lineage-BBKey2/distribution/releases/download/v1.11a/LOS22_Key2_ZKrab-v1.11a.zip">ZKrab-v1.11a</a></li>
+                  <li class="article_text">For LOS 22.2-kernel 4.19-zkrab download the Key2 version of build <a href="https://github.com/Lineage-BBKey2/distribution/releases/download/v1.20b/LOS22_Key2_ZKrab-v1.20b.zip">ZKrab-1.20b beta</a></li>
                   <li class="article_text">For LOS 22.2-kernel 4.19 download build <a href="https://mega.nz/file/JBQRBDBB#nyXQoC3aOe9dtYo2ArjTBfQAOIG6Cpx0l1ZEiu5jZoo">1.21A (daily testing)</a></li>
                   <li class="article_text">For LOS 23.2-kernel 4.19 download build <a href="https://mega.nz/file/9YZQXDZK#OO7Rkf3mdue-ku-ntWHsJ6q7-4R7S2vo18HohHKg_aA">2.3B (daily testing)</a></li>
                 </ul>
-                <p class="article_text">If you have a Key2LE (Luna) download the latest build of your perferred rom variant</p>
+                <p class="article_text">If you have a Key2LE (Luna) download the latest build of your perferred Key2LE compatable rom variant</p>
                 <ul class="article_list">
                   <li class="article_text">For LOS 22.2-kernel 4.4 download the Key2LE version of build <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.11a/LOS22_Key2LE_ZKrab-v1.11a.zip">ZKrab-v1.11a</a></li>
-                  <li class="article_text">For LOS 22.2-kernel 4.19 download build <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.20a/LOS22_Key2LE_ZKrab-v1.20a.zip">ZKrab-1.20a alpha</a></li>
+                  <li class="article_text">For LOS 22.2-kernel 4.19-zkrab download the Key2LE version of build <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.20b/LOS22_Key2LE_ZKrab-v1.20b.zip">ZKrab-1.20b beta</a></li>
                 </ul>
                 <p class="article_text">Once your rom download finishes extract the .zip file</p>
                 <p class="article_text">Gapps (Google Services) is not included in the rom, if you want them you will need to download it seperately.</p>
@@ -773,7 +794,7 @@ footer {
               <h4 class="article_header">Requirements</h4>
                 <p class="article_text">You have ADB and fastboot installed</p>
                 <p class="article_text">Note: You cannot update from builds below LOS 22.2 builds v1.1B(Key2) and 20260606(Key2LE), and LOS 23.2 build 2.0G without wiping you data because of encryption changes!</p>
-                <p class="article_text">(KEY2 NOT LE) Your updating to a rom of the *same* variant, if not follow the 'Flashing LineageOS' section of the install guide.</p>
+                <p class="article_text">If your not on a ZKrab rom you have to update to a rom of the *same* variant, if your not follow the 'Flashing LineageOS' section of the install guide.</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Notes</h4>
@@ -781,7 +802,7 @@ footer {
                 <p class="article_text">If you need to downgrade you can do so with the recovery update method.
                 <p class="article_text">On LOS22.2-kernel 4.4 you cannot downgrade to versions under ZKrab-1.9a(Key2) or ZKrab-1.4a(Key2LE) without wiping your data because of the July 2026 security</p>
                 <p class="article_text">If you are on LOS22.2-kernel 4.4 and on v1.8a or lower when updating to ZKrab-v1.9a or higher make sure the k2prodfix magisk module is removed, it's changes have been merged into the rom.</p>
-                <p class="article_text">Updating to Key2LE - Kernel 4.19:
+                <p class="article_text">Updating to ZKrab - Kernel 4.19:
                 <p class="article_text"><var class="article_header">If you are using adoptable/internal SD storage on kernel 4.4 ROM</var>: Before updating to v1.20a+, migrate/backup all apps/files from the SD card, format the SD card as normal/portable storage, then repeat formatting as adoptable/internal storage after updating to v1.20a+
                 <p class="article_text">Default ZRAM compression changed to Zstd in kernel, but if you had previously forced a compression algorithm with persist.vendor.key2.zram.compressor, that override will persist. It is recommended to switch to Zstd - see bottom of this page: <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/tag/v1.20a">https://github.com/Lineage-BBKey2LE/distribution/releases/tag/v1.20a</a></p>
               <p class="article_divider"></p>
@@ -797,16 +818,17 @@ footer {
               <p class="article_divider"></p>
 
               <h4 class="article_header">Updating via recovery</h4>
-                <p class="article_text">If you have a Key2 download the latest build for your rom variant</p>
+                <p class="article_text">If you have a Key2 (Athena) download the latest build of your preferred Key2 compatable rom variant</p>
                 <ul class="article_list">
                   <li class="article_text">For LOS 22.2-kernel 4.4 download the Key2 version of build <a href="https://github.com/Lineage-BBKey2/distribution/releases/download/v1.11a/LOS22_Key2_ZKrab-v1.11a.zip">ZKrab-v1.11a</a></li>
+                  <li class="article_text">For LOS 22.2-kernel 4.19-zkrab download the Key2 version of build <a href="https://github.com/Lineage-BBKey2/distribution/releases/download/v1.20b/LOS22_Key2_ZKrab-v1.20b.zip">ZKrab-1.20b beta</a></li>
                   <li class="article_text">For LOS 22.2-kernel 4.19 download build <a href="https://mega.nz/file/JBQRBDBB#nyXQoC3aOe9dtYo2ArjTBfQAOIG6Cpx0l1ZEiu5jZoo">1.21A (daily testing)</a></li>
                   <li class="article_text">For LOS 23.2-kernel 4.19 download build <a href="https://mega.nz/file/9YZQXDZK#OO7Rkf3mdue-ku-ntWHsJ6q7-4R7S2vo18HohHKg_aA">2.3B (daily testing)</a></li>
                 </ul>
-                <p class="article_text">If you have a Key2LE (Luna) download the latest build of your rom variant</p>
+                <p class="article_text">If you have a Key2LE (Luna) download the latest build of your perferred Key2LE compatable rom variant</p>
                 <ul class="article_list">
                   <li class="article_text">For LOS 22.2-kernel 4.4 download the Key2LE version of build <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.11a/LOS22_Key2LE_ZKrab-v1.11a.zip">ZKrab-v1.11a</a></li>
-                  <li class="article_text">For LOS 22.2-kernel 4.19 download build <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.20a/LOS22_Key2LE_ZKrab-v1.20a.zip">ZKrab-1.20a alpha</a></li>
+                  <li class="article_text">For LOS 22.2-kernel 4.19-zkrab download the Key2LE version of build <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.20b/LOS22_Key2LE_ZKrab-v1.20b.zip">ZKrab-1.20b beta</a></li>
                 </ul>
                 <p class="article_text">Once your rom download finishes extract the .zip file</p>
                 <p class="article_text">If your phone is rooted patch the boot.img file included with the new build.</p>
@@ -1098,6 +1120,43 @@ footer {
               </div>
 
               <p class="article_divider"></p>
+              <input type="checkbox" id="k2-15-419-zkrab" name="k2-15-419-zkrab">
+              <label for="k2-15-419-zkrab" class="changelog_divider">
+                <p class="changelog_divider_line" style="flex-grow:0;width:20px;"></p>
+                <p class="changelog_divider_text">Key2: LineageOS 22.2 + Kernel 4.19 (ZKrab)</p>
+                <p class="changelog_divider_line"></p>
+                <svg class="changelog_arrow" viewBox="0 0 54 85" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
+                </svg>
+              </label>
+              <p class="article_divider_small"></p>
+
+              <div id="k2-15-419-zkrab_changelog">
+
+                <div>
+                  <h4 class="article_header">Known bugs</h4>
+                    <ul class="article_list">
+                      <li class="article_text">Haptic vibration weaker than kernel 4.4 ROMs</li>
+                    </ul>
+                  <p class="article_divider_small"></p>
+                </div>
+
+                <h4 class="article_header"><a href="https://github.com/Lineage-BBKey2/distribution/releases/download/v1.20b/LOS22_Key2_ZKrab-v1.20b.zip">ZKrab-v1.20b 07 Sep 2026</a></h4>
+                  <p class="article_text">Update kernel from 4.4 to 4.19 with kernel adaptions and performance tunings (results in generally faster and smoother performance than kernel 4.4 ROMs)</p>
+                  <p class="article_text">Update to more modern graphics stack (ASUS 4.19-kernel) and plumbing (Gralloc4/Mapper 4.0)</p>
+                  <p class="article_text">Change speed key function to CTRL key</p>
+                  <p class="article_text">Fix permission blocking when enabling "Personalized suggestions" in official Blackberry Keyboard app (Re-install Blackberry Keyboard may be required)</p>
+                  <p class="article_text">Restore some missing NFC configurations from stock BB Android (fixes NFC functionality in some cases)</p>
+                  <p class="article_text">Change "Keyboard touchpad" QS tile to "Keyboard scrolling" with new icon, change its function to enable/disable keyboard scrolling (instead of enable/disable touchpad) - allows disabling keyboard scrolling while keeping touchpad functionality for keyboard gestures and backlight activation</p>
+                  <p class="article_text">Long pressing "Keyboard scrolling" QS tile launches Settings/System/Blackberry keyboard</p>
+                  <p class="article_text">Settings/System/Blackberry keyboard: Add "Enable keyboard touchpad" toggle, add "Light on keyboard touch" options (with "only light on press" enabled) to keyboard/button backlight settings</p>
+                  <p class="article_text">FIXED: UI element highlighting and yellow borders in some apps when touching keyboard</p>
+                  <p class="article_text">Decrease ZRAM from 3 GB to 2.5 GB</p>
+                  <p class="article_text">Add separate OTA update URL for 4.19 kernel ROMs (kernel 4.4 ROMs will not receive OTA update to kernel 4.19 ROMs yet)</p>
+                <p class="article_divider_small"></p>
+              </div>
+
+              <p class="article_divider"></p>
               <input type="checkbox" id="k2-15-44" name="k2-15-44">
               <label for="k2-15-44" class="changelog_divider">
                 <p class="changelog_divider_line" style="flex-grow:0;width:20px;"></p>
@@ -1223,7 +1282,7 @@ footer {
               <input type="checkbox" id="le-15-419" name="le-15-419">
               <label for="le-15-419" class="changelog_divider">
                 <p class="changelog_divider_line" style="flex-grow:0;width:20px;"></p>
-                <p class="changelog_divider_text">Key2LE: LineageOS 22.2 + Kernel 4.19</p>
+                <p class="changelog_divider_text">Key2LE: LineageOS 22.2 + Kernel 4.19 (ZKrab)</p>
                 <p class="changelog_divider_line"></p>
                 <svg class="changelog_arrow" viewBox="0 0 54 85" xmlns="http://www.w3.org/2000/svg">
                   <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
@@ -1232,6 +1291,26 @@ footer {
               <p class="article_divider_small"></p>
 
               <div id="le-15-419_changelog">
+
+                <div>
+                  <h4 class="article_header">Known bugs</h4>
+                    <ul class="article_list">
+                      <li class="article_text">Haptic vibration weaker than kernel 4.4 ROMs</li>
+                    </ul>
+                  <p class="article_divider_small"></p>
+                </div>
+
+                <h4 class="article_header"><a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.20b/LOS22_Key2LE_ZKrab-v1.20b.zip">ZKrab-v1.20b 07 Sep 2026</a></h4>
+                  <p class="article_text">Update to more modern graphics stack (ASUS 4.19-kernel) and plumbing (Gralloc4/Mapper 4.0)</p>
+                  <p class="article_text">Improved screen wake-up time</p>
+                  <p class="article_text">Change speed key function to CTRL key</p>
+                  <p class="article_text">Fix permission blocking when enabling "Personalized suggestions" in official Blackberry Keyboard app (Re-install Blackberry Keyboard may be required)</p>
+                  <p class="article_text">Restore some missing NFC configurations from stock BB Android (fixes NFC functionality in some cases)</p>
+                  <p class="article_text">Default ZRAM compression changed to LZ4 in kernel</p>
+                  <p class="article_text">Fix hardware nav buttons sometimes operating when they are disabled</p>
+                  <p class="article_text">Other under-the-hood fixes/performance improvements</p>
+                <p class="article_divider_small"></p>
+
                 <h4 class="article_header"><a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.20a/LOS22_Key2LE_ZKrab-v1.20a.zip">ZKrab-v1.20a 21 Aug 2026</a></h4>
                   <p class="article_text">Update kernel from 4.4 to 4.19 with kernel adaptions and performance tunings (results in generally faster and smoother performance than kernel 4.4 ROMs)
                   <p class="article_text">Add new FM Radio app (based on https://github.com/iusmac/RevampedFMRadio):</p>
@@ -1420,7 +1499,7 @@ footer {
                 <p class="article_text"><a href="https://lawnchair.app/">Lawnchair</a>: An open-source clone of google's pixel launcher</p>
                 <p class="article_divider_small"></p>
                 <h4 class="article_header">Other</h4>
-                <p class="article_text"><a href="https://mega.nz/file/dZoB1KzJ#XfcjDzpr_vISa9Z1qXQHCQ2Zhp9y-hlUJg_sJN9Hveg">BigKaka 8.8 mod</a>: A build of the BigKaka GCam mod with changes to work with key2's hardware.</p>
+                <p class="article_text"><a href="https://mega.nz/file/dZoB1KzJ#XfcjDzpr_vISa9Z1qXQHCQ2Zhp9y-hlUJg_sJN9Hveg">AGC 8.8 mod</a>: A build of the AGC 8.8 GCam mod with changes to work with key2's hardware.</p>
                 <p class="article_text"><a href="https://github.com/aistra0528/Hail">Hail</a>: Freeze certain apps to stop them from running in the background</p>
                 <p class="article_text"><a href="https://github.com/PeterCxy/Shelter">Shelter</a>/<a href="https://github.com/proletarius101/Insular">Insular</a>/<a href="https://github.com/oasisfeng/island">Island</a>: Add apps to a work profile to isolate them from other apps, stop them from auto starting or install multible versions at once.</p>
                 <p class="article_text"><a href="https://github.com/keymapperorg/KeyMapper">KeyMapper</a>: Remap any button and set custom key binds easily</p>
