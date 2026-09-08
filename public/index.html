@@ -12,7 +12,7 @@
 
 :root {
   --accent: var(--pink) !important;
-  --accent-alt: linear-gradient(in oklab to right, var(--accent), color-mix(in oklab, var(--accent) 50%, var(--overlay2))) !important;
+  --accent-alt: color-mix(in oklab, var(--accent) 80%, var(--overlay2)) !important;
 }
 /* basics */
 body {
@@ -38,19 +38,19 @@ a:active {
 }
 ::-moz-selection {
   color: var(--base);
-  background: var(--accent);
+  background: var(--accent-alt);
   text-shadow: none !important;
 }
 ::selection {
   color: var(--base);
-  background: var(--accent);
-  background-color: var(--accent) !important;
+  background: var(--accent-alt);
+  background-color: var(--accent-alt) !important;
   text-shadow: none !important;
 }
 
 /* background */
 .background {
-  background: linear-gradient(182deg in oklab, var(--base), color-mix(in oklab, var(--surface0) 81%, var(--accent)));
+  background: linear-gradient(165deg in oklab, color-mix(var(--base) 69%, var(--mantle) ), color-mix(var(--accent) 30%, var(--surface2)));
   position: fixed;
   top: 0px;
   bottom: 0px;
@@ -95,10 +95,10 @@ a:active {
 .sidebar_index {
   background: var(--accent-alt);
   color: var(--base);
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--accent-alt);
 }
 .sidebar_index:hover {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--accent-alt);
 }
 
 /* the actual site */
@@ -184,10 +184,10 @@ footer {
   text-shadow: 2px 2px 10px color-mix(in oklab, var(--mantle) 70%, transparent);
   color: var(--text);
 }
-#intro, #contact, #info {
+#txt_padding {
   margin-left: 12px;
 }
-#info {
+#info, #sitemap {
   padding-top: 20px;
 }
 #contact {
@@ -283,35 +283,47 @@ li {
             <!-- this is gonna be where the visit counter is -->
           </div>
 
-          <div id="intro">
-            <p class="gp_text">(there's going to be a visit counter here that looks like the htc flip clock, so just like imagine it for now)
-            <p class="gp_text">Note: this website does not use any java script!</p>
-            <p class="gp_text">Hello. I'm Felix, welcome to my website ig.</p>
-            <p class="gp_text">I'm <a href="https://en.wikipedia.org/wiki/Non-binary">non-binary</a>, have a lot of mental heath issues, and am not fully verbal.</p>
-            <p class="gp_text">This site used to be hosted on neocities, but I moved to nekoweb so I can post my atempts at art and photography with it being fed to AI</p>
-          </div>
+          <div id="txt_padding">
+            <div id="intro">
+              <p class="gp_text">(there's going to be a visit counter here that looks like the htc flip clock, so just like imagine it for now)
+              <p class="gp_text">Note: this website does not use any java script!</p>
+              <p class="gp_text">Hello. I'm Felix, welcome to my website ig.</p>
+              <p class="gp_text">This site is mostly empty right now, except for key2 page.</p>
+            </div>
 
-          <div id="info">
-            <p class="gp_text">Favorite teas: earl gray and irish breakfast</p>
-            <p class="gp_text">Current phone: BlackBerry Key2 (LOS 22.2), but I will be moving to a zinwa P26 when it comes out!</p>
-            <p class="gp_text">Favorite Video Games: Disco Elysium, The Drakengard/NieR series, Heaven Will Be Mine, Oneshot, MC LCE, Kingdom: Classic, pseudoregalia, atlyss, Hyper Light Drifter, Tunic, SLARPG, mutazione, Morrowind, Panzer Dragoon Orta</p>
-            <p class="gp_text">Favorite movie: Bionicle: The Legend Reborn</p>
-            <p class="gp_text">Favorite TV show: Twin Peaks</p>
-            <p class="gp_text">Text editor: Kate</p>
-            <p class="gp_text">Desktop Enviroment: KDE plasma</p>
-            <p class="gp_text">Operating sysem: Chimera linux on my laptop, Arch linux on my desktop</p>
-          </div>
+            <div id="sitemap">
+              <p class="gp_text">(temporary) Sitemap:
+              <p class="gp_text">Index: where you are now
+              <p class="gp_text">Blog: where I yap about stuff sometimes
+              <p class="gp_text">Wiki: the blog but actually useful
+              <p class="gp_text">Links: links to other stuff i like
+              <p class="gp_text">Media: not sure yet
+              <p class="gp_text">Guestbook: self explanitory
+            </div>
 
-          <ul id="contact">
-            <p class="gp_text">Where you can contact me if needed:</p>
-            <li class="gp_text">Email: daphnispastmidnight@duck.com</li>
-            <li class="gp_text">Matrix: @kelmic:matrix.org</li>
-            <li class="gp_text">Discord: <a href="https://discord.com/users/1416472651429314721">lunaterra0197</a></li>
-            <li class="gp_text">XDA: <a href="https://xdaforums.com/m/luna-terra-cg.13449447/">@Luna-Terra-CG</a></li>
-            <li class="gp_text">Github: <a href="https://github.com/Luna-Terra-CG">Luna-Terra-CG</a></li>
-            <li class="gp_text">My guestbook</li>
-            <p class="gp_text">If it's not in there it's not me or I forgot about the account :3</p>
-          </ul>
+            <div id="info">
+              <p class="gp_text">About:
+              <p class="gp_text">Favorite teas: earl gray and irish breakfast</p>
+              <p class="gp_text">Current phone: BlackBerry Passport &amp; BlackBerry Key2 (LOS 22.2), but I will be moving to a zinwa P26 when it comes out!</p>
+              <p class="gp_text">Favorite Video Games: Disco Elysium, The Drakengard/NieR series, Heaven Will Be Mine, Oneshot, MC LCE, Kingdom: Classic, pseudoregalia, atlyss, Hyper Light Drifter, Tunic, SLARPG, mutazione, Morrowind, Panzer Dragoon Orta</p>
+              <p class="gp_text">Favorite movie: Bionicle: The Legend Reborn</p>
+              <p class="gp_text">Favorite TV show: Twin Peaks</p>
+              <p class="gp_text">Text editor: Kate</p>
+              <p class="gp_text">Desktop Enviroment: KDE plasma</p>
+              <p class="gp_text">Operating sysem: Chimera linux on my laptop, Arch linux on my desktop</p>
+            </div>
+
+            <ul id="contact">
+              <p class="gp_text">Where you can contact me if needed:</p>
+              <li class="gp_text">Email: daphnispastmidnight@duck.com</li>
+              <li class="gp_text">Matrix: @kelmic:matrix.org</li>
+              <li class="gp_text">Discord: <a href="https://discord.com/users/1416472651429314721">lunaterra0197</a></li>
+              <li class="gp_text">XDA: <a href="https://xdaforums.com/m/luna-terra-cg.13449447/">@Luna-Terra-CG</a></li>
+              <li class="gp_text">Github: <a href="https://github.com/Luna-Terra-CG">Luna-Terra-CG</a></li>
+              <li class="gp_text">My guestbook</li>
+              <p class="gp_text">If it's not in there it's not me or I forgot about the account :3</p>
+            </ul>
+          </div>
 
           <footer>
             <p>CC BY-SA 4.0 license - hosted on <a href="https://daphnis-past-midnight.nekoweb.org/index.html">nekoweb.org</a> &amp; <a href="https://luna-terra-cg.github.io/public/index.html">github.io</a> - <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io.git">source code</a> - <a href="https://github.com/catppuccin/catppuccin">catppuccin colors</a></p>
