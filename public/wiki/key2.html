@@ -121,7 +121,7 @@ a:active {
   backdrop-filter: blur(4px);
   display: flex;
   flex-direction: column;
-  overflow: scroll;
+  overflow: auto;
 }
 .article_contents {
   color: var(--text);
@@ -311,7 +311,7 @@ li {
 pre {
   width:auto;
   padding: 0px;
-  overflow: scroll;
+  overflow: auto;
   margin-block: 0em 0em;
 }
 footer {
@@ -629,12 +629,13 @@ footer {
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Can I pay someone to do this to my device?</h4>
-                <p class="article_text">Call a local repair shops or a techy person you know, and ask if you can pay them to install a custom rom on your phone.</p>
+                <p class="article_text">Call a local repair shop or a techy person you know, and ask if you can pay them to install a custom rom on your phone.</p>
                 <p class="article_text">At least one should be able too. And it should be much much quicker than mailing it to someone.</p>
                 <p class="article_text">Note: Make sure to call and ASK, some repair shops won't do this and almost none advertise doing this.</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Who are the rom developers?</h4>
+                <p class="article_text">Note: Roms published by zzach have ZKrab in the version name</p>
                 <p class="article_text">Key2: zzach(zapaca), krab-ubica(tim-ecoder) Previously: BotchedRPR</p>
                 <p class="article_text">Key2LE: zzach(zapaca) Previously: BotchedRPR</p>
               <p class="article_divider_small"></p>
@@ -663,7 +664,7 @@ footer {
               <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
             </svg>
             <h3 class="article_name">Install Guide for LineageOS UNOFFICIAL</h3>
-            <p class="article_date"><var class="article-date-var">Last editied:</var> 21 Aug 2026</p>
+            <p class="article_date"><var class="article-date-var">Last editied:</var> 10 Sep 2026</p>
           </label>
           <input type="checkbox" id="article_krab" name="article_krab">
             <div class="article_contents" id="article_krab_contents">
@@ -749,7 +750,6 @@ footer {
                 <p class="article_text">Boot into the bootloader by holding volume down and the power button.</p>
                 <p class="article_text">Run the following commands:</p>
                 <ul class="article_list">
-                  <li><code class="article_code">fastboot -w</code></li>
                   <li><code class="article_code">fastboot flash recovery /path/to/recovery.img</code></li>
                   <li><code class="article_code">fastboot flash boot /path/to/recovery.img</code></li>
                   <li><code class="article_code">fastboot reboot</code></li>
@@ -758,12 +758,13 @@ footer {
                 <p class="article_text">Note: You navigate the recovery by using the volume keys to move the cursor and the power button the select.</p>
                 <p class="article_text">Once the recovery menu appears select Advanced -&gt; Enable ADB</p>
                 <p class="article_text">From a computer run <code class="article_code">adb shell wipe-frp</code></p>
+                <p class="article_text">Select Factory reset -> Format system partition, then Format data/factory reset.</p>
+                <p class="article_text">Go back to the main menu by pressing the arrow in the top right.</p>
                 <p class="article_text">Then select 'Apply update' -&gt; 'Apply update from adb'</p>
-                <p class="article_text">Note: The zip file you need to sideload is the one *inside* of the LOS zip file you downloaded</p>
+                <p class="article_text">Note: Make sure the zip file your sideloading is the one *inside* the one you downloaded.</p>
                 <p class="article_text">If you are using a ZKrab rom run <code class="article_code">adb sideload /path/to/lineage-22.2-&lt;date&gt;-UNOFFICIAL-&lt;version&gt;-&lt;codename&gt;.zip</code></p>
                 <p class="article_text">if your not run <code class="article_code">adb sideload /path/to/lineage-&lt;lineageVersion&gt;-&lt;date&gt;-UNOFFICIAL-krab-&lt;version&gt;-athena.zip</code></p>
                 <p class="article_text">If you have any additional zips to flash(ie: gapps, magisk) go into 'Apply update' -&gt; 'Apply update from adb' and run <code class="article_code">adb sideload /path/to/package.zip</code>, once the signature verification failed message appears select yes.</p>
-                <p class="article_text">If you get a not enough space on system partion error when flashing gapps go into 'Factory reset/Format data' and format the system partition, then re-sideload LineageOS and gapps.</p>
                 <p class="article_text">Press the 'Reboot system' button</p>
                 <p class="article_text">If you get set back to recovery and sideloading the rom again does not fix it you may have a 'bcb recovery' unit, to get around that boot into the bootloader and run <code class="article_code">fastboot flash recovery boot.img</code></p>
                 <p class="article_divider_small"></p>
@@ -783,26 +784,27 @@ footer {
               <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
             </svg>
             <h3 class="article_name">Updating to a newer LineageOS UNOFFICIAL build</h3>
-            <p class="article_date"><var class="article-date-var">Last editied:</var> 24 Aug 2026</p>
+            <p class="article_date"><var class="article-date-var">Last editied:</var> 10 Sep 2026</p>
           </label>
           <input type="checkbox" id="article_krab_update" name="article_krab_update">
             <div class="article_contents" id="article_krab_update_contents">
               <p class="article_divider"></p>
 
               <h4 class="article_header">Requirements</h4>
-                <p class="article_text">You have ADB and fastboot installed</p>
-                <p class="article_text">Note: You cannot update from builds below LOS 22.2 builds v1.1B(Key2) and 20260606(Key2LE), and LOS 23.2 build 2.0G without wiping you data because of encryption changes!</p>
-                <p class="article_text">If your not on a ZKrab rom and moving to a ZKrab you have to update to a rom of the *same* variant, if you want a different one follow the 'Flashing LineageOS' section of the install guide.</p>
+                <p class="article_text">(recovery update) You have ADB and fastboot installed</p>
+                <p class="article_text">(recovery update) A USB type A to USB type C cable</p>
+                <p class="article_text">You cannot update from builds below LOS 22.2 builds v1.1B(Key2) and 20260606(Key2LE), and LOS 23.2 build 2.0G without wiping you data because of encryption changes!</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Notes</h4>
-                <p class="article_text">The Key2LE roms support changing to a rom with a different kernel withouit wiping your data!</p>
+                <p class="article_text">If you want to change to a different varient and your NOT changing from a ZKrab to ZKrab you WILL have to follow the Flashing LineageOS section of the install guide, intead of this one.</p>
+                <p class="article_text">The ZKrab roms support moving between 4.4 and 4.19 kernel versions without wiping your data</p>
                 <p class="article_text">If you need to downgrade you can do so with the recovery update method.
-                <p class="article_text">On LOS22.2-kernel 4.4 you cannot downgrade to versions under ZKrab-1.9a(Key2) or ZKrab-1.4a(Key2LE) without wiping your data because of the July 2026 security</p>
-                <p class="article_text">If you are on LOS22.2-kernel 4.4 and on v1.8a or lower when updating to ZKrab-v1.9a or higher make sure the k2prodfix magisk module is removed, it's changes have been merged into the rom.</p>
+                <p class="article_text">You cannot downgrade to versions under ZKrab-1.9a(Key2), ZKrab-1.4a(Key2LE), 1.21A(key2) without wiping your data because of the changes in the July 2026 security</p>
+                <p class="article_text">If you are on LOS22.2-kernel 4.4 and on v1.8a or lower when updating to ZKrab build make sure the k2prodfix magisk module is removed, it's changes have been merged into the rom.</p>
                 <p class="article_text">Updating to ZKrab - Kernel 4.19:
                 <p class="article_text"><var class="article_header">If you are using adoptable/internal SD storage on kernel 4.4 ROM</var>: Before updating to v1.20a+, migrate/backup all apps/files from the SD card, format the SD card as normal/portable storage, then repeat formatting as adoptable/internal storage after updating to v1.20a+
-                <p class="article_text">Default ZRAM compression changed to Zstd in kernel, but if you had previously forced a compression algorithm with persist.vendor.key2.zram.compressor, that override will persist. It is recommended to switch to Zstd - see bottom of this page: <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/tag/v1.20a">https://github.com/Lineage-BBKey2LE/distribution/releases/tag/v1.20a</a></p>
+                <p class="article_text">Default ZRAM compression changed to LZ4 in kernel, but if you had previously forced a compression algorithm with persist.vendor.key2.zram.compressor, that override will persist. It is recommended to switch to LZ4 - see bottom of this page: <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/tag/v1.20b">https://github.com/Lineage-BBKey2LE/distribution/releases/tag/v1.20b</a></p>
               <p class="article_divider"></p>
 
               <h4 class="article_header">Updating via OTA update</h4>
