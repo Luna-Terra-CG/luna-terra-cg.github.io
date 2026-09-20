@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en_NS">
+<!--, this website barely works don't bother looking at the code >.< ,-->
 
 <head>
-  <title>Boring and undecorated guestbook</title>
+    <title>My boring guestbook</title>
   <link rel="icon" type="image/x-icon" href="assets/nonbinary.ico">
-  <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="colors.css">
   <link rel="stylesheet" href="sidebar.css">
@@ -26,13 +25,13 @@ p, h4, h3 {
   margin: 0px;
 }
 a:link {
-  color: var(--maroon);
+  color: var(--mauve);
 }
 a:visited {
-  color: var(--rosewater);
+  color: var(--pink);
 }
 a:hover {
-  color: var(--rosewater);
+  color: var(--pink);
 }
 a:active {
   color: var(--sky);
@@ -40,16 +39,18 @@ a:active {
 ::-moz-selection {
   color: var(--base);
   background: var(--accent-alt);
+  text-shadow: none !important;
 }
 ::selection {
   color: var(--base);
   background: var(--accent-alt);
   background-color: var(--accent-alt) !important;
+  text-shadow: none !important;
 }
 
 /* background */
 .background {
-  background: linear-gradient(180deg in oklab, color-mix(var(--base) 69%, var(--mantle) ), color-mix(var(--accent) 30%, var(--surface0)));
+  background: linear-gradient(165deg in oklab, color-mix(var(--surface0) 69%, var(--mantle) ), color-mix(var(--accent) 52%, var(--surface2)));
   position: fixed;
   top: 0px;
   bottom: 0px;
@@ -68,16 +69,26 @@ a:active {
 .background_scanLines {
   background-image: url("assets/scanlines.png");
   background-repeat: repeat;
-  opacity: 0.04;
+  opacity: 0.135;
   position: fixed;
   top: 0px;
   bottom: 0px;
   right: 0px;
   left: 0px;
 }
-/* sidebar fix */
+#help {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+/* abuse the sidebar css into working correctly >w< */
 .sidebar {
-  left: 0px;
+  margin-top: auto;
+  width: fit-content;
+  position: relative;
+  top: 85%;
+  transform: translateY(-100%);
 }
 /* change active tab color */
 .sidebar_comms {
@@ -86,21 +97,74 @@ a:active {
   outline: 2px solid var(--accent-alt);
 }
 .sidebar_comms:hover {
-  outline: 2px solid var(--accent-alt);
+  outline: 2px solid var(--accent-alt) !important;
 }
 
-/* site */
-.guestbook {
-  position: fixed;
-  right: 0%;
-  left: auto;
-  top: 0%;
-  bottom: 0%;
-  background: linear-gradient(170deg in oklab, color-mix(in oklab, color-mix(in oklab, var(--base) 90%, var(--accent)) 57%, transparent) , color-mix(in oklab, var(--base) 45%, transparent));
-  backdrop-filter: blur(4px);
+/* the actual site */
+.jank {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
 }
+.sidebar_flexbox {
+  height: 100%;
+  width: 100%;
+  padding-right: 89px;
+  width: fit-content;
+}
+.page_container {
+  flex-grow: 3;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.page_contents {
+  flex-grow: 3;
+  background: radial-gradient(circle at bottom right, rgba(var(--surface1-rgb), 0.6), rgba(var(--surface0-rgb), 0.6), color-mix(in oklab, color-mix(in oklab, var(--base) 96%, var(--accent)) 70%, transparent) );
+  backdrop-filter: blur(3px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* borderyy crap */
+#header {
+  background: color-mix(in oklab, var(--mantle) 20%, transparent);
+  width: 100%;
+  height: 28px;
+}
+#header_text {
+  display: inline;
+  font-family: oxygen;
+  font-weight: 300;
+  line-height: 20px;
+  vertical-align: middle;
+  color: var(--overlay1);
+  text-align: left;
+  margin-left: 5px;
+}
+footer {
+  color: var(--text);
+  width: 100%;
+  text-align: center;
+  background: color-mix(in oklab, var(--mantle) 30%, transparent);
+  margin-top: auto;
+  font-size: 15px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-family: "Oxygen", sans-serif;
+  align-self: bottom;
+}
+.sidebar_link {
+  height: fit-content;
+}
+/* atabook stuff */
 .atabook_container {
-  width: 600px;
+  width: calc(100% + 20px) !important;
+  transform: translate(-20px, 0px);
   height: 100%;
 }
 .atabook {
@@ -115,74 +179,91 @@ a:active {
   color: var(--text);
 }
 
+
 </style>
 </head>
 
 <body>
-  <div class="container">
-    <div class="background">
+  <div id="help">
+    <aside class="background">
       <p class="background_stars"></p>
       <p class="background_scanLines"></p>
-    </div>
-    <aside class="sidebar">
-      <div class="sidebar_items">
-        <div><p id="sidesidebar"></p></div>
-        <p class="ghost_margin"> </p>
-        <a class="sidebar_link" href="index.html"><div class="sidebar_index">
-          <svg class="sidebar_icon" viewBox="0 0 37 37" xmlns="http://www.w3.org/2000/svg">
-            <path fill="currentColor" stroke-width="1.02778" d="M 1,19.5 V 1 H 19.5 38 V 19.5 38 H 19.5 1 Z m 30.83333,0 V 7.166667 H 19.5 7.166667 V 19.5 31.83333 H 19.5 31.83333 Z m -17.47222,0 V 14.36111 H 19.5 24.63889 V 19.5 24.63889 H 19.5 14.36111 Z"></path>
-          </svg>
-          <p class="sidebar_text">Index</p>
-        </div></a>
-        <p class="sidebar_seperator"></p>
-        <a class="sidebar_link" href="blog.html"><div class="sidebar_blog">
-          <svg class="sidebar_icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-            <path fill="currentColor" stroke-width="0.296296" d="M 0,16 V 0 H 15.999999 32 V 16 32 H 15.999999 0 Z m 27.555554,0 V 4.4444444 H 15.999999 4.4444444 V 16 27.555556 H 15.999999 27.555554 Z M 9.7777763,20 v -2.222222 h 6.2222227 6.222222 V 20 22.222222 H 15.999999 9.7777763 Z m 0,-8 V 9.7777778 h 6.2222227 6.222222 V 12 14.222222 H 15.999999 9.7777763 Z"></path>
-          </svg>
-          <p class="sidebar_text">Blog</p>
-        </div></a>
-        <p class="sidebar_seperator"></p>
-        <a class="sidebar_link" href="wiki.html"><div class="sidebar_wiki">
-          <svg class="sidebar_icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-            <path fill="currentColor" stroke-width="0.296296" d="M 0,29.777778 V 27.555556 H 16 32 V 29.777778 32 H 16 0 Z M 0,20.592593 V 18.37037 h 16 16 v 2.222223 2.222222 H 16 0 Z M 0,11.407407 V 9.1851852 H 16 32 V 11.407407 13.62963 H 16 0 Z M 0,2.2222221 V 0 H 16 32 V 2.2222221 4.4444444 H 16 0 Z"></path>
-          </svg>
-          <p class="sidebar_text">Wiki</p>
-        </div></a>
-        <p class="sidebar_seperator"> </p>
-        <a class="sidebar_link" href="links.html"><div class="sidebar_links">
-          <svg class="sidebar_icon" viewBox="0 0 106 106" xmlns="http://www.w3.org/2000/svg">
-            <path fill="currentColor" stroke-width="0.981482" d="M 0.71880083,101.09946 V 95.210576 H 6.6076896 12.496579 v 5.888884 5.88889 H 6.6076896 0.71880083 Z m 32.38888817,0 V 95.210576 H 69.913246 106.7188 v 5.888884 5.88889 H 69.913246 33.107689 Z M 0.71880083,53.988353 V 48.099464 H 6.6076896 12.496579 v 5.888889 5.888889 H 6.6076896 0.71880083 Z m 32.38888817,0 V 48.099464 H 69.913246 106.7188 v 5.888889 5.888889 H 69.913246 33.107689 Z M 0.71880083,6.8772416 V 0.98835275 H 6.6076896 12.496579 V 6.8772416 12.766131 H 6.6076896 0.71880083 Z m 32.38888817,0 V 0.98835275 H 69.913246 106.7188 V 6.8772416 12.766131 H 69.913246 33.107689 Z"></path>
-          </svg>
-          <p class="sidebar_text">Links</p>
-        </div></a>
-        <p class="sidebar_seperator"></p>
-        <a class="sidebar_link" href="media.html"><div class="sidebar_media">
-          <svg class="sidebar_icon" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
-            <path fill="currentColor" d="M 0,33.999999 V 0 h 24 24 v 23.999999 24 h -4 -4 v -20 V 7.9999999 H 24 8 v 29.9999991 30 H 4 0 Z m 20,10 v -24 h 4 4 v 20 20 h 16 16 v -30 V 0 h 4 4 v 33.999999 34 H 44 20 Z"></path>
-          </svg>
-          <p class="sidebar_text">Media</p>
-        </div></a>
-        <p class="sidebar_seperator"></p>
-        <a class="sidebar_link" href="comms.html"><div class="sidebar_comms">
-          <svg class="sidebar_icon" viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg">
-            <path fill="currentColor" d="M 51,100.5 V 93 H 79.500001 108 v 7.5 7.5 H 79.500001 51 Z M 0,70.5 V 63 H 42 84.000001 V 70.5 78 H 42 0 Z M 33,39 V 33 H 70.5 108 v 6 6 H 70.5 33 Z M 0,7.5000003 V 0 H 46.5 93.000001 V 7.5000003 15 H 46.5 0 Z"></path>
-          </svg>
-          <p class="sidebar_text">Guestbook</p>
-        </div></a>
-        <p class="sidebar_seperator"></p>
-        <div class="sidebar_backarrow">
-          <svg class="sidebar_backarrow_icon" viewBox="0 0 218 139" xmlns="http://www.w3.org/2000/svg">
-            <path fill="currentColor" d="M 79.000241,108 V 77 h -18.24074 -18.24074 l 6.735491,6.735491 6.735491,6.735495 -8.72962,8.77025 -8.72962,8.770254 L 19.265254,88.765246 0,69.518997 19.235438,50.264572 38.470871,31.010147 47.233436,39.732114 55.996002,48.454081 49.274941,55.22704 42.553881,62 H 60.777062 79.000241 V 31 0 h 69.499999 69.5 V 69.5 139 h -69.5 -69.499999 z M 202.00024,69.5 V 16 h -53.5 -53.499999 v 23 23 h 25.999999 26 v 7.5 7.5 h -26 -25.999999 V 99.999996 123 h 53.499999 53.5 z"></path>
-          </svg>
+    </aside>
+    <div class="jank">
+      <div class="sidebar_flexbox">
+        <div class="sidebar">
+          <div class="sidebar_items">
+            <div><p id="sidesidebar"></p></div>
+            <p class="ghost_margin"> </p>
+            <a class="sidebar_link" href="index.html"><div id="sidebar_button" class="sidebar_index">
+              <svg class="sidebar_icon" viewBox="0 0 37 37" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" stroke-width="1.02778" d="M 1,19.5 V 1 H 19.5 38 V 19.5 38 H 19.5 1 Z m 30.83333,0 V 7.166667 H 19.5 7.166667 V 19.5 31.83333 H 19.5 31.83333 Z m -17.47222,0 V 14.36111 H 19.5 24.63889 V 19.5 24.63889 H 19.5 14.36111 Z"></path>
+              </svg>
+              <p class="sidebar_text">Index</p>
+            </div></a>
+            <p class="sidebar_seperator"></p>
+            <a class="sidebar_link" href="blog.html"><div id="sidebar_button" class="sidebar_blog">
+              <svg class="sidebar_icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" stroke-width="0.296296" d="M 0,16 V 0 H 15.999999 32 V 16 32 H 15.999999 0 Z m 27.555554,0 V 4.4444444 H 15.999999 4.4444444 V 16 27.555556 H 15.999999 27.555554 Z M 9.7777763,20 v -2.222222 h 6.2222227 6.222222 V 20 22.222222 H 15.999999 9.7777763 Z m 0,-8 V 9.7777778 h 6.2222227 6.222222 V 12 14.222222 H 15.999999 9.7777763 Z"></path>
+              </svg>
+              <p class="sidebar_text">Blog</p>
+            </div></a>
+            <p class="sidebar_seperator"></p>
+            <a class="sidebar_link" href="wiki.html"><div id="sidebar_button" class="sidebar_wiki">
+              <svg class="sidebar_icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" stroke-width="0.296296" d="M 0,29.777778 V 27.555556 H 16 32 V 29.777778 32 H 16 0 Z M 0,20.592593 V 18.37037 h 16 16 v 2.222223 2.222222 H 16 0 Z M 0,11.407407 V 9.1851852 H 16 32 V 11.407407 13.62963 H 16 0 Z M 0,2.2222221 V 0 H 16 32 V 2.2222221 4.4444444 H 16 0 Z"></path>
+              </svg>
+              <p class="sidebar_text">Wiki</p>
+            </div></a>
+            <p class="sidebar_seperator"> </p>
+            <a class="sidebar_link" href="links.html"><div id="sidebar_button" class="sidebar_links">
+              <svg class="sidebar_icon" viewBox="0 0 106 106" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" stroke-width="0.981482" d="M 0.71880083,101.09946 V 95.210576 H 6.6076896 12.496579 v 5.888884 5.88889 H 6.6076896 0.71880083 Z m 32.38888817,0 V 95.210576 H 69.913246 106.7188 v 5.888884 5.88889 H 69.913246 33.107689 Z M 0.71880083,53.988353 V 48.099464 H 6.6076896 12.496579 v 5.888889 5.888889 H 6.6076896 0.71880083 Z m 32.38888817,0 V 48.099464 H 69.913246 106.7188 v 5.888889 5.888889 H 69.913246 33.107689 Z M 0.71880083,6.8772416 V 0.98835275 H 6.6076896 12.496579 V 6.8772416 12.766131 H 6.6076896 0.71880083 Z m 32.38888817,0 V 0.98835275 H 69.913246 106.7188 V 6.8772416 12.766131 H 69.913246 33.107689 Z"></path>
+              </svg>
+              <p class="sidebar_text">Links</p>
+            </div></a>
+            <p class="sidebar_seperator"></p>
+            <a class="sidebar_link" href="media.html"><div id="sidebar_button" class="sidebar_media">
+              <svg class="sidebar_icon" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M 0,33.999999 V 0 h 24 24 v 23.999999 24 h -4 -4 v -20 V 7.9999999 H 24 8 v 29.9999991 30 H 4 0 Z m 20,10 v -24 h 4 4 v 20 20 h 16 16 v -30 V 0 h 4 4 v 33.999999 34 H 44 20 Z"></path>
+              </svg>
+              <p class="sidebar_text">Media</p>
+            </div></a>
+            <p class="sidebar_seperator"></p>
+            <a class="sidebar_link" href="comms.html"><div id="sidebar_button" class="sidebar_comms">
+              <svg class="sidebar_icon" viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M 51,100.5 V 93 H 79.500001 108 v 7.5 7.5 H 79.500001 51 Z M 0,70.5 V 63 H 42 84.000001 V 70.5 78 H 42 0 Z M 33,39 V 33 H 70.5 108 v 6 6 H 70.5 33 Z M 0,7.5000003 V 0 H 46.5 93.000001 V 7.5000003 15 H 46.5 0 Z"></path>
+              </svg>
+              <p class="sidebar_text">Guestbook</p>
+            </div></a>
+            <p class="sidebar_seperator"></p>
+            <div class="sidebar_backarrow">
+              <svg class="sidebar_backarrow_icon" viewBox="0 0 218 139" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M 79.000241,108 V 77 h -18.24074 -18.24074 l 6.735491,6.735491 6.735491,6.735495 -8.72962,8.77025 -8.72962,8.770254 L 19.265254,88.765246 0,69.518997 19.235438,50.264572 38.470871,31.010147 47.233436,39.732114 55.996002,48.454081 49.274941,55.22704 42.553881,62 H 60.777062 79.000241 V 31 0 h 69.499999 69.5 V 69.5 139 h -69.5 -69.499999 z M 202.00024,69.5 V 16 h -53.5 -53.499999 v 23 23 h 25.999999 26 v 7.5 7.5 h -26 -25.999999 V 99.999996 123 h 53.499999 53.5 z"></path>
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
-    </aside>
-    <div class="guestbook">
-      <div class="atabook_container">
-        <iframe class="atabook" src="https://daphnis-past-midnight.atabook.org/"></iframe>
-      </div>
-    </div>
-  </div>
-</body>
 
+      <div class="page_container">
+
+        <div class="page_contents">
+          <div id="header">
+            <p id="header_text">Guestbook</p>
+          </div>
+
+          <div class="atabook_container">
+             <iframe class="atabook" src="https://daphnis-past-midnight.atabook.org/"></iframe>
+          </div>
+
+          <footer>
+            <p>CC BY-SA 4.0 license - hosted on <a href="https://daphnis-past-midnight.neocities.org/">neocitites.org</a> &amp; <a href="https://luna-terra-cg.github.io/">github.io</a> - <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io.git">source code</a> - <a href="https://github.com/catppuccin/catppuccin">catppuccin colors</a></p>
+          </footer>
+        </div>
+
+      </div> <!-- .page_container -->
+    </div> <!-- .jank -->
+  </div> <!-- #help -->
+</body>
 </html>

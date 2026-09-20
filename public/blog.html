@@ -3,7 +3,7 @@
 <!--, this is the one page with ok css, feel free to have a look at it ,-->
 
 <head>
-    <title>the blog of blogy mc bloggerson the third of his name</title>
+    <title>blog</title>
   <link rel="icon" type="image/x-icon" href="assets/nonbinary.ico">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="colors.css">
@@ -97,7 +97,7 @@ a:active {
   outline: 2px solid var(--accent-alt);
 }
 .sidebar_blog:hover {
-  outline: 2px solid var(--accent-alt);
+  outline: 2px solid var(--accent-alt) !important;
 }
 
 /* the actual site */
@@ -166,6 +166,9 @@ footer {
   margin-top: 0px;
   margin-bottom: 0px;
   height: fit-content;
+}
+#cool_buttons > a:last-child > .big_button {
+  margin-bottom: 0px;
 }
 /* proper posts */
 .big_button {
@@ -274,42 +277,42 @@ footer {
           <div class="sidebar_items">
             <div><p id="sidesidebar"></p></div>
             <p class="ghost_margin"> </p>
-            <a class="sidebar_link" href="index.html"><div class="sidebar_index">
+            <a class="sidebar_link" href="index.html"><div id="sidebar_button" class="sidebar_index">
               <svg class="sidebar_icon" viewBox="0 0 37 37" xmlns="http://www.w3.org/2000/svg">
                 <path fill="currentColor" stroke-width="1.02778" d="M 1,19.5 V 1 H 19.5 38 V 19.5 38 H 19.5 1 Z m 30.83333,0 V 7.166667 H 19.5 7.166667 V 19.5 31.83333 H 19.5 31.83333 Z m -17.47222,0 V 14.36111 H 19.5 24.63889 V 19.5 24.63889 H 19.5 14.36111 Z"></path>
               </svg>
               <p class="sidebar_text">Index</p>
             </div></a>
             <p class="sidebar_seperator"></p>
-            <a class="sidebar_link" href="blog.html"><div class="sidebar_blog">
+            <a class="sidebar_link" href="blog.html"><div id="sidebar_button" class="sidebar_blog">
               <svg class="sidebar_icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                 <path fill="currentColor" stroke-width="0.296296" d="M 0,16 V 0 H 15.999999 32 V 16 32 H 15.999999 0 Z m 27.555554,0 V 4.4444444 H 15.999999 4.4444444 V 16 27.555556 H 15.999999 27.555554 Z M 9.7777763,20 v -2.222222 h 6.2222227 6.222222 V 20 22.222222 H 15.999999 9.7777763 Z m 0,-8 V 9.7777778 h 6.2222227 6.222222 V 12 14.222222 H 15.999999 9.7777763 Z"></path>
               </svg>
               <p class="sidebar_text">Blog</p>
             </div></a>
             <p class="sidebar_seperator"></p>
-            <a class="sidebar_link" href="wiki.html"><div class="sidebar_wiki">
+            <a class="sidebar_link" href="wiki.html"><div id="sidebar_button" class="sidebar_wiki">
               <svg class="sidebar_icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                 <path fill="currentColor" stroke-width="0.296296" d="M 0,29.777778 V 27.555556 H 16 32 V 29.777778 32 H 16 0 Z M 0,20.592593 V 18.37037 h 16 16 v 2.222223 2.222222 H 16 0 Z M 0,11.407407 V 9.1851852 H 16 32 V 11.407407 13.62963 H 16 0 Z M 0,2.2222221 V 0 H 16 32 V 2.2222221 4.4444444 H 16 0 Z"></path>
               </svg>
               <p class="sidebar_text">Wiki</p>
             </div></a>
             <p class="sidebar_seperator"> </p>
-            <a class="sidebar_link" href="links.html"><div class="sidebar_links">
+            <a class="sidebar_link" href="links.html"><div id="sidebar_button" class="sidebar_links">
               <svg class="sidebar_icon" viewBox="0 0 106 106" xmlns="http://www.w3.org/2000/svg">
                 <path fill="currentColor" stroke-width="0.981482" d="M 0.71880083,101.09946 V 95.210576 H 6.6076896 12.496579 v 5.888884 5.88889 H 6.6076896 0.71880083 Z m 32.38888817,0 V 95.210576 H 69.913246 106.7188 v 5.888884 5.88889 H 69.913246 33.107689 Z M 0.71880083,53.988353 V 48.099464 H 6.6076896 12.496579 v 5.888889 5.888889 H 6.6076896 0.71880083 Z m 32.38888817,0 V 48.099464 H 69.913246 106.7188 v 5.888889 5.888889 H 69.913246 33.107689 Z M 0.71880083,6.8772416 V 0.98835275 H 6.6076896 12.496579 V 6.8772416 12.766131 H 6.6076896 0.71880083 Z m 32.38888817,0 V 0.98835275 H 69.913246 106.7188 V 6.8772416 12.766131 H 69.913246 33.107689 Z"></path>
               </svg>
               <p class="sidebar_text">Links</p>
             </div></a>
             <p class="sidebar_seperator"></p>
-            <a class="sidebar_link" href="media.html"><div class="sidebar_media">
+            <a class="sidebar_link" href="media.html"><div id="sidebar_button" class="sidebar_media">
               <svg class="sidebar_icon" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
                 <path fill="currentColor" d="M 0,33.999999 V 0 h 24 24 v 23.999999 24 h -4 -4 v -20 V 7.9999999 H 24 8 v 29.9999991 30 H 4 0 Z m 20,10 v -24 h 4 4 v 20 20 h 16 16 v -30 V 0 h 4 4 v 33.999999 34 H 44 20 Z"></path>
               </svg>
               <p class="sidebar_text">Media</p>
             </div></a>
             <p class="sidebar_seperator"></p>
-            <a class="sidebar_link" href="comms.html"><div class="sidebar_comms">
+            <a class="sidebar_link" href="comms.html"><div id="sidebar_button" class="sidebar_comms">
               <svg class="sidebar_icon" viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg">
                 <path fill="currentColor" d="M 51,100.5 V 93 H 79.500001 108 v 7.5 7.5 H 79.500001 51 Z M 0,70.5 V 63 H 42 84.000001 V 70.5 78 H 42 0 Z M 33,39 V 33 H 70.5 108 v 6 6 H 70.5 33 Z M 0,7.5000003 V 0 H 46.5 93.000001 V 7.5000003 15 H 46.5 0 Z"></path>
               </svg>
@@ -333,13 +336,13 @@ footer {
           </div>
           
           <div class="type">
-            <p id="rants">Shrines (will be a sidebar button eventually)</p>
+            <p id="rants">Interests (will be a sidebar button eventually)</p>
             <p id="seperator_lonk">
           </div>
 
           <div id="cool_buttons">
 
-            <a class="sidebar_link" href="shrines/bb10.html"><div class="big_button">
+            <a class="sidebar_link" href="interests/bb10.html"><div class="big_button">
               <p>BlackBerry 10 (wip)</p>
               <p id="button_spacer"></p>
               <svg class="button_arrow" viewBox="0 0 54 85" xmlns="http://www.w3.org/2000/svg">
@@ -347,7 +350,7 @@ footer {
               </svg>
             </div></a>
 
-            <a class="sidebar_link" href="shrines/bb10.html"><div class="big_button" style="margin-bottom:0px;">
+            <a class="sidebar_link" href="interests/hwbm.html"><div class="big_button">
               <p>Heaven Will Be Mine (eventually)</p>
               <p id="button_spacer"></p>
               <svg class="button_arrow" viewBox="0 0 54 85" xmlns="http://www.w3.org/2000/svg">
@@ -358,14 +361,14 @@ footer {
           </div> <!-- #cool_buttons -->
 
           <div class="type">
-            <p id="rants">Actual blog posts</p>
+            <p>Actual blog posts</p>
             <p id="seperator_lonk">
           </div>
 
           <div id="cool_buttons">
 
-            <a class="sidebar_link" href="blog/items.html"><div class="big_button" style="margin-bottom:0px;">
-              <p>My favorite physical items that I own (wip)</p>
+            <a class="sidebar_link" href="blog/items.html"><div class="big_button">
+              <p>My favorite physical items that I own (forgot to finish lol)</p>
               <p id="button_spacer"></p>
               <svg class="button_arrow" viewBox="0 0 54 85" xmlns="http://www.w3.org/2000/svg">
                 <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
@@ -375,7 +378,7 @@ footer {
           </div> <!-- #cool_buttons -->
 
           <div class="type">
-            <p id="rants">Microbloging</p>
+            <p>Microbloging</p>
             <p id="seperator_lonk">
           </div>
 

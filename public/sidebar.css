@@ -47,10 +47,10 @@
   text-decoration: none;
   color: inherit !important;
 }
-.sidebar_index, .sidebar_blog, .sidebar_wiki, .sidebar_links, .sidebar_media, .sidebar_comms {
+#sidebar_button {
   margin-right: 2px;
 }
-.sidebar_index:hover, .sidebar_blog:hover, .sidebar_wiki:hover, .sidebar_links:hover, .sidebar_media:hover, .sidebar_comms:hover {
+#sidebar_button:hover {
   outline: 2px solid var(--text);
 }
 .ghost_margin {
