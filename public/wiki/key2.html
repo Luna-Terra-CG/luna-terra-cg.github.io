@@ -558,7 +558,7 @@ footer {
               <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
             </svg>
             <h3 class="article_name">LineageOS port FAQ</h3>
-            <p class="article_date"><var class="article-date-var">Last editied:</var> 25 Sep 2026</p>
+            <p class="article_date"><var class="article-date-var">Last editied:</var> 26 Sep 2026</p>
           </label>
           <input type="checkbox" id="article_faq" name="article_faq">
             <div class="article_contents" id="article_faq_contents">
@@ -575,6 +575,7 @@ footer {
               <h4 class="article_header">Is performance better than android 8.1?</h4>
                 <p class="article_text">Yes! The combination of optimizations from newer android and lighter weight rom can make it noticeably faster, even on android 15 with kernel 4.4</p>
                 <p class="article_text">Though becuase of it being an older mid-range phone it does <i>*heavily*</i> depend on how you've configured it and what apps you have installed</p>
+                <p class="article_text">Heavy apps like instagram can be slow or unusable</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Will I get timely security updates?</h4>
@@ -587,6 +588,12 @@ footer {
 
               <h4 class="article_header">Will this keep any of my data from the stock rom?</h4>
                 <p class="article_text">No. So make sure to backup what you need first.</p>
+              <p class="article_divider_small"></p>
+
+              <h4 class="article_header">How do I tell if I have a Key2 or Key2LE?</h4>
+                <p class="article_text">Run <code class="article_code">fastboot getvar product</code> in the bootloader.</p>
+                <p class="article_text">If the output starts with bbf100, you have a Key2.</p>
+                <p class="article_text">If it starts with bbe100, you have a Key2LE</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Can I do this with abx563, abn088, acw142, etc rom build installed?</h4>
@@ -610,7 +617,7 @@ footer {
 
               <h4 class="article_header">Do keyboard touch gestures still work on the Key2?</h4>
                 <p class="article_text">Yes! Scrolling is still a little weird in some apps but you can disable it with a Quick Settings button.</p>
-                <p class="article_text">Gestures when editing text work exactly the same as on android 8.1 if you use Krab-Ubica's version of BlackBerry keyboard or K12KB.</p>
+                <p class="article_text">Gestures when editing text work exactly the same as on android 8.1 if you use a version of the BlackBerry keyboard app or K12KB.</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Do banking apps or google wallet work?</h4>
@@ -647,7 +654,7 @@ footer {
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">I want to contribute, where is the source code?</h4>
-                <p class="article_text">Key2: Kernel 4.4 <a href="https://github.com/orgs/Lineage-BBKey2">https://github.com/orgs/Lineage-BBKey2</a>, Kernel 4.19 <a href="https://github.com/tim-ecoder/lineageos_blackberry_athena">https://github.com/tim-ecoder/lineageos_blackberry_athena</a> (out of date since 1.20D)</p>
+                <p class="article_text">Key2: ZKrab: <a href="https://github.com/orgs/Lineage-BBKey2">https://github.com/orgs/Lineage-BBKey2</a>, Non-ZKrab: <a href="https://github.com/tim-ecoder/lineageos_blackberry_athena">https://github.com/tim-ecoder/lineageos_blackberry_athena</a> (out of date since 1.20D)</p>
                 <p class="article_text">Key2LE: <a href="https://github.com/Lineage-BBKey2LE">https://github.com/Lineage-BBKey2LE</a></p>
                 <p class="article_text">Bootloader unlock: krab-ubica, BotchedRPR(?) and others</p>
               <p class="article_divider_small"></p>
@@ -666,7 +673,7 @@ footer {
               <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
             </svg>
             <h3 class="article_name">Install Guide for LineageOS UNOFFICIAL</h3>
-            <p class="article_date"><var class="article-date-var">Last editied:</var> 10 Sep 2026</p>
+            <p class="article_date"><var class="article-date-var">Last editied:</var> 26 Sep 2026</p>
           </label>
           <input type="checkbox" id="article_krab" name="article_krab">
             <div class="article_contents" id="article_krab_contents">
@@ -683,6 +690,7 @@ footer {
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Notes</h4>
+                <p class="article_text">If you don't understad any of the term used, read <a href="https://wiki.lineageos.org/glossary/">the LineageOS glossary</a>.</p>
                 <p class="article_text">If you have any questions or issues ask in the BlackBerry Android hideout discord server, the invite is <a href="https://discord.gg/BuJURQD6Qb">https://discord.gg/BuJURQD6Qb</a></p>
                 <p class="article_text">When asking for install help please don't DM community members, and ask in '# conversion-help' in the Key2 section, not a '# general' chat.</p>
                 <p class="article_text">If you don't know the path of a file you can drag it from your filemanager into a terminal window</p>
@@ -793,7 +801,7 @@ footer {
               <h4 class="article_header">Requirements</h4>
                 <p class="article_text">(recovery update) You have ADB and fastboot installed</p>
                 <p class="article_text">(recovery update) A USB type A to USB type C cable</p>
-                <p class="article_text">You cannot update from builds below LOS 22.2 builds v1.1B(Key2) and 20260606(Key2LE), and LOS 23.2 build 2.0G without wiping you data because of encryption changes!</p>
+                <p class="article_text">You cannot update from builds below LOS 22.2 builds v1.1B(Key2) and 20260606(Key2LE), and LOS 23.2 build 2.0G without wiping your data because of encryption changes!</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Notes</h4>
@@ -1535,7 +1543,7 @@ footer {
                 <p class="article_text"><a href="https://github.com/palsoftware/pastiera">Pastiera</a>: A foss keyboard app built for android phones with hardware keyboards. It's the default on Bochenek's rom builds.</p>
                 <p class="article_text"><a href="https://github.com/tim-ecoder/K12KB">K12KB</a>: The keyboard app bundled with the Key2 roms. Currently requires enableing 'Allow on-screen keyboard' in Settings -&gt; System -&gt; BlackBerry keyboard to work properly</p>
                 <p class="article_text"><a href="https://mega.nz/file/ZBJQXY4Q#2shEOGdU56T2yYTq02Zz4o5ARtkIMQhfK8h__AuAtZo">Krab-ubica's BlackBerry Keyboard</a>: The blackberry keyboard but with working keyboard gestures. Chloejp has made a version with all language packs available <a href="https://mega.nz/file/5nARHTaR#PGwnOkdDz4k1UAxviBiS78fKHAbMXs55_PL-Ga1lpH8">here</a> &amp; one with only vietnamese added available <a href="https://mega.nz/file/tmAShbRa#2Sf9X3QNpOSuQZEEahy76o2ibs7eWSOipvJ4Vf_j9Kc">here</a>.</p>
-                <p class="article_text"><a href="https://github.com/lhmb2025/bbkb-recompiled">BBKB 5</a>: A heavily modified version of the blackberry keyboard with material you colors, customizable keyboard gestures, newer emojis, language pack downloading, and a ton of various fixes and improvments. If you want to join they also have a discord server <a href="https://discord.gg/HavRXQHKj7">https://discord.gg/HavRXQHKj7</a></p>
+                <p class="article_text"><a href="https://github.com/lhmb2025/bbkb-recompiled">BBKB 5</a>: A new keyboard app based off of BlackBerry keyboard. It's main new features are: material you colors, custom themes, customizable keyboard gestures, newer emojis, and it also has ton of various fixes and improvments. If you want to join they also have a discord server <a href="https://discord.gg/HavRXQHKj7">https://discord.gg/HavRXQHKj7</a></p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Launchers</h4>
@@ -1555,7 +1563,7 @@ footer {
 
               <h4 class="article_header">Root Tweaks</h4>
                 <p class="article_text"><a href="https://github.com/kgr17/Key2Toolbox">Key2 Toolbox</a>: A root app that bundles a quite a few tweaks into one app, the full list is on the github repo</p>
-                <p class="article_text"><a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_wumbomumbo/k2prodfix.zip">k2prodfix v2.1</a>: Only use if you are on an alpha/beta rom!! A magisk module by wumbomumbo that lets you download BlackBerry services from the play store and make them think that they're running on an unmoddified Key2, it also adds more volume steps, hardware bluetooth A2DP offload, set swappiness to 60, and increase the max aquired buffers in SurfaceFlinger. If you have bluetooth issues after installing use <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_wumbomumbo/k2prodfixlite.zip">the lite version</a> instead.</p>
+                <p class="article_text"><a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_wumbomumbo/k2prodfixlite.zip">k2prodfix v2.1</a>: Only use if your not on a ZKrab rom!! A magisk module by wumbomumbo that lets you download BlackBerry services from the play store and make them think that their running on an unmoddified Key2, adds more volume steps, sets swappiness to 60, and increases the max aquired buffers in SurfaceFlinger.</p>
                 <p class="article_text"><a href="https://github.com/nozerorma/key2-tweaks">Key2 Tweaks</a>: A small utility app to enable keyboard passcode entry on krab-ubica's roms, disable the nav keys when the keyboard is open and replace the built in EQ.</p>
               <p class="article_divider_small"></p>
 
@@ -1586,7 +1594,7 @@ footer {
               <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
             </svg>
             <h3 class="article_name">Reverting to Android 8.1</h3>
-            <p class="article_date"><var class="article-date-var">Last editied:</var> 08 Jul 2026</p>
+            <p class="article_date"><var class="article-date-var">Last editied:</var> 24 Sep 2026</p>
           </label>
           <input type="checkbox" id="article_key2_a8" name="article_key2_a8">
             <div class="article_contents" id="article_key2_a8_contents">
@@ -1641,7 +1649,7 @@ footer {
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Fixing wifi, bluetooth &amp; cellular not working</h4>
-                <p class="article_text">This has been temporarily removed due to it modifiying the persist partition in an unsafe manner, thus breaking hardware key attestation</p>
+                <p class="article_text">This has been temporarily removed due to it modifiying the persist partition in an unsafe way, which breaks hardware key attestation (play integrity).</p>
 <!--                <p class="article_text">Note: This section is on how to fix a rare bug, you will most likely not experience it when reverting.</p>
                 <p class="article_text">If you relocked the bootloader unlock it again as shown in the install guide.</p>
                 <p class="article_text">Note: You need to use the same LineageOS recovery file you used earlier.</p>
