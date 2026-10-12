@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en_NS">
+
+<head>
+  <title>How to install SailfishOS on a Google Nexus 5</title>
+  <link rel="icon" type="image/x-icon" href="../assets/nonbinary.ico">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&amp;family=Oxygen:wght@300;400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../colors.css">
+  <link rel="stylesheet" href="../subpage.css">
+<style>
+
+:root {
+  --accent: var(--mauve) !important;
+  --accent-alt: color-mix(in oklab, var(--accent) 80%, var(--overlay2)) !important;
+}
+
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <aside class="background">
+      <p class="background_stars"></p>
+      <p class="background_scanLines"></p>
+    </aside>
+    <div class="jank">
+      <div class="back_flexbox">
+        <a href="../wiki.html"><div id="back_button">
+          <p>back</p>
+        </div></a>
+      </div>
+      <div class="article_flexbox">
+        <div class="article_container">
+          <div id="header">
+            <p id="header_text">wiki/How to install SailfishOS on a Google Nexus 5</p>
+          </div>
+
+          <p class="divider"></p>
+            <p class="text">If any of these file links are dead email me at daphnispastmidnight@duck.com I have them backed up locally.
+            <p class="text">This exists because every tutorial I found when trying to install it on mine either has enough missing for it to not 100% work or had dead/missing file links.
+          <p class="divider"></p>
+
+          <p class="header">Required files
+            <p class="text">SFOS 1
+            <ul>
+              <li class="text">twrp-3.7.0_9-0-hammerhead.img: <a href="https://dl.twrp.me/hammerhead/">https://dl.twrp.me/hammerhead/</a></li>
+              <li class="text">cm-11-20141008-SNAPSHOT-M11-hammerhead.zip: <a href="https://xdaforums.com/t/nexus-5-all-sailfishos-versions-archive.4716977/">https://xdaforums.com/t/nexus-5-all-sailfishos-versions-archive.4716977/</a> (install instructions in post don't work)</li>
+              <li class="text">sailfishos-hammerhead-release-1.1.9.28-beta0-201510022255.zip: <a href="https://xdaforums.com/t/nexus-5-all-sailfishos-versions-archive.4716977/">https://xdaforums.com/t/nexus-5-all-sailfishos-versions-archive.4716977/</a> (install instructions in post don't work)</li>
+            </ul>
+            <p class="divider_small"></p>
+            <p class="text">All versions newer than SFOS 1
+            <p class="text">SFOS 3.2.1.20 to 5.x: <a href="https://talk.maemo.org/showpost.php?p=1562106&postcount=785">https://talk.maemo.org/showpost.php?p=1562106&amp;postcount=785</a>
+            <p class="text">Older archived roms: <a href="https://xdaforums.com/t/nexus-5-all-sailfishos-versions-archive.4716977/">https://xdaforums.com/t/nexus-5-all-sailfishos-versions-archive.4716977/</a> (install instructions in post don't work)
+            <ul>
+              <li class="text">CF-Auto-Root.zip: <a href="https://mega.nz/file/lGhxxKya#6yshoy0o--_IzXpofGLogigbryW-ltdWX9y28qHEoEo">https://mega.nz/file/lGhxxKya#6yshoy0o--_IzXpofGLogigbryW-ltdWX9y28qHEoEo</a></li>
+              <li class="text">TWRP_multirom_hammerhead_20150630.img: <a href="https://mega.nz/folder/g3EhDKKA#CYwSB8o9AKhroBQkNwcw2w">https://mega.nz/folder/g3EhDKKA#CYwSB8o9AKhroBQkNwcw2w</a></li>
+              <li class="text">kernel_kexec_hammerhead_601.zip: <a href="https://mega.nz/file/xPpRHIRI#wa7SPBs4V3w5pIAR-qCzimNZ9_HvW1QUZt7ss4pt7cw">https://mega.nz/file/xPpRHIRI#wa7SPBs4V3w5pIAR-qCzimNZ9_HvW1QUZt7ss4pt7cw</a></li>
+              <li class="text">multirom-20160207-v33-hammerhead.zip: <a href="https://mega.nz/file/4H53gSwY#alz4wWx_7jQXnxlAz0l7OW4_s_4fsoR3HnsHphzwGf0">https://mega.nz/file/4H53gSwY#alz4wWx_7jQXnxlAz0l7OW4_s_4fsoR3HnsHphzwGf0</a></li>
+              <li class="text">cm-12.1-20160704-UNOFFICIAL-hammerhead-nocheck.zip: <a href="https://talk.maemo.org/showpost.php?p=1575238&postcount=1240">https://talk.maemo.org/showpost.php?p=1575238&amp;postcount=1240</a></li>
+            </ul>
+          <p class="divider"></p>
+
+          <p class="header">Installing SFOS 1</p>
+            <p class="text">Unlock the bootloader and flash the final factory image from: <a href="https://developers.google.com/android/images#hammerhead">https://developers.google.com/android/images#hammerhead</a>
+            <p class="text">Boot into the bootloader and flash the twrp recovery file <code>fastboot flash recovery twrp-3.7.0_9-0-hammerhead.img</code>
+            <p class="text">Enter recovery mode thru the bootloader menu
+            <p class="text">Format data in the Wipe menu
+            <p class="text">Sideload the cm-11 zip in Advanced/ADB Sideload, then WITHOUT REBOOTING do the same with the sailfishos zip.
+            <p class="text">Reboot the phone
+            <p class="text">Yup that it. Looks so short compared to the other one, doesn't it?
+          <p class="divider"></p>
+
+          <p class="header">Installing every other version
+              <p class="text">Note: This whole section is based on <a href="https://talk.maemo.org/showpost.php?p=1574832&postcount=1220">https://talk.maemo.org/showpost.php?p=1574832&amp;postcount=1220</a> but with some issues fixed, all credit goes to edp17!!!
+              <p class="text">This assumes you are not rooted, have an unlocked bootloader and are running the final android 6.0.1 factory image from <a href="https://developers.google.com/android/images#hammerhead">https://developers.google.com/android/images#hammerhead</a>
+            <p class="divider_small"></p>
+              <p class="text">Boot the .img file from CF-Auto-Root.zip with <code>fastboot boot CF-Auto-Root-hammerhead-hammerhead-nexus5.img</code>
+              <p class="text">It will reboot several times, do not turn it off during this.
+            <p class="divider_small"></p>
+              <p class="text">Once that finishes flash the TWRP multirom file.
+              <p class="text">Sideload kernel_kexec_hammerhead_601.zip then multirom-20160207-v33-hammerhead.zip
+              <p class="text">Reboot into the stock rom after sideloading the second zip file
+              <p class="text">Note: You can press Do Not Install when rebooting since it's already rooted
+            <p class="divider_small"></p>
+              <p class="text">Boot into recovery.
+              <p class="text">Uncheck the cache option in the mount menu
+              <p class="text">Disable and re enable MTP
+              <p class="text">Copy cm-12.1-20160704-UNOFFICIAL-hammerhead-nocheck.zip and your Saifish OS zip to the device via MTP
+              <p class="text">Unplug the USB cable
+              <p class="text">Go into Advanced, MultiROM, Settings, Configure autoboot
+              <p class="text">Set the radio buttons at the top to Disabled
+              <p class="text">Go into Advanced, MultiROM, Add ROM, SailfishOS, Next
+              <p class="text">Set the CyanogenMod ZIP file to cm-12.1-20160704-UNOFFICIAL-hammerhead-nocheck.zip
+              <p class="text">And set the Rootfs ZIP file to your Saifish OS zip file
+              <p class="text">Note: The flashing process can take over 10 minutes so you should plug in power
+              <p class="text">Reboot once it finishes, if you get a prompt to install root, press Do Not Install
+              <p class="text">Press the sailfish install twice to boot it
+              <p class="text">BOOTING INTO THE STOCK OS AT ALL WILL BRICK YOUR SAILFISH INSTALLATION
+              <p class="text">It may reboot after getting to the setup screen, if it does just boot sailfish again
+              <p class="text">Note: Pressing at the bottom of the screen when prompted in connect to wifi will let you skip logging into a Jolla account
+            <p class="divider_small"></p>
+              <p class="text">If you want to try a different sailfish zip, format data in recovery.
+              <p class="text">Sideload kernel_kexec_hammerhead_601.zip then multirom-20160207-v33-hammerhead.zip
+              <p class="text">Fully poweroff
+              <p class="text">Then redo the block of flashing steps directly above
+          <p class="divider"></p>
+
+          <p class="header">Fix bootloop after reflashing the factory image
+            <p class="text">Erase the boot, cache, recovery, system &amp; userdata partitions with the <code>fastboot erase</code> command.
+            <p class="text">Then flash the images inside the image-hammerhead zip in this order: boot, recovery, cache, system. Don't flash userdata.img.
+          <p class="divider"></p>
+
+        </div> <!-- .article_container -->
+      </div> <!-- .article_flexbox -->
+    </div> <!-- .jank -->
+  </div>
+</body>
+</html>
