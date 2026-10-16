@@ -502,6 +502,7 @@ footer {
               <p class="article_divider"></p>
 
               <h4 class="article_header">Requirements</h4>
+                <p class="article_text">I don't use root or google services anymore, this guide is effectively unmaintained and better modules are out there, if you want to improve this a not AI generated pull request is more than welcome.</p>
                 <p class="article_text">Note: The tutorial is meant for the blackberry key2(le) but will work for other android devices.
                 <p class="article_text">You have ADB and fastboot installed</p>
                 <p class="article_text">Your device is running LineageOS, if it's not see the article below</p>
@@ -559,7 +560,7 @@ footer {
               <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
             </svg>
             <h3 class="article_name">LineageOS port FAQ</h3>
-            <p class="article_date"><var class="article-date-var">Last editied:</var> 08 Oct 2026</p>
+            <p class="article_date"><var class="article-date-var">Last editied:</var> 16 Oct 2026</p>
           </label>
           <input type="checkbox" id="article_faq" name="article_faq">
             <div class="article_contents" id="article_faq_contents">
@@ -567,9 +568,10 @@ footer {
 
               <h4 class="article_header">What is the difference between the rom variants?</h4>
                 <p class="article_text">LOS22.2 + Kernel 4.4 is the older stable version, and is slower than the roms with kernel 4.19. It will be totally depricated in favor LOS22.2 + Kernel 4.19 (ZKrab).</p>
-                <p class="article_text">LOS22.2 + Kernel 4.19 (ZKrab) has the newer 4.19 kernel (read as four dot nineteen), meaning you get battery and performance improvments over the kernel 4.4 version. It's the default stable build, and the target for any new bugs being fixed.</p>
-                <p class="article_text">Note: LOS23.2 + Kernel 4.19 isn't available on the Key2LE</p>
+                <p class="article_text">LOS22.2 + Kernel 4.19 (ZKrab) has the newer 4.19 kernel (read as four dot nineteen), meaning you get battery and performance improvments over the kernel 4.4 version. It's the default stable build, and the target for any LOS22.2 bugs being fixed.</p>
+                <p class="article_text">Note: LOS23.2 &amp; LOS24 aren't available on the Key2LE</p>
                 <p class="article_text">LOS23.2 + Kernel 4.19 has the latest android version and better performance than the kernel 4.4 roms but is more buggy and is missing some of it features features (mainly OTA updates, FM radio &amp; dual sim fixes). GPU performance tends to be worse because of how much heavier android 16 is.</p>
+                <p class="article_text"><a href="https://github.com/nghoang290390-dotcom/key2-ota">LOS24 + Kernel 4.19</a> an extremely new, and unstable, port of android 17. Do not use it as more than a toy, it is not ready for it yet. Installion of it is not covered here, or supported by me, use at your own risk and discretion.</p>
                 <p class="article_text">Discontinued:
                 <p class="article_text">LOS22.2 + Kernel 4.19 (krab) was the first of the 2 LOS22.2 + Kernel 4.19 roms, it was marked discontinued by krab-ubica on 7 Oct 2026.</p>
               <p class="article_divider_small"></p>
@@ -589,13 +591,11 @@ footer {
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Will this keep any of my data from the stock rom?</h4>
-                <p class="article_text">No. So make sure to backup what you need first.</p>
+                <p class="article_text">No, so make sure to backup what you need first.</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">How do I tell if I have a Key2 or Key2LE?</h4>
-                <p class="article_text">Run <code class="article_code">fastboot getvar product</code> in the bootloader.</p>
-                <p class="article_text">If the output starts with bbf100, you have a Key2.</p>
-                <p class="article_text">If it starts with bbe100, you have a Key2LE</p>
+                <p class="article_text">Run <code class="article_code">fastboot getvar product</code> in the bootloader, if the output has bbf100 you have a Key2, if it has bbe100 you have a Key2LE.</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Can I do this with abx563, abn088, acw142, etc rom build installed?</h4>
@@ -610,6 +610,10 @@ footer {
 
               <h4 class="article_header">Does dual sim work?</h4>
                 <p class="article_text">Yes, but on LOS 23 the second IMEI does not get recogniced on some devices, this has been fixed in the LOS 22 roms.</p>
+              <p class="article_divider_small"></p>
+
+              <h4 class="article_header">Can I install this on any phones other than the Key2 and Key2LE?</h4>
+                <p class="article_text">No. Begging and/or being rude to the rom developers over this will not make it happen.</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Will this LineageOS port ever be made official?</h4>
@@ -630,7 +634,7 @@ footer {
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">What is the difference between the ROMs here and on CrackBerry?</h4>
-                <p class="article_text">The ROMs linked here are the builds put out by the rom developers, the one on CrackBerry is the Key2's 1.20G rom with a newer android security patch applied via AI.</p>
+                <p class="article_text">The ROMs linked here are the builds put out by the rom developers, the one on CrackBerry is the Key2's 1.20G rom with a newer android security patch applied with AI.</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Will versions of android older than 15 ever be ported?</h4>
@@ -646,13 +650,14 @@ footer {
 
               <h4 class="article_header">Who are the rom developers?</h4>
                 <p class="article_text">Note: Roms published by zzach have ZKrab in the version name</p>
-                <p class="article_text">Key2: zzach(zapaca), krab-ubica(tim-ecoder) Previously: BotchedRPR</p>
-                <p class="article_text">Key2LE: zzach(zapaca) Previously: BotchedRPR</p>
+                <p class="article_text">LOS 22: zzach(zapaca),  Previously: BotchedRPR, krab-ubica(tim-ecoder)</p>
+                <p class="article_text">LOS 23: krab-ubica(tim-ecoder) Previously: BotchedRPR</p>
+                <p class="article_text">LOS 24: Hoàng</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Who runs this website, is it official?</h4>
                 <p class="article_text">I have the username Luna-Terra in the discord server, but I am no longer very active there in protest of discord's age verification, and heavy user profiling</p>
-                <p class="article_text">I wouldn't call it official, but it's endorced by both current rom developers and the previous rom developer BotchedRPR.</p>
+                <p class="article_text">I wouldn't call it official since it's not written by a rom maintainer, but it's endorced by both current rom developers and the previous rom developer BotchedRPR.</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">I want to contribute, where is the source code?</h4>
@@ -1712,9 +1717,9 @@ footer {
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Root Tweaks</h4>
-                <p class="article_text"><a href="https://github.com/kgr17/Key2Toolbox">Key2 Toolbox</a>: A root app that bundles a quite a few tweaks into one app, the full list is on the github repo</p>
+                <p class="article_text"><a href="https://github.com/kgr17/Key2Toolbox">Key2 Toolbox</a>: A root app that bundles a lot of tweaks tweaks into one app, the full list is on the github repo</p>
                 <p class="article_text"><a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_wumbomumbo/k2prodfixlite.zip">k2prodfix v2.1</a>: Only use if your not on a ZKrab rom!! A magisk module by wumbomumbo that lets you download BlackBerry services from the play store and make them think that their running on an unmoddified Key2, adds more volume steps, sets swappiness to 60, and increases the max aquired buffers in SurfaceFlinger.</p>
-                <p class="article_text"><a href="https://github.com/nozerorma/key2-tweaks">Key2 Tweaks</a>: A small utility app to enable keyboard passcode entry on krab-ubica's roms, disable the nav keys when the keyboard is open and replace the built in EQ.</p>
+                <p class="article_text"><a href="https://github.com/nozerorma/aperture-blackberry">Aperture - BlackBerry Edition</a>: A Customized version of the default LOS camera app to look, and feel like, the camera app in the stock firmware (readme is ai generated and potentially the code, use at your own risk)</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Reduce background apps</h4>
