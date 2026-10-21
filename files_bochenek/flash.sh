@@ -9,10 +9,8 @@ echo "REEMENT, PLEASE CONTACT blackberry AT LEGALinfo@BLACKBERRY.COM. PLEASE REA
 echo "THIS DOCUMENT CAREFULLY BEFORE INSTALLING OR USING THE SOFTWARE."
 echo "***************************************************************************"
 echo
-
-BIN="./host/linux-x86/bin"
 IMG="./img"
-FASTBOOT="fastboot"
+FASTBOOT="./host/linux-x86/bin/fastboot"
 
 echo "Note: If device is not in fastboot mode"
 echo "Please switch to fastboot mode by holding the power and volume down key for 30s"
