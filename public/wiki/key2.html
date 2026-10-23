@@ -501,8 +501,10 @@ footer {
             <div class="article_contents" id="article_integritySpoofing_contents">
               <p class="article_divider"></p>
 
+              <h4 class="article_header">I don't use root or google services anymore, this guide is unmaintained and better modules are out there, if you want to improve this a not AI generated pull request is more than welcome.</h4>
+              <p class="article_divider_small"></p>
+
               <h4 class="article_header">Requirements</h4>
-                <p class="article_text">I don't use root or google services anymore, this guide is effectively unmaintained and better modules are out there, if you want to improve this a not AI generated pull request is more than welcome.</p>
                 <p class="article_text">Note: The tutorial is meant for the blackberry key2(le) but will work for other android devices.
                 <p class="article_text">You have ADB and fastboot installed</p>
                 <p class="article_text">Your device is running LineageOS, if it's not see the article below</p>
@@ -577,13 +579,13 @@ footer {
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Is performance better than android 8.1?</h4>
-                <p class="article_text">Yes! The combination of optimizations from newer android and lighter weight rom can make it noticeably faster, even on android 15 with kernel 4.4</p>
-                <p class="article_text">Though becuase of it being an older mid-range phone it does <i>*heavily*</i> depend on how you've configured it and what apps you have installed</p>
+                <p class="article_text">Yes! The combination of optimizations from newer android and lighter weight rom can make it noticeably faster, even on android 15 + kernel 4.4</p>
+                <p class="article_text">Though becuase of it being an older mid-range phone it does <i>HEAVILY</i> depend on how you've configured it and what apps you have installed.</p>
                 <p class="article_text">Heavy apps like instagram can be slow or unusable</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Will I get timely security updates?</h4>
-                <p class="article_text">On ZKrab roms you will get them within a week or 2. On non-zkrab roms you'll usally get them if there's a new one when krab-ubica releases a rom build.</p>
+                <p class="article_text">On LOS 22 you will get them within a week or 2. On LOS 23 you'll usally get them if there's a new one when the rom is released.</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">How long does the install take?</h4>
@@ -598,7 +600,8 @@ footer {
                 <p class="article_text">Run <code class="article_code">fastboot getvar product</code> in the bootloader, if the output has bbf100 you have a Key2, if it has bbe100 you have a Key2LE.</p>
               <p class="article_divider_small"></p>
 
-              <h4 class="article_header">Can I do this with abx563, abn088, acw142, etc rom build installed?</h4>
+              <h4 class="article_header">Does this work with my model or with abx563, abn088, acw142, rom build installed</h4>
+                <p class="article_text">This works with every model, even the Chinese exclusive model that doesn't have Google Services</p>
                 <p class="article_text">It doesn't matter what android 8.1 build you currently have installed, flashing the rom build required for the bootloader unlock is part of the guide.</p>
               <p class="article_divider_small"></p>
 
@@ -627,10 +630,8 @@ footer {
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Do banking apps or google wallet work?</h4>
-                <p class="article_text">It depends on the banking app, some banking apps will work and some will need play integrity spoofing to work,</p>
-                <p class="article_text">google wallet needs play integrity to be spoofed for it to work at all.</p>
-                <p class="article_text">Note: Setting up play integrity spoofing may not fix your banking app,
-                <p class="article_text">the modules set linked here is not perfect and you may need different ones for your app to work</p>
+                <p class="article_text">It depends on the banking app, some banking apps will work and some will need play integrity spoofing to work, google wallet needs play integrity to be spoofed for it to work at all.</p>
+                <p class="article_text">Note: Setting up play integrity spoofing may not fix your banking app, the modules set linked here is not perfect and you may need different ones for your app to work.</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">What is the difference between the ROMs here and on CrackBerry?</h4>
@@ -656,8 +657,8 @@ footer {
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Who runs this website, is it official?</h4>
-                <p class="article_text">I have the username Luna-Terra in the discord server, but I am no longer very active there in protest of discord's age verification, and heavy user profiling</p>
-                <p class="article_text">I wouldn't call it official since it's not written by a rom maintainer, but it's endorced by both current rom developers and the previous rom developer BotchedRPR.</p>
+                <p class="article_text">I have the username luna-terra in the discord server, but I'm not super active there because of Discords's heavy user profiling</p>
+                <p class="article_text">I wouldn't call it official since it's not written by a rom developer, but it's endorced by both current rom developers and the previous rom developer BotchedRPR.</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">I want to contribute, where is the source code?</h4>
@@ -718,10 +719,11 @@ footer {
                 <p class="article_text">For the Key2LE (Luna) download the <a href="https://mega.nz/file/5doWRJRL#G6dQcZo4bGgZJIDHchV9oW_cxBwlUu1CxLzdxCrg9Ec">ACT575 Autoloader</a>.</p>
                 <p class="article_text">Power off your device then boot into the bootloader, you do that by holding volume down and the power button until <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/blob/main/assets_fumo.enterprises/K2-5.jpg">this green menu appears</a>.</p>
                 <p class="article_text">You now need to flash the autoloader, to do so extract the downloaded 7z file and run the included 'flashall.bat' file</p>
-                <p class="article_text">Note: A linux version of the flashall.bat script is available <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_bochenek/flash.sh">here</a>.</p>
+                <p class="article_text">Note: A linux version of the flashall.bat script is available <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_BotchedRPR/flash.sh">here</a>.</p>
                 <p class="article_text">If you get any <code class="article_code">error: cannot load</code> messages you can ignore them.</p>
                 <p class="article_text">The phone will now reboot to either the android 8.1 setup, an 'Error!' screen, or the bootloader. It does not matter which.</p>
-                <p class="article_text">Reboot to the bootloader and run flashall.bat again</p>
+                <p class="article_text">Reboot to the bootloader and run flashall.bat a second time</p>
+                <p class="article_text">Note: That is needed because on some devices after only flashing it once the unlock tool doesn't see that the required rom version is installed.</p>
                 <p class="article_text">Power off your device then boot into the bootloader.</p>
               <p class="article_divider_small"></p>
 
@@ -735,7 +737,7 @@ footer {
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Unlocking the bootloader (Linux)</h4>
-                <p class="article_text">Download kibo from <a href="https://github.com/BotchedRPR/kibo/releases">Bochenek's github page</a> and extract the zip file you downloaded.</p>
+                <p class="article_text">Download kibo from <a href="https://github.com/BotchedRPR/kibo/releases">BotchedRPR's github page</a> and extract the zip file you downloaded.</p>
                 <p class="article_text">Mark the kibo binary included with the zip file as executable.</p>
                 <p class="article_text">Open a terminal where kibo is located and run <code class="article_code">./kibo unlock</code></p>
                 <p class="article_text">If the unlock was successful, on the phone <code class="article_code">MODE:</code> will change from <code class="article_code">PRODUCT</code> to <code class="article_code">FACTORY</code></p>
@@ -877,6 +879,9 @@ footer {
           </label>
           <input type="checkbox" id="article_key2_changelog" name="article_key2_changelog">
             <div class="article_contents" id="article_key2_changelog_contents">
+              <p class="article_divider"></p>
+
+              <h4 class="article_header">The rom release dates are what day it was in the US/Eastern time zone when the build was published, not the build date!</h4>
               <p class="article_divider"></p>
 
               <input type="checkbox" id="k2-16-419" name="k2-16-419">
@@ -1695,10 +1700,10 @@ footer {
               <p class="article_divider"></p>
 
               <h4 class="article_header">Keyboard Apps</h4>
-                <p class="article_text"><a href="https://github.com/palsoftware/pastiera">Pastiera</a>: A foss keyboard app built for android phones with hardware keyboards. It's was default in Bochenek's rom builds.</p>
+                <p class="article_text"><a href="https://github.com/pkb-rocks/plektra">Plektra</a>: A foss keyboard app built for android phones with hardware keyboards. It was default in BotchedRPR's rom builds</p>
                 <p class="article_text"><a href="https://github.com/tim-ecoder/K12KB">K12KB</a>: The keyboard app bundled with the Key2 roms. Currently requires enableing 'Allow on-screen keyboard' in Settings -&gt; System -&gt; BlackBerry keyboard to work properly</p>
                 <p class="article_text"><a href="https://mega.nz/file/ZBJQXY4Q#2shEOGdU56T2yYTq02Zz4o5ARtkIMQhfK8h__AuAtZo">Krab-ubica's BlackBerry Keyboard</a>: The original BlackBerry keyboard app with modifications to make gesture controlls work in android 16. Chloejp has made a version with all language packs bundled, available <a href="https://mega.nz/file/5nARHTaR#PGwnOkdDz4k1UAxviBiS78fKHAbMXs55_PL-Ga1lpH8">here</a> &amp; one with only vietnamese added, available <a href="https://mega.nz/file/tmAShbRa#2Sf9X3QNpOSuQZEEahy76o2ibs7eWSOipvJ4Vf_j9Kc">here</a>.</p>
-                <p class="article_text"><a href="https://github.com/lhmb2025/bbkb-recompiled">BBKB 5</a>: A new keyboard app based off of BlackBerry keyboard. It's main new features are: material you colors, custom themes, remapable keyboard gestures, newer emojis, and a ton of various fixes and improvments. They also have a discord server if you want to join <a href="https://discord.gg/HavRXQHKj7">https://discord.gg/HavRXQHKj7</a></p>
+                <p class="article_text"><a href="https://github.com/lhmb2025/bbkb-recompiled">BBKB 5</a>: A new keyboard app based off of BlackBerry keyboard. It's main new features are: material you colors, custom themes, remapable keyboard gestures, newer emojis, it also has a ton of various fixes and improvments. They also have a discord server if you want to join <a href="https://discord.gg/HavRXQHKj7">https://discord.gg/HavRXQHKj7</a></p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Launchers</h4>
@@ -1779,7 +1784,7 @@ footer {
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Locking the bootloader (Linux)</h4>
-                <p class="article_text">Download kibo from <a href="https://github.com/BotchedRPR/kibo/releases">Bochenek's github page</a> and extract the zip file you downloaded.</p>
+                <p class="article_text">Download kibo from <a href="https://github.com/BotchedRPR/kibo/releases">BotchedRPR's github page</a> and extract the zip file you downloaded.</p>
                 <p class="article_text">Mark the kibo binary included with the zip file as executable.</p>
                 <p class="article_text">Open a terminal where kibo is located and run <code class="article_code">./kibo unlock</code></p>
                 <p class="article_text">If the relock was successful, on the phone MODE: will change from <code class="article_code">FACTORY</code> to <code class="article_code">PRODUCT</code>.</p>
@@ -1793,12 +1798,12 @@ footer {
                 <p class="article_text">Once your rom download finishes extract the zip file it downloads as</p>
                 <p class="article_text">Make sure device is fully powered off then hold power and volume down until the bootloader appears</p>
                 <p class="article_text">Run the flashall.bat script from the autoloader.</p>
-                <p class="article_text">Note: A linux version of the flashall.bat script is available <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_bochenek/flash.sh">here</a>.</p>
+                <p class="article_text">Note: A linux version of the flashall.bat script is available <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_BotchedRPR/flash.sh">here</a>.</p>
                 <p class="article_text">If you did not lock the bootloader follow the section below</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Booting ACQ160 with an unlocked bootloader</h4>
-                <p class="article_text">Download the modded boot file from <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_bochenek/acq160-mfi-boot.img">here</a>.</p>
+                <p class="article_text">Download the modded boot file from <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_BotchedRPR/acq160-mfi-boot.img">here</a>.</p>
                 <p class="article_text">Or if you want to root you need to use <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_krab/boot160-nosfi-pt0-root290.img">this boot file</a> and <a href="https://github.com/topjohnwu/Magisk/releases#release-v29.0">and Magisk v29.0</a></p>
                 <p class="article_text">Open a terminal where you downloaded the file and run <code class="article_code">fastboot flash boot acq160-mfi-boot.img</code>, or if your rooting run <code class="article_code">fastboot flash boot boot160-nosfi-pt0-root290.img</code></p>
               <p class="article_divider_small"></p>
@@ -1815,7 +1820,7 @@ footer {
                   <li><code class="article_code">fastboot reboot</code></li>
                 </ul>
                 <p class="article_text">Once the recovery menu appears select 'Advanced' -&gt; 'Enable ADB'</p>
-                <p class="article_text">Download the persist partition patch from <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_bochenek/persist.7z">here</a> then extract the downloaded 7z file.</p>
+                <p class="article_text">Download the persist partition patch from <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_BotchedRPR/persist.7z">here</a> then extract the downloaded 7z file.</p>
                 <p class="article_text">Open a terminal where you extracted the file <code class="article_code">persist</code> to, then run the following commands:</p>
                 <ul class="article_list">
                   <li><code class="article_code">adb push persist /tmp/</code></li>
