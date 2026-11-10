@@ -562,7 +562,7 @@ footer {
               <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
             </svg>
             <h3 class="article_name">LineageOS port FAQ</h3>
-            <p class="article_date"><var class="article-date-var">Last editied:</var> 16 Oct 2026</p>
+            <p class="article_date"><var class="article-date-var">Last editied:</var> 10 Nov 2026</p>
           </label>
           <input type="checkbox" id="article_faq" name="article_faq">
             <div class="article_contents" id="article_faq_contents">
@@ -669,6 +669,7 @@ footer {
 
               <h4 class="article_header">Where can I contact the rom developers, the website writer, or report bugs?</h4>
                 <p class="article_text">On the BlackBerry Android hideout discord server <a href="https://discord.gg/BuJURQD6Qb">https://discord.gg/BuJURQD6Qb</a></p>
+                <p class="article_text">If you find a bug and cannot or do not want to use discord, email it, your installed rom version, and steps to reproduce it and I will post the bug for you, if log files are needed from you I will privately give the developer your email.</p>
                 <p class="article_text">But if you need to contact me directly please leave something on my guestbook, or on one of the platforms on my index page.</p>
               <p class="article_divider"></p>
 
@@ -681,7 +682,7 @@ footer {
               <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
             </svg>
             <h3 class="article_name">Install Guide for LineageOS UNOFFICIAL</h3>
-            <p class="article_date"><var class="article-date-var">Last editied:</var> 26 Sep 2026</p>
+            <p class="article_date"><var class="article-date-var">Last editied:</var> 10 Nov 2026</p>
           </label>
           <input type="checkbox" id="article_krab" name="article_krab">
             <div class="article_contents" id="article_krab_contents">
@@ -717,9 +718,11 @@ footer {
 
                 <p class="article_text">For the Key2 (Athena) download the <a href="https://mega.nz/file/pdBjAARa#l5WNgDKoaRWN-ORkK-lBPhGqkwyFqz91HlU3r-CGWfs">ACQ160 Autoloader</a>.</p>
                 <p class="article_text">For the Key2LE (Luna) download the <a href="https://mega.nz/file/5doWRJRL#G6dQcZo4bGgZJIDHchV9oW_cxBwlUu1CxLzdxCrg9Ec">ACT575 Autoloader</a>.</p>
-                <p class="article_text">Power off your device then boot into the bootloader, you do that by holding volume down and the power button until <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/blob/main/assets_fumo.enterprises/K2-5.jpg">this green menu appears</a>.</p>
+                <p class="article_text">Power off your device then boot into the bootloader, you do that by holding volume down and the power button</p>
+                <img src="key2/product.webp" style="width:300px;margin:12px;"/>
                 <p class="article_text">You now need to flash the autoloader, to do so extract the downloaded 7z file and run the included 'flashall.bat' file</p>
                 <p class="article_text">Note: A linux version of the flashall.bat script is available <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_bochenek/flash.sh">here</a>.</p>
+                <img src="key2/stock.webp" style="width:440px;margin:12px;"/>
                 <p class="article_text">If you get any <code class="article_code">error: cannot load</code> messages you can ignore them.</p>
                 <p class="article_text">The phone will now reboot to either the android 8.1 setup, an 'Error!' screen, or the bootloader. It does not matter which.</p>
                 <p class="article_text">Reboot to the bootloader and run flashall.bat a second time</p>
@@ -732,6 +735,7 @@ footer {
                 <p class="article_text">Open the unlock tool.</p>
                 <p class="article_text">Press the scan in the upper right corner, once your device is found press the 'Unlock BootLoader' button</p>
                 <p class="article_text">Note: The progress bar will stay at 75% even after the unlock finishes</p>
+                <img src="key2/unlock_win.webp" style="width:440px;margin:12px;"/>
                 <p class="article_text">If the unlock was successful, on the phone <code class="article_code">MODE:</code> will change from <code class="article_code">PRODUCT</code> to <code class="article_code">FACTORY</code></p>
                 <p class="article_text">Power off you device</p>
               <p class="article_divider_small"></p>
@@ -740,12 +744,13 @@ footer {
                 <p class="article_text">Download kibo from <a href="https://github.com/BotchedRPR/kibo/releases">BotchedRPR's github page</a> and extract the zip file you downloaded.</p>
                 <p class="article_text">Mark the kibo binary included with the zip file as executable.</p>
                 <p class="article_text">Open a terminal where kibo is located and run <code class="article_code">./kibo unlock</code></p>
+                <img src="key2/unlock_lin.webp" style="width:440px;margin:12px;"/>
                 <p class="article_text">If the unlock was successful, on the phone <code class="article_code">MODE:</code> will change from <code class="article_code">PRODUCT</code> to <code class="article_code">FACTORY</code></p>
                 <p class="article_text">Power off you device</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Flashing LineageOS</h4>
-                <p class="article_text"><var class="article_header">Alpha, beta, and daily testing builds may have breaking changes and are not as stable, use at your own risk!</var></p>
+<!--                 <p class="article_text"><var class="article_header">Alpha, beta, and daily testing builds may have breaking changes and are not as stable, use at your own risk!</var></p> -->
                 <p class="article_text">Note: If are going to use it as your daily phone or aren't sure which variant you want, use LOS 22.2 + kernel 4.19</p>
                 <p class="article_text">If you have a Key2 (Athena) download the latest build of your preferred Key2 compatable rom variant</p>
                 <ul class="article_list">
@@ -763,7 +768,7 @@ footer {
                 <p class="article_text">The recommended gapps package for LineageOS 22 is <a href="https://github.com/MindTheGapps/15.0.0-arm64/releases/latest">MindTheGapps 15</a>, and <a href="https://github.com/MindTheGapps/16.0.0-arm64/releases/latest">MindTheGapps 16</a> for LineageOS 23.</p>
                 <p class="article_divider_small"></p>
 
-                <p class="article_text">Note: Krab-Ubica recommendes flashing the <a href="https://drive.google.com/drive/folders/14v-IQtztn6GbvDzfsTk-WgUpW_m-mUrR">modem firmware from ACW142</a> when using a Key2 (NOT THE KEY2LE) with a rom on the 4.19 kernel, but that is not covered here.</p>
+                <p class="article_text">Note: Krab-Ubica recommends flashing the <a href="https://drive.google.com/drive/folders/14v-IQtztn6GbvDzfsTk-WgUpW_m-mUrR">modem firmware from ACW142</a> when using a Key2 (NOT THE KEY2LE) with a rom on the 4.19 kernel, but that is not covered here.</p>
                 <p class="article_text">Open a terminal/command prompt window where you extracted the rom's zip file to</p>
                 <p class="article_text">Boot into the bootloader by holding volume down and the power button.</p>
                 <p class="article_text">Run the following commands:</p>
@@ -772,6 +777,7 @@ footer {
                   <li><code class="article_code">fastboot flash boot /path/to/recovery.img</code></li>
                   <li><code class="article_code">fastboot reboot</code></li>
                 </ul>
+                <img src="key2/recovery.webp" style="width:300px;margin:12px;"/>
                 <p class="article_text">Note: You need to flash recovery to the boot partition because fastboot reboot recovery doesn't work :p</p>
                 <p class="article_text">Note: You navigate the recovery by using the volume keys to move the cursor and the power button the select.</p>
                 <p class="article_text">Once the recovery menu appears select Advanced -&gt; Enable ADB</p>
@@ -782,12 +788,14 @@ footer {
                 <p class="article_text">Note: Make sure the zip file your sideloading is the one *inside* the one you downloaded.</p>
                 <p class="article_text">If you are using a ZKrab rom run <code class="article_code">adb sideload /path/to/lineage-22.2-&lt;date&gt;-UNOFFICIAL-&lt;version&gt;-&lt;codename&gt;.zip</code></p>
                 <p class="article_text">if your not run <code class="article_code">adb sideload /path/to/lineage-&lt;lineageVersion&gt;-&lt;date&gt;-UNOFFICIAL-krab-&lt;version&gt;-athena.zip</code></p>
+                <img src="key2/rom.webp" style="width:300px;margin:12px;"/>
                 <p class="article_text">If you have any additional zips to flash(ie: gapps, magisk) go into 'Apply update' -&gt; 'Apply update from adb' and run <code class="article_code">adb sideload /path/to/package.zip</code>, once the signature verification failed message appears select yes.</p>
+                <img src="key2/gapps.webp" style="width:300px;margin:12px;"/>
                 <p class="article_text">Press the 'Reboot system' button</p>
                 <p class="article_text">If you get set back to recovery and sideloading the rom again does not fix it you may have a 'bcb recovery' unit, to get around that boot into the bootloader and run <code class="article_code">fastboot flash recovery boot.img</code></p>
-                <p class="article_divider_small"></p>
 
                 <p class="article_text">Note: The first boot can take up to 10-15 minutes</p>
+                <img src="key2/finish.webp" style="width:300px;margin:12px;"/>
                 <p class="article_text">(Optional) Download a keyboard app that supports the physical keyboard from the Apps &amp; Tweaks article</p>
               <p class="article_divider"></p>
 
@@ -800,7 +808,7 @@ footer {
               <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
             </svg>
             <h3 class="article_name">Updating to a newer LineageOS UNOFFICIAL build</h3>
-            <p class="article_date"><var class="article-date-var">Last editied:</var> 10 Sep 2026</p>
+            <p class="article_date"><var class="article-date-var">Last editied:</var> 10 Nov 2026</p>
           </label>
           <input type="checkbox" id="article_krab_update" name="article_krab_update">
             <div class="article_contents" id="article_krab_update_contents">
@@ -812,11 +820,13 @@ footer {
                 <p class="article_text">You cannot update from builds below LOS 22.2 builds v1.1B(Key2) and 20260606(Key2LE), and LOS 23.2 build 2.0G without wiping your data because of encryption changes!</p>
               <p class="article_divider_small"></p>
 
+              <h4 class="article_header">Due to differences in the encryption between the LOS 22 and 23 roms not factory reseting before flashing <i>will corrupt all of your user data</i>, if you want to change los versions please follow the Flashing LineageOS section of the install guide intead of this one.</h4>
+              <p class="article_divider_small"></p>
+
               <h4 class="article_header">Notes</h4>
-                <p class="article_text">If you want to change to a different varient and your NOT changing from a ZKrab to ZKrab you WILL have to follow the Flashing LineageOS section of the install guide intead of this one.</p>
                 <p class="article_text">The ZKrab roms support moving between 4.4 and 4.19 kernel versions without wiping your data</p>
                 <p class="article_text">If you need to downgrade you can do so with the recovery update method.
-                <p class="article_text">You cannot downgrade to versions under ZKrab-1.9a(Key2), ZKrab-1.4a(Key2LE), 1.21A(key2) without wiping your data because of the changes in the July 2026 security</p>
+                <p class="article_text">You cannot downgrade to versions under ZKrab-1.9a(Key2), ZKrab-1.4a(Key2LE), 2.1A(Key2) without wiping your data because of the changes in the July 2026 security</p>
                 <p class="article_text">If you are on LOS22.2-kernel 4.4 and on v1.8a or lower when updating to ZKrab build make sure the k2prodfix magisk module is removed, it's changes have been merged into the rom.</p>
                 <p class="article_text">Moving to/from ZKrab - Kernel 4.19:
                 <p class="article_text"><var class="article_header">If you are using adoptable/internal SD storage on kernel 4.4 ROM</var>: Before updating to v1.20a+, migrate/backup all apps/files from the SD card, format the SD card as normal/portable storage, then repeat formatting as adoptable/internal storage after updating to v1.20a+
@@ -824,7 +834,7 @@ footer {
               <p class="article_divider"></p>
 
               <h4 class="article_header">Updating via OTA update</h4>
-                <p class="article_text">Only LOS22.2 + Kernel 4.4 builds above v1.8a(Key2) and 20260602(Key2LE) and Zkrab kernel 4.19 roms support OTA updates!!!</p>
+                <p class="article_text">Only LOS22.2 + Kernel 4.4 builds above v1.8a(Key2) and 20260602(Key2LE) and LOS22.2 + Kernel 4.19 roms support OTA updates!!!</p>
                 <p class="article_text">Note: You will get a notification when a new build get released, updating this way does not keep root</p>
                 <p class="article_text">Go to Settings  -&gt; System -&gt; System Update</p>
                 <p class="article_text">Click the 'Download' text for the latest update.</p>
@@ -857,13 +867,12 @@ footer {
                   <li><code class="article_code">fastboot reboot</code></li>
                 </ul>
                 <p class="article_text">Select 'Apply update' -&gt; 'Apply update from adb'</p>
-                <p class="article_text">Note: If your flashing android 16 you need to cancel out of the apply update menu then go back in for it to work</p>
                 <p class="article_text">Note: The zip file you need to sideload is the one *inside* of the LOS zip file you just downloaded</p>
                 <p class="article_text">If you are using a ZKrab rom run <code class="article_code">adb sideload /path/to/lineage-22.2-&lt;date&gt;-UNOFFICIAL-&lt;version&gt;-&lt;codename&gt;.zip</code></p>
                 <p class="article_text">and if your not run <code class="article_code">adb sideload /path/to/lineage-&lt;lineageVersion&gt;-&lt;date&gt;-UNOFFICIAL-krab-&lt;version&gt;-athena.zip</code></p>
                 <p class="article_text">If you have google services installed go into 'Apply update' -&gt; 'Apply update from adb' and run <code class="article_code">adb sideload /path/to/gapps.zip</code>, once the signature verification failed messages appears select yes.</p>
                 <p class="article_text">If your not rooted select 'Reboot system'</p>
-                <p class="article_text">If your rooted select 'Advanced' then 'Reboot to bootloader', once the bootloader appears flash your modified boot.img file and boot the phone.</p>
+                <p class="article_text">If your rooted select 'Advanced' then 'Reboot to bootloader', once the bootloader appears flash your modified boot.img file and reboot.</p>
               <p class="article_divider_small"></p>
 
             </div>
@@ -1069,7 +1078,7 @@ footer {
                   <h4 class="article_header">Known bugs</h4>
                     <ul class="article_list">
                       <li class="article_text">Yellow flashlight-torch</li>
-                      <li class="article_text">Haptic/vibro is less powerfull</li>
+                      <li class="article_text">Haptic/vibro is less powerful</li>
                       <li class="article_text">Colors little bit over-saturated on Synaptics LCD</li>
                       <li class="article_text">user-report: wired-headset UI-sounds fail</li>
                     </ul>
@@ -1284,7 +1293,6 @@ footer {
                     <li class="article_text">Change keyboard and navigation button backlight timeouts to 10 seconds to match stock BB Android 8.1</li>
                   </ul>
                   <p class="article_text">Display sizes 1/7, 2/7, 3/7 rounded up (294->300, 336->340, 378->380; avoids old values falling just below some application layout thresholds)</p>
-                  <p class="article_text">Fix far-end voice echo during VOIP calls</p>
                   <p class="article_text">Prevent BBF100-9 (Japanese single-SIM) devices being initialized as dual-SIM (not tested)</p>
                 <p class="article_divider_small"></p>
 
