@@ -572,8 +572,8 @@ footer {
                 <p class="article_text">LOS22.2 + Kernel 4.4 is the older stable version, and is slower than the roms with kernel 4.19. It will be totally depricated in favor LOS22.2 + Kernel 4.19 (ZKrab).</p>
                 <p class="article_text">LOS22.2 + Kernel 4.19 (ZKrab) has the newer 4.19 kernel (read as four dot nineteen), meaning you get battery and performance improvments over the kernel 4.4 version. It's the default stable build, and the target for any LOS22.2 bugs being fixed.</p>
                 <p class="article_text">Note: LOS23.2 &amp; LOS24 aren't available on the Key2LE</p>
-                <p class="article_text">LOS23.2 + Kernel 4.19 has the latest android version and better performance than the kernel 4.4 roms but is more buggy and is missing some of it features features (mainly OTA updates, FM radio &amp; dual sim fixes). GPU performance tends to be worse because of how much heavier android 16 is.</p>
-                <p class="article_text"><a href="https://github.com/nghoang290390-dotcom/key2-ota">LOS24 + Kernel 4.19</a> an extremely new, and unstable, port of android 17. Do not use it as more than a toy, it is not ready for it yet. Installion of it is not covered here, or supported by me, use at your own risk and discretion.</p>
+                <p class="article_text">LOS23.2 + Kernel 4.19 has android version 16 but may be more buggy and is missing some of the niceties from the LOS 22.2 roms (mainly OTA updates, FM radio &amp; dual sim fixes). GPU performance tends to be worse because of how much heavier android 16 is.</p>
+                <p class="article_text"><a href="https://github.com/nghoang290390-dotcom/key2-ota">LOS24 + Kernel 4.19</a> an extremely new, port of android 17. Do not use it as more than a toy, it is not ready for it yet. Installion of it is not covered here, or supported by me, use at your own discretion.</p>
                 <p class="article_text">Discontinued:
                 <p class="article_text">LOS22.2 + Kernel 4.19 (krab) was the first of the 2 LOS22.2 + Kernel 4.19 roms, it was marked discontinued by krab-ubica on 7 Oct 2026.</p>
               <p class="article_divider_small"></p>
@@ -609,6 +609,7 @@ footer {
                 <p class="article_text">If your sim card works on the stock roms it will most likely work on Lineage OS, but it cannot be guaranteed.</p>
                 <p class="article_text">Some carriers in France and Vietnam are known have to problems with VoLTE be registered (Unfortunately I cannot find a list at time of writing)</p>
                 <p class="article_text">But if you need eSIM support that does not work.</p>
+                <p class="article_text">VoWIFI calling is also supported on LOS 22.2, but some of the carriers it has been tested have blocked it because the phone was not bought from them.</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Does dual sim work?</h4>
@@ -669,7 +670,7 @@ footer {
 
               <h4 class="article_header">Where can I contact the rom developers, the website writer, or report bugs?</h4>
                 <p class="article_text">On the BlackBerry Android hideout discord server <a href="https://discord.gg/BuJURQD6Qb">https://discord.gg/BuJURQD6Qb</a></p>
-                <p class="article_text">If you find a bug and cannot or do not want to use discord, email it, your installed rom version, and steps to reproduce it and I will post the bug for you, if log files are needed from you I will privately give the developer your email.</p>
+                <p class="article_text">If you find a bug and cannot or do not want to use discord <a href="mailto:daphnispastmidnight@duck.com">email me</a> a description of the bug, your installed rom version, and steps to reproduce it and I will post the bug for you, if log files are needed from you I will privately give the developer your email.</p>
                 <p class="article_text">But if you need to contact me directly please leave something on my guestbook, or on one of the platforms on my index page.</p>
               <p class="article_divider"></p>
 
@@ -699,7 +700,7 @@ footer {
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Notes</h4>
-                <p class="article_text">If you don't understand any of the terms used here, read <a href="https://wiki.lineageos.org/glossary/">the LineageOS glossary</a>.</p>
+                <p class="article_text">If you don't understand any of the terms used here read <a href="https://wiki.lineageos.org/glossary/">the LineageOS glossary</a>.</p>
                 <p class="article_text">If you have any questions or issues ask in the BlackBerry Android hideout discord server, the invite is <a href="https://discord.gg/BuJURQD6Qb">https://discord.gg/BuJURQD6Qb</a></p>
                 <p class="article_text">When asking for install help please don't DM community members, and ask in '# conversion-help' in the Key2 section, not a '# general' chat.</p>
                 <p class="article_text">If you don't know the path of a file you can drag it from your filemanager into a terminal window</p>
@@ -713,7 +714,7 @@ footer {
                 <p class="article_text">(optional) Write down the rom version you currently have installed (ie: abl911, act575, etc), this can make bugs you report easier to fix.</p>
                 <p class="article_text">Remove your lockscreen password and google account from your device</p>
                 <p class="article_text">If the option to remove you passcode or google account is grayed out factory reset from settings</p>
-                <p class="article_text">If you do not remember your password put in random passwords until the device automatically factory resets, then follow <a href="https://youtu.be/HPddEUfth7A">theses instructions</a> from the device setup.</p>
+                <p class="article_text">If you do not remember your password put in random passwords until the device automatically factory resets, then follow <a href="https://youtu.be/HPddEUfth7A">theses instructions</a> from the device setup (if that doesn't work just continue with the guide).</p>
                 <p class="article_divider_small"></p>
 
                 <p class="article_text">For the Key2 (Athena) download the <a href="https://mega.nz/file/pdBjAARa#l5WNgDKoaRWN-ORkK-lBPhGqkwyFqz91HlU3r-CGWfs">ACQ160 Autoloader</a>.</p>
@@ -724,9 +725,9 @@ footer {
                 <p class="article_text">Note: A linux version of the flashall.bat script is available <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/raw/refs/heads/files/files_bochenek/flash.sh">here</a>.</p>
                 <img src="key2/stock.webp" style="width:440px;margin:12px;"/>
                 <p class="article_text">If you get any <code class="article_code">error: cannot load</code> messages you can ignore them.</p>
-                <p class="article_text">The phone will now reboot to either the android 8.1 setup, an 'Error!' screen, or the bootloader. It does not matter which.</p>
+                <p class="article_text">Once that script finishes the phone will reboot to either the android 8.1 setup, an 'Error!' screen, or the bootloader. It does not matter which.</p>
                 <p class="article_text">Reboot to the bootloader and run flashall.bat a second time</p>
-                <p class="article_text">Note: That is needed because on some devices after only flashing it once the unlock tool doesn't see that the required rom version is installed.</p>
+                <p class="article_text">Note: On some devices after only flashing it once the unlock tool doesn't see that the required rom version is installed.</p>
                 <p class="article_text">Power off your device then boot into the bootloader.</p>
               <p class="article_divider_small"></p>
 
@@ -736,7 +737,7 @@ footer {
                 <p class="article_text">Press the scan in the upper right corner, once your device is found press the 'Unlock BootLoader' button</p>
                 <p class="article_text">Note: The progress bar will stay at 75% even after the unlock finishes</p>
                 <img src="key2/unlock_win.webp" style="width:440px;margin:12px;"/>
-                <p class="article_text">If the unlock was successful, on the phone <code class="article_code">MODE:</code> will change from <code class="article_code">PRODUCT</code> to <code class="article_code">FACTORY</code></p>
+                <p class="article_text">If the unlock was successful, <code class="article_code">MODE:</code> will change from <code class="article_code">PRODUCT</code> to <code class="article_code">FACTORY</code> on the phone</p>
                 <p class="article_text">Power off you device</p>
               <p class="article_divider_small"></p>
 
@@ -745,7 +746,8 @@ footer {
                 <p class="article_text">Mark the kibo binary included with the zip file as executable.</p>
                 <p class="article_text">Open a terminal where kibo is located and run <code class="article_code">./kibo unlock</code></p>
                 <img src="key2/unlock_lin.webp" style="width:440px;margin:12px;"/>
-                <p class="article_text">If the unlock was successful, on the phone <code class="article_code">MODE:</code> will change from <code class="article_code">PRODUCT</code> to <code class="article_code">FACTORY</code></p>
+                <p class="article_text">Accept the unlock prompt that's on the phone.</p>
+                <p class="article_text">If the unlock was successful, <code class="article_code">MODE:</code> will change from <code class="article_code">PRODUCT</code> to <code class="article_code">FACTORY</code> on the phone</p>
                 <p class="article_text">Power off you device</p>
               <p class="article_divider_small"></p>
 
@@ -777,8 +779,8 @@ footer {
                   <li><code class="article_code">fastboot flash boot /path/to/recovery.img</code></li>
                   <li><code class="article_code">fastboot reboot</code></li>
                 </ul>
-                <img src="key2/recovery.webp" style="width:300px;margin:12px;"/>
                 <p class="article_text">Note: You need to flash recovery to the boot partition because fastboot reboot recovery doesn't work :p</p>
+                <img src="key2/recovery.webp" style="width:300px;margin:12px;"/>
                 <p class="article_text">Note: You navigate the recovery by using the volume keys to move the cursor and the power button the select.</p>
                 <p class="article_text">Once the recovery menu appears select Advanced -&gt; Enable ADB</p>
                 <p class="article_text">From a computer run <code class="article_code">adb shell wipe-frp</code></p>
@@ -834,7 +836,7 @@ footer {
               <p class="article_divider"></p>
 
               <h4 class="article_header">Updating via OTA update</h4>
-                <p class="article_text">Only LOS22.2 + Kernel 4.4 builds above v1.8a(Key2) and 20260602(Key2LE) and LOS22.2 + Kernel 4.19 roms support OTA updates!!!</p>
+                <p class="article_text">Only LOS22.2 + Kernel 4.4 builds above v1.8a(Key2) and 20260602(Key2LE) and LOS22.2 + Kernel 4.19 (ZKrab) roms support OTA updates!!!</p>
                 <p class="article_text">Note: You will get a notification when a new build get released, updating this way does not keep root</p>
                 <p class="article_text">Go to Settings  -&gt; System -&gt; System Update</p>
                 <p class="article_text">Click the 'Download' text for the latest update.</p>
@@ -1716,7 +1718,7 @@ footer {
                 <p class="article_text"><a href="https://github.com/pkb-rocks/plektra">Plektra</a>: A foss keyboard app built for android phones with hardware keyboards. It was default in BotchedRPR's rom builds</p>
                 <p class="article_text"><a href="https://github.com/tim-ecoder/K12KB">K12KB</a>: The keyboard app bundled with the Key2 roms. Currently requires enableing 'Allow on-screen keyboard' in Settings -&gt; System -&gt; BlackBerry keyboard to work properly</p>
                 <p class="article_text"><a href="https://mega.nz/file/ZBJQXY4Q#2shEOGdU56T2yYTq02Zz4o5ARtkIMQhfK8h__AuAtZo">Krab-ubica's BlackBerry Keyboard</a>: The original BlackBerry keyboard app with modifications to make gesture controlls work in android 16. Chloejp has made a version with all language packs bundled, available <a href="https://mega.nz/file/5nARHTaR#PGwnOkdDz4k1UAxviBiS78fKHAbMXs55_PL-Ga1lpH8">here</a> &amp; one with only vietnamese added, available <a href="https://mega.nz/file/tmAShbRa#2Sf9X3QNpOSuQZEEahy76o2ibs7eWSOipvJ4Vf_j9Kc">here</a>.</p>
-                <p class="article_text"><a href="https://github.com/lhmb2025/bbkb-recompiled">BBKB 5</a>: A new keyboard app based off of BlackBerry keyboard. It's main new features are: material you colors, custom themes, remapable keyboard gestures, newer emojis, it also has a ton of various fixes and improvments. They also have a discord server if you want to join <a href="https://discord.gg/HavRXQHKj7">https://discord.gg/HavRXQHKj7</a></p>
+                <p class="article_text"><a href="https://github.com/lhmb2025/bbkb-recompiled">BBKB 5</a>: A new keyboard app based off of BlackBerry keyboard. It's main new features are: material you colors, custom themes, remapable keyboard gestures, newer emojis, it also has a ton of various fixes and improvments. They have a discord server aswell if you want to join <a href="https://discord.gg/HavRXQHKj7">https://discord.gg/HavRXQHKj7</a></p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Launchers</h4>
@@ -1727,11 +1729,10 @@ footer {
                 <p class="article_divider_small"></p>
 
                 <h4 class="article_header">Other</h4>
-                <p class="article_text"><a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/releases/download/gcam-v3/AGC88_krab-v3.apk">AGC 8.8 mod</a>: A build of the AGC 8.8 GCam mod with changes to work with the Key2's hardware.</p>
+                <p class="article_text"><a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io/releases/download/gcam-v3/AGC88_krab-v3.apk">AGC 8.8 mod</a>: A build of the AGC GCam mod with changes to work with the Key2's hardware.</p>
                 <p class="article_text"><a href="https://github.com/aistra0528/Hail">Hail</a>: Freeze certain apps to stop them from running in the background</p>
                 <p class="article_text"><a href="https://github.com/PeterCxy/Shelter">Shelter</a>/<a href="https://github.com/proletarius101/Insular">Insular</a>/<a href="https://github.com/oasisfeng/island">Island</a>: Add apps to a work profile to isolate them from other apps, stop them from auto starting or install multible versions at once.</p>
                 <p class="article_text"><a href="https://github.com/keymapperorg/KeyMapper">KeyMapper</a>: Remap any button and set custom keyboard shortcuts easily</p>
-                <p class="article_text"><a href="https://github.com/Aliucord/Aliucord">Aliucord</a>: A completely native discord mod based on a version from before it was a wrapper for the mobile website</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Root Tweaks</h4>
