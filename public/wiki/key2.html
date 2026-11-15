@@ -213,6 +213,10 @@ a:active {
 #article_key2_a8:not(:checked) + #article_key2_a8_contents {
   display: none;
 }
+#article_roms{display:none}
+#article_roms:not(:checked) + #article_roms_contents {
+  display: none;
+}
 /* gnereal stuff */
 .article_title {
   color: var(--text);
@@ -1861,9 +1865,33 @@ footer {
                 </ul>
                 <p class="article_text">Lock your bootloader again then redo the flashing section android 8.1 of the guide</p>-->
               <p class="article_divider"></p>
-
             </div>
           <p class="article_name_divider" style="width:auto;margin-right:var(--article-padding);"></p>
+
+          <label for="article_roms" class="article_title">
+          <p class="article_name_divider"></p>
+            <svg class="article_arrow" viewBox="0 0 54 85" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
+            </svg>
+            <h3 class="article_name">Other custom roms</h3>
+            <p class="article_date"><var class="article-date-var">Last editied:</var> 15 Nov 2026</p>
+          </label>
+          <input type="checkbox" id="article_roms" name="article_roms">
+            <div class="article_contents" id="article_roms_contents">
+              <p class="article_divider"></p>
+
+              <p class="article_text"><a href="https://community.e.foundation/t/unofficial-build-blackberry-key2-athena-blackberry-key2-le-luna-for-e-os-a15-4-x/">/e/OS</a>: Completely deGoogled and a different theme.</p>
+              <p class="article_text"><a href="https://github.com/iamtheretronerd/banana-os">Banana OS</a> (Key2LE): LOS with BlackBerry 10 styling and UX</p>
+              <p class="article_text"><a href="https://github.com/kurdworld/calyxos_updates">Calyx OS</a> (Key2): Bundled microG and a more security focus. Android 17, based on zzach's LOS 22 sources.</p>
+              <p class="article_text">SailfishOS (Key2, Key2LE planned): Mobile linux distro with a sleek user interface. This port is not released yet.</p>
+              <p class="article_divider_small"></p>
+              <p class="article_text">If you have made an addidional custom rom with Key2(LE) support please <a href="mailto:daphnispastmidnight@duck.com">email me</a></p>
+
+              <p class="article_divider"></p>
+            </div>
+          <p class="article_name_divider" style="width:auto;margin-right:var(--article-padding);"></p>
+
+
           <footer>
             <p>CC BY-SA 4.0 license - hosted on <a href="https://daphnis-past-midnight.nekoweb.org/wiki/key2.html">nekoweb.org</a> &amp; <a href="https://luna-terra-cg.github.io/public/wiki/key2.html">github.io</a> - <a href="https://github.com/Luna-Terra-CG/luna-terra-cg.github.io.git">source code</a> - <a href="https://github.com/catppuccin/catppuccin">catppuccin colors</a></p>
           </footer>
