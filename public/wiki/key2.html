@@ -492,7 +492,7 @@ footer {
           <div id="header">
             <p id="header_text">wiki/Key2(LE) LineageOS Stuff</p>
           </div>
-          <h4 class="article_header" style="margin-left:20px;margin-right:var(--article-padding);">THE KERENEL 4.4 ROMS WILL BE DEPRICATED. IF YOUR ON THIS VERSION PLEASE UPDATE TO LOS22.2 + KERNEL 4.19. YOU CAN DO SO WITHOUT DATA LOSS, IF YOU ARE USING ADOPTABLE STORAGE <a href="https://github.com/Lineage-BBKey2/distribution/releases/tag/v1.21a">SEE HERE</a>.</h4>
+          <h4 class="article_header" style="margin-left:20px;margin-right:var(--article-padding);">THE KERENEL 4.4 ROMS HAVE NOW HAD THEIR FINAL RELEASE. FURFER OTA UPDATES AFTER 1.14a WILL UPDATE YOU TO A KERNEL 4.19 VERSION, IF YOUR USING ADOPTABLE STORAGE YOU CANNOT UPDATE CLEANLY, <a href="https://github.com/Lineage-BBKey2/distribution/releases/tag/v1.21a">SEE HERE</a>.</h4>
           <label for="article_integritySpoofing" class="article_title">
             <p class="article_name_divider"></p>
             <svg class="article_arrow" viewBox="0 0 54 85" xmlns="http://www.w3.org/2000/svg">
@@ -566,19 +566,19 @@ footer {
               <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
             </svg>
             <h3 class="article_name">LineageOS port FAQ</h3>
-            <p class="article_date"><var class="article-date-var">Last editied:</var> 25 Nov 2026</p>
+            <p class="article_date"><var class="article-date-var">Last editied:</var> 27 Nov 2026</p>
           </label>
           <input type="checkbox" id="article_faq" name="article_faq">
             <div class="article_contents" id="article_faq_contents">
               <p class="article_divider"></p>
 
               <h4 class="article_header">What is the difference between the rom variants?</h4>
-                <p class="article_text">LOS22.2 + Kernel 4.4 is the older stable version, and is slower than the roms with kernel 4.19. It will be totally depricated in favor LOS22.2 + Kernel 4.19 (ZKrab).</p>
-                <p class="article_text">LOS22.2 + Kernel 4.19 (ZKrab) has the newer 4.19 kernel (read as four dot nineteen), meaning you get battery and performance improvments over the kernel 4.4 version. It's the default stable build, and the target for any LOS22.2 bugs being fixed.</p>
+                <p class="article_text">LOS22.2 + Kernel 4.4 is the older stable version, and is slower than the roms with kernel 4.19. It has been replaced by LOS22.2 + Kernel 4.19 (ZKrab).</p>
+                <p class="article_text">LOS22.2 + Kernel 4.19 (ZKrab) has the newer 4.19 kernel (read as four dot nineteen), meaning you get battery, performance, and large security improvments over the kernel 4.4 version. It's the default stable build, and the target for any LOS22.2 bugs being fixed.</p>
                 <p class="article_text">Note: LOS23.2 &amp; LOS24 aren't available on the Key2LE</p>
                 <p class="article_text">LOS23.2 + Kernel 4.19 has android version 16 but may be more buggy and is missing some of the niceties from the LOS 22.2 roms (mainly OTA updates, FM radio, dual sim fixes, &amp; working language pack downloads in BLackBerry keyboard). GPU performance tends to be worse because of how much heavier android 16 is.</p>
-                <p class="article_text"><a href="https://github.com/nghoang290390-dotcom/key2-ota">LOS24 + Kernel 4.19</a> an extremely new, port of android 17. Do not use it as more than a toy, it is not ready for it yet. Installion of it is not covered here, or supported by me, use at your own discretion.</p>
-                <p class="article_text">Discontinued:
+                <p class="article_text">LOS24 + Kernel 4.19 there are 2 versions out right now, <a href="https://github.com/kurdworld/lineageos_ota">the one developed by Kali based on zzach's roms</a>, <a href="https://github.com/nghoang290390-dotcom/key2-ota">and the one developed by Hoàng based on BotchedRPR's old port</a>. Neither of them are complete, and both are still new, Kail's has more active development being done on it.</p>
+                <p class="article_text">Discontinued:</p>
                 <p class="article_text">LOS22.2 + Kernel 4.19 (krab) was the first of the 2 LOS22.2 + Kernel 4.19 roms, it was marked discontinued by krab-ubica on 7 Oct 2026.</p>
               <p class="article_divider_small"></p>
 
@@ -604,9 +604,9 @@ footer {
                 <p class="article_text">Run <code class="article_code">fastboot getvar product</code> in the bootloader, if the output has bbf100 you have a Key2, if it has bbe100 you have a Key2LE.</p>
               <p class="article_divider_small"></p>
 
-              <h4 class="article_header">Does this work with my model or with abx563, abn088, acw142, rom build installed</h4>
+              <h4 class="article_header">Does this work with my model or with abx563, abn088, acw142, etc, rom build installed?</h4>
                 <p class="article_text">This works with every model, even the Chinese exclusive model that doesn't have Google Services</p>
-                <p class="article_text">It doesn't matter what android 8.1 build you currently have installed, flashing the rom build required for the bootloader unlock is part of the guide.</p>
+                <p class="article_text">It doesn't matter what android 8.1 build you currently have installed, flashing the rom build required by the bootloader unlock is part of the guide.</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Will this work with my carrier?</h4>
@@ -648,7 +648,7 @@ footer {
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Where can I get someone to do this to my device?</h4>
-                <p class="article_text">The install is really easy (for modding stuff) so you can call a local repair shop or a techy person you know, and see if you can pay them to install this custom rom on your phone.</p>
+                <p class="article_text">The install is easy (for modding stuff) so you can call a local repair shop or a techy person you know, and see if you can pay them to install this custom rom on your phone.</p>
                 <p class="article_text">At least one should be able too. And it should be much much quicker than mailing it to someone.</p>
                 <p class="article_text">Note: Make sure to call and ASK, some repair shops won't do this and basically none advertise doing this.</p>
                 <p class="article_text">Or if you want a community member to install it, you can also ask in '💲 for-sale' in the discord server</p>
@@ -658,7 +658,8 @@ footer {
                 <p class="article_text">Note: Roms published by zzach have ZKrab in the version name</p>
                 <p class="article_text">LOS 22: zzach(zapaca),  Previously: BotchedRPR, krab-ubica(tim-ecoder)</p>
                 <p class="article_text">LOS 23: krab-ubica(tim-ecoder) Previously: BotchedRPR</p>
-                <p class="article_text">LOS 24: Hoàng</p>
+                <p class="article_text">LOS 24: Kali, Hoàng</p>
+                <p class="article_text">Bootloader unlock: krab-ubica, BotchedRPR(?) and others</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Who runs this website, is it official?</h4>
@@ -666,10 +667,9 @@ footer {
                 <p class="article_text">I wouldn't call it official since I am not one of the rom developers, but it's endorced by both current rom developers and the previous rom developer BotchedRPR.</p>
               <p class="article_divider_small"></p>
 
-              <h4 class="article_header">I want to contribute, where is the source code?</h4>
-                <p class="article_text">Key2: ZKrab: <a href="https://github.com/orgs/Lineage-BBKey2">https://github.com/orgs/Lineage-BBKey2</a>, Non-ZKrab: <a href="https://github.com/tim-ecoder/lineageos_blackberry_athena">https://github.com/tim-ecoder/lineageos_blackberry_athena</a> (out of date since 1.20D)</p>
-                <p class="article_text">Key2LE: <a href="https://github.com/Lineage-BBKey2LE">https://github.com/Lineage-BBKey2LE</a></p>
-                <p class="article_text">Bootloader unlock: krab-ubica, BotchedRPR(?) and others</p>
+              <h4 class="article_header">Where is the source code?</h4>
+                <p class="article_text">LOS 22.2: <a href="https://github.com/orgs/Lineage-BBKey2">https://github.com/orgs/Lineage-BBKey2</a></p>
+                <p class="article_text">LOS 23.2: <a href="https://github.com/tim-ecoder/lineageos_blackberry_athena">https://github.com/tim-ecoder/lineageos_blackberry_athena</a> (out of date since 1.20D)</p>
               <p class="article_divider_small"></p>
 
               <h4 class="article_header">Where can I contact the rom developers, the website writer, or report bugs?</h4>
@@ -760,14 +760,14 @@ footer {
                 <p class="article_text">Note: If are going to use it as your daily phone or aren't sure which variant you want, use LOS 22.2 + kernel 4.19</p>
                 <p class="article_text">If you have a Key2 (Athena) download the latest build of your preferred Key2 compatable rom variant</p>
                 <ul class="article_list">
-                  <li class="article_text">For LOS 22.2 + kernel 4.4 download the Key2 version of build <a href="https://github.com/Lineage-BBKey2/distribution/releases/download/v1.13a/LOS22_Key2_ZKrab-v1.13a.zip">ZKrab-v1.13a</a></li>
-                  <li class="article_text">For LOS 22.2 + kernel 4.19 (ZKrab) download the Key2 version of build <a href="https://github.com/Lineage-BBKey2/distribution/releases/download/v1.22a/LOS22_Key2_ZKrab-v1.22a.zip">ZKrab-1.22a</a></li>
+                  <li class="article_text">For LOS 22.2 + kernel 4.4 download the Key2 version of build <a href="https://github.com/Lineage-BBKey2/distribution/releases/download/v1.14a/LOS22_Key2_ZKrab-v1.14a.zip">ZKrab-v1.14a</a></li>
+                  <li class="article_text">For LOS 22.2 + kernel 4.19 (ZKrab) download the Key2 version of build <a href="https://github.com/Lineage-BBKey2/distribution/releases/download/v1.23a/LOS22_Key2_ZKrab-v1.23a.zip">ZKrab-1.23a</a></li>
                   <li class="article_text">For LOS 23.2 + kernel 4.19 download build <a href="https://mega.nz/file/ZZhCyRAb#SM6TYB-G13IJ5J1rWEUnAgY1q5AYeP-2ZsyQ9TzDBNc">Krab-2.5B</a></li>
                 </ul>
                 <p class="article_text">If you have a Key2LE (Luna) download the latest build of your perferred Key2LE compatable rom variant</p>
                 <ul class="article_list">
-                  <li class="article_text">For LOS 22.2 + kernel 4.4 download the Key2LE version of build <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.13a/LOS22_Key2LE_ZKrab-v1.13a.zip">ZKrab-v1.13a</a></li>
-                  <li class="article_text">For LOS 22.2 + kernel 4.19 (ZKrab) download the Key2LE version of build <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.22a/LOS22_Key2LE_ZKrab-v1.22a.zip">ZKrab-1.22a</a></li>
+                  <li class="article_text">For LOS 22.2 + kernel 4.4 download the Key2LE version of build <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.14a/LOS22_Key2LE_ZKrab-v1.14a.zip">ZKrab-v1.14a</a></li>
+                  <li class="article_text">For LOS 22.2 + kernel 4.19 (ZKrab) download the Key2LE version of build <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.23a/LOS22_Key2LE_ZKrab-v1.23a.zip">ZKrab-1.23a</a></li>
                 </ul>
                 <p class="article_text">Once your rom download finishes extract the .zip file</p>
                 <p class="article_text">Gapps (Google Services) is not included in the rom, if you want them you will need to download it seperately.</p>
@@ -852,14 +852,14 @@ footer {
               <h4 class="article_header">Updating via recovery</h4>
                 <p class="article_text">If you have a Key2 (Athena) download the latest build of your preferred Key2 compatable rom variant</p>
                 <ul class="article_list">
-                  <li class="article_text">For LOS 22.2 + kernel 4.4 download the Key2 version of build <a href="https://github.com/Lineage-BBKey2/distribution/releases/download/v1.13a/LOS22_Key2_ZKrab-v1.13a.zip">ZKrab-v1.13a</a></li>
-                  <li class="article_text">For LOS 22.2 + kernel 4.19 (ZKrab) download the Key2 version of build <a href="https://github.com/Lineage-BBKey2/distribution/releases/download/v1.22a/LOS22_Key2_ZKrab-v1.22a.zip">ZKrab-1.22a</a></li>
+                  <li class="article_text">For LOS 22.2 + kernel 4.4 download the Key2 version of build <a href="https://github.com/Lineage-BBKey2/distribution/releases/download/v1.14a/LOS22_Key2_ZKrab-v1.14a.zip">ZKrab-v1.14a</a></li>
+                  <li class="article_text">For LOS 22.2 + kernel 4.19 (ZKrab) download the Key2 version of build <a href="https://github.com/Lineage-BBKey2/distribution/releases/download/v1.23a/LOS22_Key2_ZKrab-v1.23a.zip">ZKrab-1.23a</a></li>
                   <li class="article_text">For LOS 23.2 + kernel 4.19 download build <a href="https://mega.nz/file/ZZhCyRAb#SM6TYB-G13IJ5J1rWEUnAgY1q5AYeP-2ZsyQ9TzDBNc">Krab-2.5B</a></li>
                 </ul>
                 <p class="article_text">If you have a Key2LE (Luna) download the latest build of your perferred Key2LE compatable rom variant</p>
                 <ul class="article_list">
-                  <li class="article_text">For LOS 22.2 + kernel 4.4 download the Key2LE version of build <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.13a/LOS22_Key2LE_ZKrab-v1.13a.zip">ZKrab-v1.13a</a></li>
-                  <li class="article_text">For LOS 22.2 + kernel 4.19 (ZKrab) download the Key2LE version of build <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.22a/LOS22_Key2LE_ZKrab-v1.22a.zip">ZKrab-1.22a</a></li>
+                  <li class="article_text">For LOS 22.2 + kernel 4.4 download the Key2LE version of build <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.14a/LOS22_Key2LE_ZKrab-v1.14a.zip">ZKrab-v1.14a</a></li>
+                  <li class="article_text">For LOS 22.2 + kernel 4.19 (ZKrab) download the Key2LE version of build <a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.23a/LOS22_Key2LE_ZKrab-v1.23a.zip">ZKrab-1.23a</a></li>
                 </ul>
                 <p class="article_text">Once your rom download finishes extract the .zip file</p>
                 <p class="article_text">If your phone is rooted patch the boot.img file included with the new build.</p>
@@ -890,7 +890,7 @@ footer {
               <path fill="currentColor" d="M 5.7562988,79.218243 0.03683021,73.436486 15.522985,57.969213 31.00914,42.50194 15.50457,26.969301 0,11.436663 5.7766512,5.7183321 11.553301,0 32.77665,21.247858 54,42.495716 32.737884,63.747858 11.475767,85 Z"></path>
             </svg>
             <h3 class="article_name">LineageOS UNOFFICIAL changelog</h3>
-            <p class="article_date"><var class="article-date-var">LOS 22.2 + K4.4:</var> ZKrab-v1.13a <var class="article-date-var">LOS 22.2 + K4.19:</var> ZKrab-1.22a <var class="article-date-var">LOS 23.2:</var> 2.5B</p>
+            <p class="article_date"><var class="article-date-var">LOS 22.2 + K4.4:</var> ZKrab-v1.14a <var class="article-date-var">LOS 22.2 + K4.19:</var> ZKrab-1.23a <var class="article-date-var">LOS 23.2:</var> 2.5B</p>
           </label>
           <input type="checkbox" id="article_key2_changelog" name="article_key2_changelog">
             <div class="article_contents" id="article_key2_changelog_contents">
@@ -1191,6 +1191,16 @@ footer {
                   <p class="article_divider_small"></p>
                 </div>-->
 
+                <h4 class="article_header"><a href="https://github.com/Lineage-BBKey2/distribution/releases/download/v1.23a/LOS22_Key2_ZKrab-v1.23a.zip">ZKrab-v1.23a 26 Nov 2026</a></h4>
+                  <p class="article_text">Nov. 2026 Android platform security patches/updates from upstream LOS 22.2</p>
+                  <p class="article_text">Prevent occasional failure of camera to load after boot</p>
+                  <p class="article_text">Fix switching from speaker to earpiece for WhatsApp voice messages</p>
+                  <p class="article_text">Add guards against accidental navigation key presses during top-row keyboard typing and keyboard swiping (*)</p>
+                  <p class="article_text">Kernel upstream updates and backports (*)</p>
+                  <p class="article_text">Move Legacy BlackBerry apps menu from Settings/System/BlackBerry Settings to Settings/Apps</p>
+                  <p class="article_text">(*) With krab-ubica's help - thank you!</p>
+                <p class="article_divider_small"></p>
+
                 <h4 class="article_header"><a href="https://github.com/Lineage-BBKey2/distribution/releases/download/v1.22a/LOS22_Key2_ZKrab-v1.22a.zip">ZKrab-v1.22a 15 Nov 2026</a></h4>
                   <p class="article_text">Update kernel with fixes and security updates from CIP129 through CIP136</p>
                   <p class="article_text">BlackBerry settings:</p>
@@ -1316,6 +1326,44 @@ footer {
               <p class="article_divider_small"></p>
 
               <div id="k2-15-44_changelog">
+
+                <h4 class="article_header"><a href="https://github.com/Lineage-BBKey2/distribution/releases/download/v1.14a/LOS22_Key2_ZKrab-v1.14a.zip">ZKrab-v1.14A 26 Nov 2026</a></h4>
+                  <p class="article_text">Change OTA update URL to 4.19 kernel ROM releases</p>
+                  <ul class="article_list">
+                    <li class="article_text">OTA update above v1.14a prevented with message if adoptable storage is being used
+                  </ul>
+                  <p class="article_text">Nov. 2026 Android platform security patches/updates from upstream LOS 22.2</p>
+                  <p class="article_text">BlackBerry settings:</p>
+                  <ul class="article_list">
+                    <li class="article_text">Add keyboard "turn off with bright screen" toggle (independent from adaptive brightness toggle)</li>
+                    <li class="article_text">Add Archive.org option for Legacy BlackBerry apps installation alongside Google Play option</li>
+                    <li class="article_text">Enable non-Latin script language typing on physical keyboard</li>
+                    <li class="article_text">All language layouts from stock BlackBerry Android 8.1 supported (some languages including Korean, Japanese, Chinese may require BlackBerry Keyboard IME)</li>
+                    <li class="article_text">Adapted AOSP layouts for other languages and English Colemak/Dvorak/Workman also supported</li>
+                    <li class="article_text">Layout is auto-selected for supported languages and can be previewed/changed in Settings/System/Keyboard/Physical keyboard/stmpe_keypad/[chosen IME+chosen language]</li>
+                  </ul>
+                  <p class="article_text">Aperture Camera:</p>
+                  <ul class="article_list">
+                    <li class="article_text">Full screen camera preview, re-arrange controls to minimize overlap with preview</li>
+                    <li class="article_text">Stop cropping of captured photos and videos compared to preview in some cases</li>
+                    <li class="article_text">Add native HDR mode (ON/OFF control only)</li>
+                  </ul>
+                  <p class="article_text">Volume:</p>
+                  <ul class="article_list">
+                    <li class="article_text">Return to stock Android 8.1 volume increment numbers for media (15), notification (7), alarm (7), ring (7)</li>
+                    <li class="article_text">Adjust media volume curve to approximately match new 1/15 volume level to old 1/30</li>
+                    <li class="article_text">Use wider ring, notification, alarm curves to make low volume settings quieter </li>
+                    <li class="article_text">Change call volume increments from 15 to 10 (fixes bug of calls not starting at min. volume despite min. volume setting)</li>
+                    <li class="article_text">Add volume curves for Assistant and hearing aids (*)</li>
+                  </ul>
+                  <p class="article_text">Make toggle(s) to disable SIM card(s) usable (implementation adapted from 7SIM)</p>
+                  <p class="article_text">Start search in Settings with physical keyboard typing (*)</p>
+                  <p class="article_text">Allow Cast quick-settings tile to activate Wi-Fi and operate when Wi-Fi is enabled but disconnected</p>
+                  <p class="article_text">Prevent a black-screen freeze (caused by system_server freezing itself)</p>
+                  <p class="article_text">Fix recovery image updating when "Update recovery" is enabled in Settings/System/System updates/Preferences</p>
+                  <p class="article_text">Fix language saving issue in recovery (*)</p>
+                  <p class="article_text">(*) With krab-ubica's help - thank you!</p>
+                <p class="article_divider_small"></p>
 
                 <h4 class="article_header"><a href="https://github.com/Lineage-BBKey2/distribution/releases/download/v1.13a/LOS22_Key2_ZKrab-v1.13a.zip">ZKrab-v1.13A 11 Oct 2026</a></h4>
                   <p class="article_text">Oct. 2026 Android platform security patch</p>
@@ -1486,6 +1534,18 @@ footer {
 
               <div id="le-15-419_changelog">
 
+                <h4 class="article_header"><a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.22a/LOS22_Key2LE_ZKrab-v1.22a.zip">ZKrab-v1.23a 27 Nov 2026</a></h4>
+                  <p class="article_text">Nov. 2026 Android platform security patches/updates from upstream LOS 22.2</p>
+                  <p class="article_text">Prevent occasional failure of camera to load after boot</p>
+                  <p class="article_text">Fix switching from speaker to earpiece for WhatsApp voice messages</p>
+                  <p class="article_text">Add guards against accidental navigation key presses during top-row keyboard typing and keyboard swiping (*)</p>
+                  <p class="article_text">Kernel upstream updates and backports (*)</p>
+                  <p class="article_text">Move Legacy BlackBerry apps menu from Settings/System/BlackBerry Settings to Settings/Apps</p>
+                  <p class="article_text">Fix unavailable battery capacity information</p>
+                  <p class="article_text">(*) With krab-ubica's help - thank you!</p>
+                <p class="article_divider_small"></p>
+
+
                 <h4 class="article_header"><a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.22a/LOS22_Key2LE_ZKrab-v1.22a.zip">ZKrab-v1.22a 15 Nov 2026</a></h4>
                   <p class="article_text">Update kernel with fixes and security updates from CIP129 through CIP136</p>
                   <p class="article_text">BlackBerry settings:</p>
@@ -1624,6 +1684,44 @@ footer {
               <p class="article_divider_small"></p>
 
               <div id="le-15-44_changelog">
+
+                <h4 class="article_header"><a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.14a/LOS22_Key2LE_ZKrab-v1.14a.zip">ZKrab-v1.14A 26 Nov 2026</a></h4>
+                  <p class="article_text">Change OTA update URL to 4.19 kernel ROM releases</p>
+                  <ul class="article_list">
+                    <li class="article_text">OTA update above v1.14a prevented with message if adoptable storage is being used
+                  </ul>
+                  <p class="article_text">Nov. 2026 Android platform security patches/updates from upstream LOS 22.2</p>
+                  <p class="article_text">BlackBerry settings:</p>
+                  <ul class="article_list">
+                    <li class="article_text">Add keyboard "turn off with bright screen" toggle (independent from adaptive brightness toggle)</li>
+                    <li class="article_text">Add Archive.org option for Legacy BlackBerry apps installation alongside Google Play option</li>
+                    <li class="article_text">Enable non-Latin script language typing on physical keyboard</li>
+                    <li class="article_text">All language layouts from stock BlackBerry Android 8.1 supported (some languages including Korean, Japanese, Chinese may require BlackBerry Keyboard IME)</li>
+                    <li class="article_text">Adapted AOSP layouts for other languages and English Colemak/Dvorak/Workman also supported</li>
+                    <li class="article_text">Layout is auto-selected for supported languages and can be previewed/changed in Settings/System/Keyboard/Physical keyboard/stmpe_keypad/[chosen IME+chosen language]</li>
+                  </ul>
+                  <p class="article_text">Aperture Camera:</p>
+                  <ul class="article_list">
+                    <li class="article_text">Full screen camera preview, re-arrange controls to minimize overlap with preview</li>
+                    <li class="article_text">Stop cropping of captured photos and videos compared to preview in some cases</li>
+                    <li class="article_text">Add native HDR mode (ON/OFF control only)</li>
+                  </ul>
+                  <p class="article_text">Volume:</p>
+                  <ul class="article_list">
+                    <li class="article_text">Return to stock Android 8.1 volume increment numbers for media (15), notification (7), alarm (7), ring (7)</li>
+                    <li class="article_text">Adjust media volume curve to approximately match new 1/15 volume level to old 1/30</li>
+                    <li class="article_text">Use wider ring, notification, alarm curves to make low volume settings quieter </li>
+                    <li class="article_text">Change call volume increments from 15 to 10 (fixes bug of calls not starting at min. volume despite min. volume setting)</li>
+                    <li class="article_text">Add volume curves for Assistant and hearing aids (*)</li>
+                  </ul>
+                  <p class="article_text">Make toggle(s) to disable SIM card(s) usable (implementation adapted from 7SIM)</p>
+                  <p class="article_text">Start search in Settings with physical keyboard typing (*)</p>
+                  <p class="article_text">Allow Cast quick-settings tile to activate Wi-Fi and operate when Wi-Fi is enabled but disconnected</p>
+                  <p class="article_text">Prevent a black-screen freeze (caused by system_server freezing itself)</p>
+                  <p class="article_text">Fix recovery image updating when "Update recovery" is enabled in Settings/System/System updates/Preferences</p>
+                  <p class="article_text">Fix language saving issue in recovery (*)</p>
+                  <p class="article_text">(*) With krab-ubica's help - thank you!</p>
+                <p class="article_divider_small"></p>
 
                 <h4 class="article_header"><a href="https://github.com/Lineage-BBKey2LE/distribution/releases/download/v1.13a/LOS22_Key2LE_ZKrab-v1.13a.zip">ZKrab-v1.13A 11 Oct 2026</a></h4>
                   <p class="article_text">Oct. 2026 Android platform security patch</p>
